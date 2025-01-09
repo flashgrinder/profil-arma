@@ -1,0 +1,32 @@
+.slider-nav .slider-nav__splide-arrow {
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.slider-nav .slider-nav__arrow-icon {
+  fill: transparent;
+  stroke: var(--secondary-font-color);
+  width: 24px;
+  height: 24px;
+}
+
+.slider-nav .slider-nav__splide-arrow--prev .slider-nav__arrow-icon {
+  transform: rotate(0deg);
+}
+
+.slider-nav__splide-arrow--prev.splide__arrow--prev {
+  left: -40px;
+  @include to(1200px) {
+    left: -25px;
+  }
+}
+
+.slider-nav__splide-arrow--next.splide__arrow--next {
+  right: -40px;
+  @include to(1200px) {
+    right: -25px;
+  }
+}

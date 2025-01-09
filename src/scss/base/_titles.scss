@@ -1,40 +1,33 @@
 .title {
-	font-family: var(--font-primary);
+	font-family: var(--font-main);
 	font-style: normal;
 	margin: 0;
 	&--huge {
-		font-size: responsive 26px 56px;
+		font-size: responsive 76px 96px;
 		font-range: 375px 1024px;
 	}
 	&--big {
-		font-size: responsive 26px 48px;
+		font-size: responsive 24px 44px;
 		font-range: 375px 1024px;
 	}
 	&--large {
-		font-size: responsive 24px 40px;
-		font-range: 1024px 1440px;
-	}
-	&--medium {
-		font-size: responsive 20px 24px;
-		font-range: 1024px 1440px;
+		font-size: responsive 24px 36px;
+		font-range: 375px 1024px;
 	}
 	&--small {
-		font-size: 20px;
+		font-size: 24px;
 	}
-	&--tiny {
-		font-size: 18px;
+	&--primary {
+		color: var(--primary-font-color);
 	}
-	&--dark {
-		color: var(--color-dark);
+	&--secondary {
+		color: var(--secondary-font-color);
 	}
 	&--white {
-		color: var(--color-white);
+		color: var(--white-font-color);
 	}
-	&--w-extra-light {
-		font-weight: 200;
-	}
-	&--w-light {
-		font-weight: 300;
+	&--green {
+		color: var(--primary);
 	}
 	&--w-regular {
 		font-weight: 400;
@@ -42,26 +35,41 @@
 	&--w-medium {
 		font-weight: 500;
 	}
-	&--w-semi-bold {
-		font-weight: 600;
-	}
 	&--w-bold {
-		font-weight: bold;
-	}
-	&--w-extra-bold {
-		font-weight: 800;
-	}
-	&--w-black {
-		font-weight: 900;
+		font-weight: 700;
 	}
 	&--uppercase {
 		text-transform: uppercase;
 	}
+	&--decor {
+		position: relative;
+		padding-left: 38px;
+		@include mobile {
+			padding-left: 28px;
+		}
+	}
+	&--decor::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url("../img/icons/title-arrow.svg") no-repeat center;
+		background-size: 43px 39px;
+		display: inline-block;
+		width: 24px;
+		height: 39px;
+		@include mobile {
+			background-size: 26px 26px;
+			width: 16px;
+			height: 26px;
+		}
+	}
 }
 
 .title--indent {
-	margin: 0 0 50px;
-	@include tablet {
-		margin: 0 0 25px;
+	margin-bottom: 48px;
+	@include mobile {
+		margin-bottom: 24px;
 	}
 }

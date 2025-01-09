@@ -1,4 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+html, body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
 
 html {
 	scroll-behavior: smooth;
@@ -6,10 +10,11 @@ html {
 }
 
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
+	position: relative;
+	background-color: var(--primary-bg);
+	color: var(--primary-font-color);
 	font-family: var(--font-main);
-	text-wrap: balance;
+	overflow-x: hidden;
 }
 
 img {
@@ -17,7 +22,7 @@ img {
 }
 
 a {
-	color: var(--link-color);
+	color: var(--secondary-font-color);
 }
 
 code {
