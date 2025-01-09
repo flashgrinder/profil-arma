@@ -8,9 +8,11 @@ const webpHTML = require('gulp-webp-retina-html');
 const typograf = require('gulp-typograf');
 
 // SASS
+const postcss       = require('gulp-postcss');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('autoprefixer');
 const csso = require('gulp-csso');
 const webImagesCSS = require('gulp-web-images-css');  //Вывод WEBP-изображений
 
@@ -89,20 +91,25 @@ gulp.task('html:prod', function () {
 				},
 			})
 		)
-		.pipe(htmlclean())
+		// .pipe(htmlclean())
 		.pipe(gulp.dest('./prod/'));
 });
 
 gulp.task('sass:prod', function () {
+	const prt = require('postcss-responsive-type');
+	const plugins = [
+		prt(),
+		autoprefixer()
+	]
 	return gulp
 		.src('./src/scss/*.scss')
 		.pipe(changed('./prod/css/'))
 		.pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
-		.pipe(autoprefixer())
 		.pipe(sassGlob())
 		.pipe(groupMedia())
 		.pipe(sass())
+		.pipe(postcss(plugins))
 		.pipe(
 			webImagesCSS({
 				mode: 'webp',
@@ -115,7 +122,7 @@ gulp.task('sass:prod', function () {
 			)
 		)
 		.pipe(csso())
-		.pipe(sourceMaps.write())
+		// .pipe(sourceMaps.write())
 		.pipe(gulp.dest('./prod/css/'));
 });
 
@@ -170,14 +177,14 @@ const svgSymbol = {
 		transform: [
 			{
 				svgo: {
-					plugins: [
-						{
-							name: 'removeAttrs',
-							params: {
-								attrs: '(fill|stroke)',
-							},
-						},
-					],
+					// plugins: [
+					// 	{
+					// 		name: 'removeAttrs',
+					// 		params: {
+					// 			attrs: '(fill|stroke)',
+					// 		},
+					// 	},
+					// ],
 				},
 			},
 		],
