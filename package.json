@@ -64,10 +64,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/flashgrinder/base-template.git"
+		"url": "git+ssh://git@github.com/flashgrinder/profil-arma.git"
 	},
 	"bugs": {
-		"url": "https://github.com/flashgrinder/base-template/issues"
+		"url": "https://github.com/flashgrinder/profil-arma/issues"
 	},
-	"homepage": "https://github.com/flashgrinder/base-template#readme"
+	"homepage": "https://github.com/flashgrinder/profil-arma#readme"
 }
