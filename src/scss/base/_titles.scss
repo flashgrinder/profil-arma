@@ -2,20 +2,30 @@
 	font-family: var(--font-main);
 	font-style: normal;
 	margin: 0;
+	&--extra-huge {
+		font-size: responsive 48px 120px;
+		font-range: 375px 1600px;
+	}
 	&--huge {
-		font-size: responsive 76px 96px;
-		font-range: 375px 1024px;
+		font-size: responsive 48px 64px;
+		font-range: 375px 1600px;
 	}
 	&--big {
-		font-size: responsive 24px 44px;
-		font-range: 375px 1024px;
+		font-size: responsive 32px 48px;
+		font-range: 375px 1600px;
 	}
 	&--large {
-		font-size: responsive 24px 36px;
-		font-range: 375px 1024px;
+		font-size: responsive 24px 28px;
+		font-range: 375px 1600px;
+	}
+	&--medium {
+		font-family: var(--font-secondary);
+		font-size: responsive 20px 24px;
+		font-range: 375px 1600px;
 	}
 	&--small {
-		font-size: 24px;
+		font-family: var(--font-secondary);
+		font-size: 20px;
 	}
 	&--primary {
 		color: var(--primary-font-color);
@@ -23,47 +33,17 @@
 	&--secondary {
 		color: var(--secondary-font-color);
 	}
-	&--white {
-		color: var(--white-font-color);
+	&--subtext {
+		color: var(--subtext-font-color);
 	}
-	&--green {
-		color: var(--primary);
-	}
-	&--w-regular {
-		font-weight: 400;
-	}
-	&--w-medium {
-		font-weight: 500;
+	&--w-semibold {
+		font-weight: 600;
 	}
 	&--w-bold {
 		font-weight: 700;
 	}
 	&--uppercase {
 		text-transform: uppercase;
-	}
-	&--decor {
-		position: relative;
-		padding-left: 38px;
-		@include mobile {
-			padding-left: 28px;
-		}
-	}
-	&--decor::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		background: url("../img/icons/title-arrow.svg") no-repeat center;
-		background-size: 43px 39px;
-		display: inline-block;
-		width: 24px;
-		height: 39px;
-		@include mobile {
-			background-size: 26px 26px;
-			width: 16px;
-			height: 26px;
-		}
 	}
 }
 
