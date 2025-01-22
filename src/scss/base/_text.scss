@@ -1,45 +1,42 @@
 .text {
-  font-family: var(--font-main);
-  font-style: normal;
-  margin: 0;
-  &--large {
-    font-size: responsive 20px 24px;
-    font-range: 576px 1024px;
-  }
-  &--medium {
-    font-size: 20px;
-  }
-  &--normal {
-    font-size: 16px;
-  }
-  &--small {
-    font-size: 14px;
-  }
-  &--tiny {
-    font-size: 12px;
-  }
-  &--primary {
-    color: var(--primary-font-color);
-  }
-  &--secondary {
-    color: var(--secondary-font-color);
-  }
-  &--white {
-    color: var(--white-font-color);
-  }
-  &--w-regular {
-    font-weight: normal;
-  }
-  &--w-medium {
-      font-weight: 500;
-  }
-  &--w-bold {
-    font-weight: 700;
-  }
-  &--italic {
-    font-style: italic;
-  }
-  &--uppercase {
-    text-transform: uppercase;
-  }
+	font-family: var(--font-secondary);
+	font-style: normal;
+	margin: 0;
+	&--large {
+		font-size: responsive 20px 24px;
+		font-range: 576px 1600px;
+	}
+	&--medium {
+		font-size: 20px;
+	}
+	&--normal {
+		font-size: 16px;
+	}
+	&--small {
+		font-size: 14px;
+	}
+	&--tiny {
+		font-size: 12px;
+	}
+	&--primary {
+		color: var(--primary-font-color);
+	}
+	&--secondary {
+		color: var(--secondary-font-color);
+	}
+	&--subtext {
+		color: var(--subtext-font-color);
+	}
+	&--w-regular {
+		font-weight: normal;
+	}
+	&--w-semibold {
+		font-weight: 600;
+	}
+	&--w-bold {
+		font-weight: 700;
+	}
+	&--uppercase {
+		text-transform: uppercase;
+	}
 }
