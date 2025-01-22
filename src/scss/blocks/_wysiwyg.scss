@@ -1,0 +1,145 @@
+.wysiwyg {
+  font-family: var(--font-main);
+  color: var(--primary-font-color);
+  font-size: responsive 20px 24px;
+  font-range: 576px 1024px;
+}
+
+.wysiwyg h1,
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4,
+.wysiwyg h5,
+.wysiwyg h6 {
+  font-family: var(--font-main);
+  font-weight: bold;
+  margin: 0 0 24px;
+}
+
+.wysiwyg h2 {
+  @extend .title--large
+}
+
+.wysiwyg h3 {
+  @extend .title--small
+}
+
+.wysiwyg h4 {
+  font-size: 20px;
+}
+
+.wysiwyg h5 {
+  @extend .text--normal
+}
+
+.wysiwyg ul,
+.wysiwyg ol {
+  padding-left: 30px;
+  font-weight: 400;
+  margin-left: 0;
+  @extend .text--large;
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.wysiwyg ul li ~ li,
+.wysiwyg ol li ~ li {
+  margin-top: 20px;
+}
+
+.wysiwyg table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--disabled);
+  border-collapse: collapse;
+}
+
+.wysiwyg table th {
+  font-weight: bold;
+  padding: 5px;
+  background: #efefef;
+  border: 1px solid var(--disabled);
+}
+
+.wysiwyg table td {
+  border: 1px solid var(--disabled);
+  padding: 5px;
+}
+
+.wysiwyg ul li {
+  list-style-type: disc;
+}
+
+.wysiwyg ul li > ul,
+.wysiwyg ol li > ol {
+  margin-top: 20px;
+}
+
+.wysiwyg p {
+  font-weight: 400;
+  line-height: 32px;
+  @extend .text--large;
+  @include mobile {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.wysiwyg p + p {
+  margin-top: 24px;
+}
+
+.wysiwyg p + h1,
+.wysiwyg p + h2,
+.wysiwyg p + h3,
+.wysiwyg p + h4,
+.wysiwyg p + h5 {
+  margin-bottom: 24px;
+}
+
+.wysiwyg a {
+  text-decoration: underline;
+  color: var(--color-gray-600);
+  transition: color ease .2s;
+}
+
+.wysiwyg a:hover {
+  color: var(--primary);
+}
+
+/* About and Wysiwyg-news*/
+.wysiwyg.wysiwyg--about p,
+.wysiwyg.wysiwyg--news p {
+  font-weight: 400;
+  line-height: 32px;
+  @extend .text--large;
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.wysiwyg.wysiwyg--about p + p,
+.wysiwyg.wysiwyg--news p + p {
+  margin-top: 24px;
+}
+
+/* Industry-detail */
+.wysiwyg.wysiwyg--industry-detail p {
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0;
+  }
+}
+
+/* Accordion */
+.wysiwyg.wysiwyg--accordion p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.wysiwyg.wysiwyg--accordion p + p {
+  margin-top: 16px;
+}

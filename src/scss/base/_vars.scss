@@ -1,23 +1,48 @@
 :root {
-	--container-width: 1200px;
-	--container-padding: 15px;
+	--container-width: 1312px;
+	--container-width-1600: 1630px;
+	--container-padding: 16px;
 
-	--font-main: sans-serif;
-	--font-primary: 'Manrope', sans-serif;
+	--font-main: GolosText, sans-serif;
 
-	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
-	--link-color: #2578c8;
-	--color-dark: #1A1E23;
-	--color-invalid: #f30707;
+	/* Brand Colors */
+	--primary: #005339;
+	--secondary: #D30A21;
+	/* State Colors */
+	--primary-hover: #81AA9D;
+	--primary-pressed: #003525;
+	--disabled: #C9CBC8;
+	--secondary-hover: #D30A21;
+	--secondary-pressed: #A9081A;
+	/* Input Colors */
+	--normal: #FFFFFF;
+	--success: #E9F1E4;
+	--error: #F8E4E2;
+	/* Border Colors */
+	--normal-border: #C9CBC8;
+	--success-border: #699E4A;
+	--error-border: #D1493F;
+	/* Background Colors */
+	--primary-bg: #FFFFFF;
+	--secondary-bg: #FAFAF9;
+	--focus-bg: #F7FAF6;
+	--separator-bg: #F3F7F6;
+	--footer-bg: #D9E3E0;
+	/* Font Colors */
+	--primary-font-color: #222222;
+	--secondary-font-color: #5A5F61;
+	--white-font-color: #FFFFFF;
+	/* Shadows */
+	--small-shadow: 0px 3px 10px 0px #8585851A;
+	--big-shadow: 0px 10px 50px 0px #8585850D;
 
+	--padding-block-48: 48px 0;
+	--padding-block-80: 80px 0;
+	--padding-block-120: 120px 0;
 
     --laptop-size: 1199px;
 	--tablet-size: 1024px;
 	--mobile-size: 768px;
-}
 
-.dark {
-    --page-bg: #252526;
+	--hover-time: .3s;
 }
