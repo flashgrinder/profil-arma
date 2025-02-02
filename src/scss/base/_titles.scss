@@ -7,11 +7,15 @@
 		font-range: 375px 1600px;
 	}
 	&--huge {
-		font-size: responsive 48px 64px;
+		font-size: responsive 42px 64px;
 		font-range: 375px 1600px;
 	}
 	&--big {
 		font-size: responsive 32px 48px;
+		font-range: 375px 1600px;
+	}
+	&--pre-big {
+		font-size: responsive 24px 32px;
 		font-range: 375px 1600px;
 	}
 	&--large {
@@ -19,16 +23,20 @@
 		font-range: 375px 1600px;
 	}
 	&--medium {
-		font-family: var(--font-secondary);
 		font-size: responsive 20px 24px;
 		font-range: 375px 1600px;
 	}
 	&--small {
-		font-family: var(--font-secondary);
 		font-size: 20px;
 	}
 	&--primary {
 		color: var(--primary-font-color);
+	}
+	&--orange {
+		color: var(--primary);
+	}
+	&--white {
+		color: var(--primary-bg);
 	}
 	&--secondary {
 		color: var(--secondary-font-color);

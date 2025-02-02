@@ -1,0 +1,160 @@
+.catalog__top-wrap {
+	padding: 120px 0;
+	@include tablet {
+		padding: 48px 0;
+	}
+}
+
+.catalog__subtitle {
+	margin-top: 12px;
+}
+
+.catalog__body {
+	border-top: 1px solid var(--secondary-bg-2);
+}
+
+.catalog__outer {
+	border-bottom: 1px solid var(--secondary-bg-2);
+	@include tablet {
+		border-bottom: none;
+		overflow: hidden;
+	}
+}
+
+.catalog__inner {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(400px, 1fr));
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
+}
+
+.catalog__menu {
+	position: relative;
+	padding: 80px 120px;
+	@include tablet {
+		padding: 24px 0;
+	}
+}
+
+.catalog__menu::after {
+	@include tablet {
+		content: '';
+		position: absolute;
+		height: 1px;
+		background-color: var(--secondary-bg-2);
+		width: 999%;
+		left: -100%;
+		bottom: 0;
+	}
+}
+
+.catalog__menu-wrap-top {
+	@include tablet {
+		position: relative;
+		display: grid;
+		grid-template-columns: 80px 1fr 32px;
+		align-items: center;
+		gap: 16px;
+	}
+}
+
+.catalog__menu-wrap-top::after {
+	@include tablet {
+		content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16.8003 16.6221L10.667 10.4888L12.5337 8.62213L20.5337 16.6221L12.5337 24.6221L10.667 22.7555L16.8003 16.6221Z' fill='%2390A4AE'/%3e%3c/svg%3e");
+	}
+}
+
+.catalog__menu-decor {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	max-width: 400px;
+	transform: translateY(-50%);
+	user-select: none;
+	pointer-events: none;
+	transition: opacity .5s ease, visibility .5s ease;
+	@include tablet {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+		top: auto;
+		position: static;
+	}
+}
+
+.catalog__menu:hover .catalog__menu-decor {
+	opacity: 1;
+	visibility: visible;
+}
+
+.catalog__menu:first-child {
+	border-right: 1px solid var(--secondary-bg-2);
+	padding: 80px 120px 80px 0;
+	@include tablet {
+		padding: 24px 0;
+		border-right: none;
+	}
+}
+
+.catalog__menu:last-child .catalog__menu-decor {
+	right: -90px;
+}
+
+.catalog__menu-name {
+	max-width: 467px;
+	position: relative;
+	@include mobile {
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+
+.catalog__menu-list {
+	position: relative;
+	margin-top: 32px;
+	font-size: 18px;
+	color: var(--secondary-font-color);
+	max-width: 430px;
+	@include tablet {
+		font-size: 16px;
+		max-width: 100%;
+		padding-left: 96px;
+		margin-top: 0;
+		max-height: 0;
+		opacity: 0;
+		line-height: 0;
+		transition: line-height var(--hover-time) ease, opacity var(--hover-time) ease, margin-top var(--hover-time) ease, max-height var(--hover-time) ease;
+	}
+}
+
+.catalog__menu-list.is-open {
+	@include tablet {
+		max-height: 999px;
+		line-height: 1;
+		transition: line-height var(--hover-time) ease, opacity var(--hover-time) ease, margin-top var(--hover-time) ease, height var(--hover-time) ease;
+		margin-top: 20px;
+	}
+}
+
+.catalog__menu-list.is-open.can-animate {
+	@include tablet {
+		opacity: 1;
+	}
+}
+
+.catalog__menu-item + .catalog__menu-item {
+	margin-top: 16px;
+}
+
+.catalog__menu-link {
+	color: inherit;
+}
+
+.catalog__menu--link {
+	@include tablet {
+		display: none;
+	}
+}
