@@ -1,0 +1,148 @@
+.reviews {
+	padding: 40px 0 150px;
+	@include mobile {
+		padding: 64px 0;
+	}
+}
+
+.reviews__heading,
+.reviews__slider-nav-wrap {
+	margin-bottom: 54px;
+	@include mobile {
+		margin-bottom: 0;
+	}
+}
+
+.reviews__slider-nav-wrap {
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+	max-width: var(--container-width);
+	width: 100%;
+}
+
+.reviews__slider-nav-wrap .button {
+	@include mobile {
+		display: none;
+	}
+}
+
+.reviews__item {
+	background-color: var(--secondary-bg-2);
+	padding: 70px 0 58px 62px;
+	overflow: hidden;
+	transition: background-color var(--hover-time) ease;
+	@include mobile {
+		padding: 32px 24px;
+	}
+}
+
+.reviews__item:hover {
+	background-color: var(--blue-gray-bg);
+}
+
+.reviews__item-columns {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(500px, 1fr));
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 27px;
+	}
+}
+
+.reviews__item-info {
+	position: relative;
+	margin-top: 110px;
+	padding-left: 75px;
+	@include mobile {
+		padding-left: 0;
+		margin-top: 35px;
+	}
+}
+
+.reviews__item-decor {
+	position: absolute;
+	left: 0;
+	@include mobile {
+		display: none;
+	}
+}
+
+.reviews__item-description {
+	margin-top: 27px;
+}
+
+.reviews__item-col-right {
+	position: relative;
+	transform: perspective(700px);
+	@include mobile {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+.reviews__item-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity var(--hover-time) ease, visibility var(--hover-time) ease;
+	@include mobile {
+		position: static;
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
+	}
+}
+
+.reviews__item:hover .reviews__item-button {
+	opacity: 1;
+	visibility: visible;
+}
+
+.reviews__item-button .reviews__item-button-desktop {
+	font-size: 16px;
+	min-width: max-content;
+	@include mobile {
+		display: none;
+	}
+}
+
+.reviews__item-button .reviews__item-button-mobile {
+	text-decoration: underline;
+	padding: 0;
+	text-transform: none;
+}
+
+.reviews__item-pic {
+	position: absolute;
+	top: 50px;
+	right: 70px;
+	transform: matrix(1.00,-0.10,0.25,1.00,0,0);
+	max-width: 465px;
+	box-shadow: 0 12px 32px 0 #0000001F;
+	transition: top var(--hover-time) ease, right var(--hover-time) ease;
+	@include mobile {
+		position: static;
+		order: -1;
+	}
+	@include mobileXS {
+		max-width: 90px;
+	}
+}
+
+.reviews__item:hover .reviews__item-pic {
+	top: -150px;
+	right: 100px;
+}
+
+.reviews__action-mobile {
+	display: none;
+	margin-top: 32px;
+	@include mobile {
+		display: block;
+	}
+}

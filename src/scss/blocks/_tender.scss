@@ -1,0 +1,165 @@
+.tender {
+	padding: 130px 0 80px;
+}
+
+.tender__heading,
+.tender__subtitle {
+	@include mobile {
+		text-align: center;
+	}
+}
+
+.tender__columns {
+	display: grid;
+	grid-template-columns: 1fr minmax(350px, 428px);
+	background-color: var(--secondary-bg-2, #ECEFF1);
+	align-items: center;
+	@include to(1500px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.tender__col--left {
+	padding: 64px 80px 70px;
+	border-right: 1px solid #CFD8DC;
+	@include to(1500px) {
+		border-right: none;
+		border-bottom: 1px solid #CFD8DC;
+	}
+	@include mobile {
+		padding: 48px 24px;
+		border-bottom: none;
+	}
+}
+
+.tender__col--right {
+	padding: 24px;
+	@include to(1500px) {
+		padding: 64px 80px;
+	}
+	@include mobile {
+		padding: 50px 0 0;
+		background-color: var(--primary-bg);
+	}
+}
+
+.tender__subtitle {
+	margin-top: 12px;
+}
+
+.tender__form {
+	margin-top: 40px;
+}
+
+.tender__features {
+	gap: 32px;
+}
+
+.tender__feature {
+	gap: 16px;
+}
+
+.tender__feature-icon {
+	min-width: 40px;
+	max-height: 40px;
+}
+
+/* Tender--feedback */
+.tender.tender--feedback {
+	position: relative;
+	padding: 0 0 90px 320px;
+	background-color: var(--dark-bg);
+	@include to(1500px) {
+		padding: 0 0 90px 170px;
+	}
+	@include tablet {
+		padding: 200px 0 50px;
+	}
+}
+
+.tender.tender--feedback .container-right {
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+	max-width: var(--container-width);
+	width: 100%;
+}
+
+.tender.tender--feedback .tender__columns {
+	grid-template-columns: 1fr;
+	background-color: var(--primary);
+}
+
+.tender.tender--feedback .tender__col--left {
+	position: relative;
+	padding: 80px 228px 70px;
+	border-right: none;
+	@include to(1500px) {
+		padding: 80px 20px 70px 228px;
+		border-bottom: none;
+	}
+	@include tablet {
+		position: static;
+		padding: 48px 24px;
+	}
+}
+
+.tender.tender--feedback .tender__col--right {
+	background-color: var(--dark-bg);
+	padding: 90px 50px 0 0;
+	@include tablet {
+		padding: 50px 0 0;
+	}
+}
+
+.tender.tender--feedback .tender__decor-big {
+	position: absolute;
+	top: 50%;
+	left: -163px;
+	transform: translateY(-50%);
+	@include tablet {
+		top: 25px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 76px;
+	}
+}
+
+.tender.tender--feedback .tender__features {
+	gap: 50px;
+	@include to(1500px) {
+		gap: 28px;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	@include tablet {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.tender.tender--feedback .tender__feature {
+	max-width: 600px;
+	@include to(1500px) {
+		max-width: 100%;
+	}
+}
+
+.tender.tender--feedback .form__field--phone,
+.tender.tender--feedback .form__field--email {
+	max-width: 268px;
+	@include tablet {
+		max-width: 100%;
+	}
+}
+
+.tender.tender--feedback .form__input {
+	color: var(--primary-bg);
+}
+
+.tender.tender--feedback .form__placeholder {
+	font-size: 18px;
+}
+
+.tender.tender--feedback .form__agreement a:hover {
+	color: var(--primary-bg);
+}

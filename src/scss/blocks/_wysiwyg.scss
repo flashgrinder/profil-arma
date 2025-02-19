@@ -1,5 +1,5 @@
 .wysiwyg {
-  font-family: var(--font-main);
+  font-family: var(--font-secondary);
   color: var(--primary-font-color);
   font-size: responsive 20px 24px;
   font-range: 576px 1024px;
@@ -21,7 +21,7 @@
 }
 
 .wysiwyg h3 {
-  @extend .title--small
+  @extend .title--medium
 }
 
 .wysiwyg h4 {
@@ -95,6 +95,14 @@
 .wysiwyg p + h3,
 .wysiwyg p + h4,
 .wysiwyg p + h5 {
+  margin-top: 24px;
+}
+
+.wysiwyg p + h1,
+.wysiwyg p + h2,
+.wysiwyg p + h3,
+.wysiwyg p + h4,
+.wysiwyg p + h5 {
   margin-bottom: 24px;
 }
 
@@ -106,6 +114,11 @@
 
 .wysiwyg a:hover {
   color: var(--primary);
+}
+
+/* Wysiwyg-tabs */
+.wysiwyg.wysiwyg--tabs {
+  color: var(--primary-bg);
 }
 
 /* About and Wysiwyg-news*/

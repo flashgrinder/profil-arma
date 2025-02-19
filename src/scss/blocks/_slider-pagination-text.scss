@@ -1,0 +1,23 @@
+.slider-pagination-text.splide__pagination {
+	position: static;
+	padding: 0;
+	gap: 50px;
+}
+
+.slider-pagination-text__page.splide__pagination__page {
+	width: auto;
+	height: auto;
+	background: transparent;
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--subtext-font-color);
+	padding-bottom: 32px;
+	border-bottom: 2px solid var(--primary);
+	border-radius: 0;
+}
+
+.slider-pagination-text__page.splide__pagination__page.is-active {
+	transform: none;
+	background: transparent;
+	color: var(--secondary);
+}

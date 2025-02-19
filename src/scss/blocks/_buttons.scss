@@ -23,6 +23,18 @@
   }
 }
 
+.button__icon {
+  min-width: 24px;
+}
+
+.button span {
+  line-height: 1;
+}
+
+.button span + svg {
+  margin-top: -2px;
+}
+
 .button--primary {
   background-color: var(--primary);
   color: var(--primary-bg);

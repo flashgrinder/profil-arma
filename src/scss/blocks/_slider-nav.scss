@@ -1,16 +1,30 @@
+.slider-nav {
+  display: flex;
+  @include mobile {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
 .slider-nav .slider-nav__splide-arrow {
+  position: static;
+  transform: none;
   border-radius: 0;
   background-color: transparent;
   opacity: 1;
-  width: 24px;
-  height: 24px;
+  width: 80px;
+  height: 86px;
+  padding: 35px 24px;
+}
+
+.slider-nav .slider-nav__splide-arrow + .slider-nav__splide-arrow {
+  margin-left: 25px;
 }
 
 .slider-nav .slider-nav__arrow-icon {
   fill: transparent;
-  stroke: var(--secondary-font-color);
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 16px;
 }
 
 .slider-nav .slider-nav__splide-arrow--prev .slider-nav__arrow-icon {
@@ -18,14 +32,14 @@
 }
 
 .slider-nav__splide-arrow--prev.splide__arrow--prev {
-  left: -40px;
+  left: 0;
   @include to(1200px) {
     left: -25px;
   }
 }
 
 .slider-nav__splide-arrow--next.splide__arrow--next {
-  right: -40px;
+  right: 0;
   @include to(1200px) {
     right: -25px;
   }

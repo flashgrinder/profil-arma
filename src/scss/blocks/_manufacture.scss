@@ -1,0 +1,111 @@
+.manufacture {
+	background-color: var(--secondary);
+}
+
+.manufacture__wrap-top {
+	padding-top: 120px;
+	padding-bottom: 0;
+}
+
+.manufacture__top {
+	gap: 50px;
+	@include tablet {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 32px;
+	}
+}
+
+.manufacture__features {
+	padding: 148px 0 108px;
+	gap: 32px;
+	@include tablet {
+		padding: 32px 0 64px;
+		flex-direction: column;
+	}
+}
+
+.manufacture__features + .manufacture__heading {
+	@include tablet {
+		margin-top: 64px;
+	}
+}
+
+.manufacture__tabs {
+	display: grid;
+	grid-template-columns: minmax(300px, 504px) minmax(500px, 1fr);
+	gap: 80px;
+	padding: 130px 0;
+	@include tablet {
+		padding: 48px 0 64px;
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+}
+
+.manufacture__tabs-buttons {
+	gap: 32px;
+	margin-top: 0;
+	flex-direction: column;
+}
+
+.manufacture__tabs-num {
+	margin-bottom: 16px;
+}
+
+.manufacture__tabs-num {
+	transform: scale(1) translateX(0px);
+	transition: transform var(--hover-time) ease;
+}
+
+.manufacture__tabs-button.tabs__button {
+	padding-bottom: 32px;
+	border-bottom: 1px solid #FFFFFF8A;
+	transition: all var(--hover-time) ease;
+	@include tablet {
+		padding-bottom: 24px;
+	}
+}
+
+.manufacture__tabs-button.tabs__button:hover,
+.manufacture__tabs-button.is-active {
+	border-bottom: 1px solid var(--primary);
+}
+
+.manufacture__tabs-button.is-active .manufacture__tabs-name {
+	transform: scale(1.1) translateX(40px);
+	transition: transform var(--hover-time) ease;
+	@include tablet {
+		transform: scale(1) translateX(20px);
+	}
+}
+
+.manufacture__tabs-content {
+	position: relative;
+}
+
+.manufacture__tabs-content-wrap {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.manufacture__tabs-pic picture,
+.manufacture__tabs-pic img {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.manufacture__tabs-info {
+	position: relative;
+	padding: 32px;
+	background: #16161CAD;
+	max-width: 834px;
+	margin-top: auto;
+	@include tablet {
+		padding: 24px;
+	}
+}

@@ -2,6 +2,10 @@
 	font-family: var(--font-secondary);
 	font-style: normal;
 	margin: 0;
+	&--huge {
+		font-size: responsive 24px 32px;
+		font-range: 576px 1600px;
+	}
 	&--large {
 		font-size: responsive 20px 24px;
 		font-range: 576px 1600px;

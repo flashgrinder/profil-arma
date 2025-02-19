@@ -1,0 +1,40 @@
+.tabs__buttons {
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	margin-top: 24px;
+}
+
+.tabs__button {
+	cursor: pointer;
+	padding: 5px;
+	font-size: responsive 20px 24px;
+	font-range: 576px 1024px;
+	transition: color var(--hover-time) ease;
+}
+
+.tabs__button.is-active {
+	color: var(--primary);
+}
+
+.tabs__button:hover {
+	color: var(--primary);
+}
+
+.tabs__content {
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	backface-visibility: hidden;
+	height: 0;
+	transition: opacity .200s ease;
+	z-index: -1;
+}
+
+.tabs__content.is-open {
+	opacity: 1;
+	visibility: visible;
+	height: 100%;
+	backface-visibility: visible;
+	z-index: 10;
+}
