@@ -8,6 +8,7 @@ import placeholderInputs from "./modules/placeholder-inputs";
 import uploadFiles from "./modules/form-files";
 import reviewsSlider from "./modules/reviews-slider";
 import shipmentsSlider from "./modules/shipments-slider";
+import clientsSlider from "./modules/clients-slider";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     uploadFiles();
     reviewsSlider();
     shipmentsSlider();
+    clientsSlider();
     Fancybox.bind('[data-fancybox]');
 
 })
