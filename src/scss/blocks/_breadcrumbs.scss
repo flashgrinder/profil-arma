@@ -1,0 +1,43 @@
+.breadcrumbs {
+	font-family: var(--font-secondary);
+	margin-bottom: 60px;
+}
+
+.breadcrumbs a:first-child::before {
+	content: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+	font-size: 14px;
+}
+
+.breadcrumbs span {
+	position: relative;
+	font-weight: 600;
+	color: var(--primary);
+}
+
+.breadcrumbs a {
+	color: #CFCFCF;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: underline;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: 8px;
+}
+
+.breadcrumbs a::before,
+.breadcrumbs span::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	background-color: #CFCFCF;
+}

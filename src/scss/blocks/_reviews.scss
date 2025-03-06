@@ -114,9 +114,13 @@
 }
 
 .reviews__item-button .reviews__item-button-mobile {
+	display: none;
 	text-decoration: underline;
 	padding: 0;
 	text-transform: none;
+	@include mobile {
+		display: block;
+	}
 }
 
 .reviews__item-pic {

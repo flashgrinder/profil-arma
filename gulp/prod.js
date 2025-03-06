@@ -122,7 +122,7 @@ gulp.task('sass:prod', function () {
 			)
 		)
 		.pipe(csso())
-		// .pipe(sourceMaps.write())
+		.pipe(sourceMaps.write())
 		.pipe(gulp.dest('./prod/css/'));
 });
 

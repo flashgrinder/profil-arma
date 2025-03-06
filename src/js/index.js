@@ -9,6 +9,7 @@ import uploadFiles from "./modules/form-files";
 import reviewsSlider from "./modules/reviews-slider";
 import shipmentsSlider from "./modules/shipments-slider";
 import clientsSlider from "./modules/clients-slider";
+import officeSlider from "./modules/office-slider";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     reviewsSlider();
     shipmentsSlider();
     clientsSlider();
+    officeSlider();
     Fancybox.bind('[data-fancybox]');
 
 })

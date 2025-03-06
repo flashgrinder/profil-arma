@@ -35,6 +35,12 @@ function clientsSlider () {
                     gap: '60px',
                     arrows: true,
                 },
+                768: {
+                    perPage: 3,
+                    perMove: 1,
+                    gap: '32px',
+                    arrows: true,
+                },
             }
         } );
 

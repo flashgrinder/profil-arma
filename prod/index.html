@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Базовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png">
+</head>
+<body>
+<!-- Убираешь класс header--dark и меняет цвета на белый -->
+<header class="header js-header-mobile header--dark">
+    <button class="mobile-nav-btn burger js-mobile-nav-burger">
+        <div class="nav-icon burger__icon"></div>
+    </button>
+</header>
+<div class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="docs.html">Документация</a></li>
+    </ul>
+</div>
+
+<main>
+
+<section class="dashbord visually-hidden" style="margin: 100px auto;max-width: 1024px">
+    <a href="" class="button button--primary">
+        <svg width="45" height="23" class="button__icon">
+            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right"></use>
+        </svg>
+        <span>Сделать заказ</span>
+    </a>
+    <a href="" class="button button--secondary">
+        <span>Сделать заказ</span>
+        <svg width="45" height="23" class="button__icon">
+            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+        </svg>
+    </a>
+    <a href="" class="button button--thirty">
+        <span>Сделать заказ</span>
+        <svg width="45" height="23" class="button__icon">
+            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right"></use>
+        </svg>
+    </a>
+    <a href="" class="button button--text">
+        <span>Сделать заказ</span>
+        <svg width="45" height="23" class="button__icon">
+            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+        </svg>
+    </a>
+    <a href="" class="button button--primary button--medium">
+        <svg width="24" height="24" class="button__icon">
+            <use href="./img/svgsprite/sprite.symbol.svg#check-white"></use>
+        </svg>
+        <span>Сделать заказ</span>
+    </a>
+</section>
+
+<section class="main-screen">
+    <div class="main-screen__banner">
+        <picture>
+            <img src="./img/main-screen.png" alt="">
+        </picture>
+    </div>
+    <div class="main-screen__body container">
+        <div class="main-screen__inner d-flex d-flex-column">
+            <div class="main-screen__info">
+                <h1 class="main-screen__heading title title--huge title--white title--w-bold title--uppercase">
+                    Собственное производство
+                    фланцевой продукции и&#160;деталей трубопровода
+                </h1>
+                <p class="main-screen__subtitle text text--large text--white text--w-regular">
+                    по&#160;российским и&#160;зарубежным стандартам
+                </p>
+                <a href="javascript:;" class="main-screen__button button button--text">
+                    <span>Сделать заказ</span>
+                    <svg width="45" height="23" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="main-screen__bottom d-flex flex-justify-sb">
+                <div class="main-screen__feature">
+                    <div class="main-screen__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        2002
+                    </div>
+                    <div class="main-screen__feature-excerpt text text--large text--white text--w-regular">
+                        год основания
+                    </div>
+                </div>
+                <div class="main-screen__feature">
+                    <div class="main-screen__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        <span>ДУ10-</span>2000
+                    </div>
+                    <div class="main-screen__feature-excerpt text text--large text--white text--w-regular">
+                        широкий ассортимент
+                    </div>
+                </div>
+                <div class="main-screen__feature">
+                    <div class="main-screen__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        10-25 <span>дней</span>
+                    </div>
+                    <div class="main-screen__feature-excerpt text text--large text--white text--w-regular">
+                        срок изготовления
+                    </div>
+                </div>
+                <div class="main-screen__feature">
+                    <div class="main-screen__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        2 630 830
+                    </div>
+                    <div class="main-screen__feature-excerpt text text--large text--white text--w-regular">
+                        изготовленных изделий
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="catalog">
+    <div class="catalog__top container">
+        <div class="catalog__top-wrap">
+            <h3 class="catalog__heading title title--huge title--primary title--w-bold title--uppercase">
+                Каталог
+            </h3>
+            <p class="catalog__subtitle text text--large text--primary text--w-regular">
+                Производим как серийные изделия, так и&#160;изделия по&#160;чертежам
+            </p>
+        </div>
+    </div>
+    <div class="catalog__body">
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/flanec.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Фланцевая продукция
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фланцы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Заглушки
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Линзы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Изолирующие соединения
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Прокладки разного сечения
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фланцевый крепеж
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/troinik.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Детали трубопровода
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Тройники
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Отводы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Переходы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Опоры трубопроводов
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/tochechnaya_1.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Точеные детали
+                            трубопроводов
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Переходы точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Тройники точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Угольники точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Штуцера точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Бобышки стальные
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/trubnaya_reshetka.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Трубные решетки
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Неподвижные трубные решетки для теплообменников
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски аппаратов со&#160;встроенным компенсатором
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски кожухотрубчатых теплообменников с&#160;плавающей головкой
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски теплообменников с&#160;U&#160;образными трубами
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски пучков теплообменников
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/filtr_setchatiy.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Котельное
+                            оборудование
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фильтры сетчатые
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Грязевики
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Бак разрыва струи
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Сосуды конденсационные СК
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/pokovka.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Поковки
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Поковка стальная круглая
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Поковка прямоугольная
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Поковка стальная квадратная
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/smotrovoi_fonar.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Устройства
+                            для контроля и&#160;измерений
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Узлы для отбора проб
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Камеры уровнемера выносные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фонари смотровые
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__menu catalog__menu--link">
+                    <a href="" class="button button--text">
+                        <span>Перейти в&#160;каталог изделий</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="shipments">
+    <div class="shipments__body container">
+        <div class="shipments__top d-flex flex-justify-sb flex-align-center">
+            <h3 class="shipments__heading title title--huge title--primary title--w-bold title--uppercase">
+                Отгрузки
+            </h3>
+            <div class="shipments__subtitle text text--huge text--primary text--w-regular">
+                Создаем продукцию для ключевых компаний России&#160;&#8212; Гарантия надежности и&#160;высокого качества
+            </div>
+        </div>
+        <div class="shipments__mobile-items">
+            <div class="shipments__mobile-item">
+                <div class="shipments__mobile-item-pic">
+                    <picture>
+                        <img src="./img/other/shipments-1.jpg" alt="">
+                    </picture>
+                </div>
+                <a href="" class="shipments__mobile-item-title text text--primary text--w-bold d-flex flex-align-center">
+                    <span>Отгрузка фонарей смотровых -1-32-0,6-1-20 АТК 26-01-1-89</span>
+                    <svg width="45" height="23" class="shipments__item-mobile-icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="shipments__mobile-item">
+                <div class="shipments__mobile-item-pic">
+                    <picture>
+                        <img src="./img/other/shipments-1.jpg" alt="">
+                    </picture>
+                </div>
+                <a href="" class="shipments__mobile-item-title text text--primary text--w-bold d-flex flex-align-center">
+                    <span>Отгрузка фонарей смотровых -1-32-0,6-1-20 АТК 26-01-1-89</span>
+                    <svg width="45" height="23" class="shipments__item-mobile-icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="shipments__mobile-item">
+                <div class="shipments__mobile-item-pic">
+                    <picture>
+                        <img src="./img/other/shipments-1.jpg" alt="">
+                    </picture>
+                </div>
+                <a href="" class="shipments__mobile-item-title text text--primary text--w-bold d-flex flex-align-center">
+                    <span>Отгрузка фонарей смотровых -1-32-0,6-1-20 АТК 26-01-1-89</span>
+                    <svg width="45" height="23" class="shipments__item-mobile-icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="shipments__slider-wrap">
+            <div class="shipments__splide shipments__splide--text splide d-flex flex-justify-sb js-shipments-slider-tab-init">
+                <div class="shipments__splide-track splide__track">
+                    <div class="shipments__splide-list splide__list">
+                        <div class="shipments__splide-slide splide__slide">
+                            Нефтянная отрасль
+                        </div>
+                        <div class="shipments__splide-slide splide__slide">
+                            Газовая отрасль
+                        </div>
+                        <div class="shipments__splide-slide splide__slide">
+                            Химическая отрасль
+                        </div>
+                        <div class="shipments__splide-slide splide__slide">
+                            Промышленная отрасль
+                        </div>
+                    </div>
+                </div>
+                <div class="shipments__splide-arrows slider-nav splide__arrows">
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shipments__splide splide js-shipments-slider-init">
+                <div class="shipments__splide-track splide__track">
+                    <div class="shipments__splide-list splide__list">
+                        <div class="shipments__splide-slide splide__slide">
+                            <div class="shipments__item js-shipments-item">
+                                <div class="shipments__item-info d-flex d-flex-column">
+                                    <div class="shipments__item-logo">
+                                        <picture>
+                                            <img src="./img/other/logo-rosneft.svg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__wrap-text">
+                                        <h3 class="shipments__item-title title title--pre-big title--primary title--w-bold">
+                                            Тройники с&#160;фланцами ANSI по&#160;разработанным чертежам ООО&#160;&#171;Профиль-Арма&#187;
+                                        </h3>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Произвели и&#160;поставили:
+                                            </div>
+                                        </div>
+                                        <ul class="shipments__item-production text text--pre-medium text--primary text--w-regular">
+                                            <li>
+                                                Заглушки с&#160;рукояткой ЗР&#160;(II) 50-16 ст&#160;20 Т-ММ 25-01-01
+                                            </li>
+                                            <li>
+                                                эксцентрических фланцевых ASME/ANSI
+                                            </li>
+                                        </ul>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#pin-shipments"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Челябинск
+                                            </div>
+                                        </div>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                20 рабочих дней
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipments__item-photos">
+                                    <div class="shipments__item-photo is-active js-shipments-photo" data-num="01">
+                                        <picture>
+                                            <img src="./img/other/shipments-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="02">
+                                        <picture>
+                                            <img src="./img/other/shipments-2.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="03">
+                                        <picture>
+                                            <img src="./img/other/shipments-3.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shipments__splide-slide splide__slide">
+                            <div class="shipments__item js-shipments-item">
+                                <div class="shipments__item-info d-flex d-flex-column">
+                                    <div class="shipments__item-logo">
+                                        <picture>
+                                            <img src="./img/other/logo-rosneft.svg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__wrap-text">
+                                        <h3 class="shipments__item-title title title--pre-big title--primary title--w-bold">
+                                            Тройники с&#160;фланцами ANSI по&#160;разработанным чертежам ООО&#160;&#171;Профиль-Арма&#187;
+                                        </h3>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Произвели и&#160;поставили:
+                                            </div>
+                                        </div>
+                                        <ul class="shipments__item-production text text--pre-medium text--primary text--w-regular">
+                                            <li>
+                                                Заглушки с&#160;рукояткой ЗР&#160;(II) 50-16 ст&#160;20 Т-ММ 25-01-01
+                                            </li>
+                                            <li>
+                                                эксцентрических фланцевых ASME/ANSI
+                                            </li>
+                                        </ul>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#pin-shipments"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Челябинск
+                                            </div>
+                                        </div>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                20 рабочих дней
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipments__item-photos">
+                                    <div class="shipments__item-photo is-active js-shipments-photo" data-num="01">
+                                        <picture>
+                                            <img src="./img/other/shipments-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="02">
+                                        <picture>
+                                            <img src="./img/other/shipments-2.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="03">
+                                        <picture>
+                                            <img src="./img/other/shipments-3.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shipments__splide-slide splide__slide">
+                            <div class="shipments__item js-shipments-item">
+                                <div class="shipments__item-info d-flex d-flex-column">
+                                    <div class="shipments__item-logo">
+                                        <picture>
+                                            <img src="./img/other/logo-rosneft.svg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__wrap-text">
+                                        <h3 class="shipments__item-title title title--pre-big title--primary title--w-bold">
+                                            Тройники с&#160;фланцами ANSI по&#160;разработанным чертежам ООО&#160;&#171;Профиль-Арма&#187;
+                                        </h3>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Произвели и&#160;поставили:
+                                            </div>
+                                        </div>
+                                        <ul class="shipments__item-production text text--pre-medium text--primary text--w-regular">
+                                            <li>
+                                                Заглушки с&#160;рукояткой ЗР&#160;(II) 50-16 ст&#160;20 Т-ММ 25-01-01
+                                            </li>
+                                            <li>
+                                                эксцентрических фланцевых ASME/ANSI
+                                            </li>
+                                        </ul>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#pin-shipments"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Челябинск
+                                            </div>
+                                        </div>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                20 рабочих дней
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipments__item-photos">
+                                    <div class="shipments__item-photo is-active js-shipments-photo" data-num="01">
+                                        <picture>
+                                            <img src="./img/other/shipments-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="02">
+                                        <picture>
+                                            <img src="./img/other/shipments-2.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="03">
+                                        <picture>
+                                            <img src="./img/other/shipments-3.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shipments__splide-slide splide__slide">
+                            <div class="shipments__item js-shipments-item">
+                                <div class="shipments__item-info d-flex d-flex-column">
+                                    <div class="shipments__item-logo">
+                                        <picture>
+                                            <img src="./img/other/logo-rosneft.svg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__wrap-text">
+                                        <h3 class="shipments__item-title title title--pre-big title--primary title--w-bold">
+                                            Тройники с&#160;фланцами ANSI по&#160;разработанным чертежам ООО&#160;&#171;Профиль-Арма&#187;
+                                        </h3>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Произвели и&#160;поставили:
+                                            </div>
+                                        </div>
+                                        <ul class="shipments__item-production text text--pre-medium text--primary text--w-regular">
+                                            <li>
+                                                Заглушки с&#160;рукояткой ЗР&#160;(II) 50-16 ст&#160;20 Т-ММ 25-01-01
+                                            </li>
+                                            <li>
+                                                эксцентрических фланцевых ASME/ANSI
+                                            </li>
+                                        </ul>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#pin-shipments"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                Челябинск
+                                            </div>
+                                        </div>
+                                        <div class="shipments__item-prop d-flex flex-align-center">
+                                            <svg width="24" height="24" class="shipments__item-prop-icon">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#calendar"></use>
+                                            </svg>
+                                            <div class="shipments__item-prop-name text text--pre-medium text--primary text--w-medium">
+                                                20 рабочих дней
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipments__item-photos">
+                                    <div class="shipments__item-photo is-active js-shipments-photo" data-num="01">
+                                        <picture>
+                                            <img src="./img/other/shipments-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="02">
+                                        <picture>
+                                            <img src="./img/other/shipments-2.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="shipments__item-photo js-shipments-photo" data-num="03">
+                                        <picture>
+                                            <img src="./img/other/shipments-3.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="clients">
+    <div class="clients__body">
+        <div class="clients__top container">
+            <h3 class="clients__heading title title--big title--primary title--w-bold title--uppercase">
+                <span class="title title--orange">10 723</span> клиента за&#160;<span class="title title--orange">22</span> года
+               &#160;&#8212; Доверие, проверенное временем
+            </h3>
+            <div class="clients__subtitle text text--large text--primary text--w-regular">
+                Мы&#160;работаем с&#160;2002 года и&#160;являясь экспертами своего дела, изготавливаем фланцы, заглушки, трубные решетки, прокладки,
+                линзы и&#160;прочие детали трубопровода для многих компаний России, многие из&#160;которых являются крупнейшими компаниями России.
+            </div>
+        </div>
+        <div class="clients__wrap-sliders">
+            <div class="clients__wrap-text-slider container">
+                <div class="clients__splide clients__splide--text splide js-clients-text-slider-init d-flex flex-justify-sb">
+                    <div class="clients__splide-track splide__track">
+                        <div class="clients__splide-list splide__list">
+                            <div class="clients__splide-slide splide__slide">
+                                Нефтяная отрасль
+                            </div>
+                            <div class="clients__splide-slide splide__slide">
+                                Газовая отрасль
+                            </div>
+                            <div class="clients__splide-slide splide__slide">
+                                Химическая отрасль
+                            </div>
+                            <div class="clients__splide-slide splide__slide">
+                                Промышленная отрасль
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__splide-arrows slider-nav splide__arrows">
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clients__splide clients__splide--logos splide js-clients-logos-slider-init">
+                <div class="clients__splide-track splide__track">
+                    <div class="clients__splide-list splide__list">
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/rosneft.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/ink.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/gazprom.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/l.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/a.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/m.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/rosneft.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/ink.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/gazprom.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/l.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/a.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/m.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/rosneft.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/ink.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/gazprom.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/l.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/a.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/m.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/rosneft.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/ink.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/gazprom.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/l.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/a.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__splide-slide splide__slide">
+                            <div class="clients__slide-logo">
+                                <picture>
+                                    <img src="./img/other/m.png" alt="">
+                                </picture>
+                                <div class="clients__slide-tooltip">
+                                    Роснефть
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clients__splide-arrows slider-nav splide__arrows">
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="reviews__body">
+        <div class="reviews__top container">
+            <h3 class="reviews__heading title title--big title--primary title--w-bold title--uppercase">
+                НАС ЦЕНЯТ ЗА&#160;ОПЕРАТИВНОСТЬ
+                <br>
+                И&#160;СООТВЕТСТВИЕ СТАНДАРТАМ КАЧЕСТВА
+            </h3>
+        </div>
+        <div class="reviews__slider-wrap container-right">
+            <div class="reviews__splide splide js-reviews-slider-init">
+                <div class="reviews__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
+                    <a href="" class="button button--text">
+                        <span>Все отзывы</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                    <div class="reviews__splide-arrows slider-nav splide__arrows">
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="reviews__splide-track splide__track">
+                    <div class="reviews__splide-list splide__list">
+                        <div class="reviews__splide-slide splide__slide">
+                            <div class="reviews__item">
+                                <div class="reviews__item-columns">
+                                    <div class="reviews__item-col-left">
+                                        <div class="reviews__item-logo">
+                                            <picture>
+                                                <img src="./img/other/logo-ink.svg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="reviews__item-info">
+                                            <svg width="58" height="42" class="reviews__item-decor">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#quote-decor"></use>
+                                            </svg>
+                                            <div class="reviews__item-name text text--large text--primary text--w-semibold">
+                                                Переседов В.В., директор ООО&#160;&#171;СТС&#187;
+                                            </div>
+                                            <div class="reviews__item-description text text--large text--secondary text--w-regular">
+                                                Выражаем Вам нашу искреннюю благодарность и&#160;глубокую признательность за&#160;плодотворное сотрудничество. Мы&#160;верим в&#160;сохранение сложившихся деловых и&#160;дружеских отношений, надеемся на&#160;дальнейшее взаимовыгодное сторудничество.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__item-col-right">
+                                        <div class="reviews__item-button">
+                                            <a href="./img/other/reviews.jpg"
+                                               class="reviews__item-button-desktop button button--primary"
+                                               data-fancybox>
+                                                <span>Смотреть оригинал отзыва</span>
+                                            </a>
+                                            <a href="./img/other/reviews.jpg"
+                                               class="reviews__item-button-mobile button button--text button--small"
+                                               data-fancybox>
+                                                <span>Читать оригинал</span>
+                                            </a>
+                                        </div>
+                                        <div class="reviews__item-pic">
+                                            <picture>
+                                                <img src="./img/other/reviews.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__splide-slide splide__slide">
+                            <div class="reviews__item">
+                                <div class="reviews__item-columns">
+                                    <div class="reviews__item-col-left">
+                                        <div class="reviews__item-logo">
+                                            <picture>
+                                                <img src="./img/other/logo-rosneft.svg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="reviews__item-info">
+                                            <svg width="58" height="42" class="reviews__item-decor">
+                                                <use href="./img/svgsprite/sprite.symbol.svg#quote-decor"></use>
+                                            </svg>
+                                            <div class="reviews__item-name text text--large text--primary text--w-semibold">
+                                                Переседов В.В., директор ООО&#160;&#171;СТС&#187;
+                                            </div>
+                                            <div class="reviews__item-description text text--large text--secondary text--w-regular">
+                                                Выражаем Вам нашу искреннюю благодарность и&#160;глубокую признательность за&#160;плодотворное сотрудничество. Мы&#160;верим в&#160;сохранение сложившихся деловых и&#160;дружеских отношений, надеемся на&#160;дальнейшее взаимовыгодное сторудничество.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__item-col-right">
+                                        <div class="reviews__item-button">
+                                            <a href="./img/other/reviews.jpg"
+                                               class="reviews__item-button-desktop button button--primary"
+                                               data-fancybox>
+                                                <span>Смотреть оригинал отзыва</span>
+                                            </a>
+                                            <a href="./img/other/reviews.jpg"
+                                               class="reviews__item-button-mobile button button--text button--small"
+                                               data-fancybox>
+                                                <span>Читать оригинал</span>
+                                            </a>
+                                        </div>
+                                        <div class="reviews__item-pic">
+                                            <picture>
+                                                <img src="./img/other/reviews.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews__action-mobile container">
+            <a href="" class="reviews__button button button--secondary button--medium">
+                <span>Все отзывы</span>
+                <svg width="45" height="23" class="button__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#chevron-right"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="manufacture">
+    <div class="manufacture__body">
+        <div class="manufacture__wrap-top container">
+            <div class="manufacture__top d-flex flex-justify-sb">
+                <h3 class="manufacture__heading title title--big title--white title--w-bold title--uppercase">
+                    Мощность наших ПРОИЗВОДСТВЕННЫХ ГРУПП <br> позволяет изготовить любые трубопроводные <br> изделия
+                </h3>
+                <a href="" class="button button--text">
+                    <span>о&#160;производстве</span>
+                    <svg width="45" height="23" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="manufacture__features d-flex flex-justify-sb">
+                <div class="manufacture__feature">
+                    <div class="manufacture__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        90
+                    </div>
+                    <div class="manufacture__feature-excerpt text text--large text--white text--w-regular">
+                        Человек работает в&#160;компании
+                    </div>
+                </div>
+                <div class="manufacture__feature">
+                    <div class="manufacture__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        3 000&#160;м&#178;
+                    </div>
+                    <div class="manufacture__feature-excerpt text text--large text--white text--w-regular">
+                        Производственных площадей
+                    </div>
+                </div>
+                <div class="manufacture__feature">
+                    <div class="manufacture__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        97
+                    </div>
+                    <div class="manufacture__feature-excerpt text text--large text--white text--w-regular">
+                        Единиц оборудования
+                    </div>
+                </div>
+                <div class="manufacture__feature">
+                    <div class="manufacture__feature-name title title--huge title--white title--w-bold title--uppercase">
+                        > 10 000
+                    </div>
+                    <div class="manufacture__feature-excerpt text text--large text--white text--w-regular">
+                        Можем выпускать изделий в&#160;меся
+                    </div>
+                </div>
+            </div>
+            <h3 class="manufacture__heading title title--big title--white title--w-bold title--uppercase">
+                <span class="title title--orange title--huge">5</span> <span class="title title--orange">групп</span>
+                современного оборудования
+            </h3>
+        </div>
+        <div class="manufacture__tabs-outer container-right">
+            <div class="manufacture__tabs tabs js-tabs">
+                <div class="manufacture__tabs-buttons tabs__buttons">
+                    <div class="manufacture__tabs-button tabs__button is-active" data-tab-trigger="group-1">
+                        <div class="manufacture__tabs-num title title--medium title--orange title--w-bold">
+                            01
+                        </div>
+                        <div class="manufacture__tabs-name title title--medium title--white title--w-semibold">
+                            Токарная группа оборудования
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-button tabs__button" data-tab-trigger="group-2">
+                        <div class="manufacture__tabs-num title title--medium title--orange title--w-bold">
+                            02
+                        </div>
+                        <div class="manufacture__tabs-name title title--medium title--white title--w-semibold">
+                            Фрезерная группа оборудования
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-button tabs__button" data-tab-trigger="group-3">
+                        <div class="manufacture__tabs-num title title--medium title--orange title--w-bold">
+                            03
+                        </div>
+                        <div class="manufacture__tabs-name title title--medium title--white title--w-semibold">
+                            Лазерная и&#160;плазменная резка
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-button tabs__button" data-tab-trigger="group-4">
+                        <div class="manufacture__tabs-num title title--medium title--orange title--w-bold">
+                            04
+                        </div>
+                        <div class="manufacture__tabs-name title title--medium title--white title--w-semibold">
+                            Токарная группа оборудования
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-button tabs__button" data-tab-trigger="group-5">
+                        <div class="manufacture__tabs-num title title--medium title--orange title--w-bold">
+                            05
+                        </div>
+                        <div class="manufacture__tabs-name title title--medium title--white title--w-semibold">
+                            Токарная группа оборудования
+                        </div>
+                    </div>
+                </div>
+                <div class="manufacture__tabs-wrapper tabs__wrapper">
+                    <div class="manufacture__tabs-content tabs__content is-open" data-tab-content="group-1">
+                        <div class="manufacture__tabs-content-wrap">
+                            <div class="manufacture__tabs-pic">
+                                <picture>
+                                    <img src="./img/other/tab-1.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="manufacture__tabs-info wysiwyg wysiwyg--tabs">
+                                <p>
+                                    Токарная группа необходима для обработки цилиндрических элементов, точной обработки внешних и&#160;внутренних диаметров, нарезания резьбы, создания гладких торцевых поверхностей и&#160;обеспечения требуемых размеров.
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+                                <h3>
+                                    Профиль-Арма использует современные токарные станки:
+                                </h3>
+                                <ul>
+                                    <li>Токарно-винторезный станок 1К63</li>
+                                    <li>Резьбонакатной станок UPW 25.1</li>
+                                    <li>Токарно-винторезный станок 16K20</li>
+                                    <li>Токарно-винторезный станок 1A616</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-content tabs__content" data-tab-content="group-2">
+                        <div class="manufacture__tabs-content-wrap">
+                            <div class="manufacture__tabs-pic">
+                                <picture>
+                                    <img src="./img/other/tab-2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="manufacture__tabs-info wysiwyg wysiwyg--tabs">
+                                <p>
+                                    Токарная группа необходима для обработки цилиндрических элементов, точной обработки внешних и&#160;внутренних диаметров, нарезания резьбы, создания гладких торцевых поверхностей и&#160;обеспечения требуемых размеров.
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+                                <h3>
+                                    Профиль-Арма использует современные токарные станки:
+                                </h3>
+                                <ul>
+                                    <li>Токарно-винторезный станок 1К63</li>
+                                    <li>Резьбонакатной станок UPW 25.1</li>
+                                    <li>Токарно-винторезный станок 16K20</li>
+                                    <li>Токарно-винторезный станок 1A616</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-content tabs__content" data-tab-content="group-3">
+                        <div class="manufacture__tabs-content-wrap">
+                            <div class="manufacture__tabs-pic">
+                                <picture>
+                                    <img src="./img/other/tab-3.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="manufacture__tabs-info wysiwyg wysiwyg--tabs">
+                                <p>
+                                    Токарная группа необходима для обработки цилиндрических элементов, точной обработки внешних и&#160;внутренних диаметров, нарезания резьбы, создания гладких торцевых поверхностей и&#160;обеспечения требуемых размеров.
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+                                <h3>
+                                    Профиль-Арма использует современные токарные станки:
+                                </h3>
+                                <ul>
+                                    <li>Токарно-винторезный станок 1К63</li>
+                                    <li>Резьбонакатной станок UPW 25.1</li>
+                                    <li>Токарно-винторезный станок 16K20</li>
+                                    <li>Токарно-винторезный станок 1A616</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-content tabs__content" data-tab-content="group-4">
+                        <div class="manufacture__tabs-content-wrap">
+                            <div class="manufacture__tabs-pic">
+                                <picture>
+                                    <img src="./img/other/tab-4.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="manufacture__tabs-info wysiwyg wysiwyg--tabs">
+                                <p>
+                                    Токарная группа необходима для обработки цилиндрических элементов, точной обработки внешних и&#160;внутренних диаметров, нарезания резьбы, создания гладких торцевых поверхностей и&#160;обеспечения требуемых размеров.
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+                                <h3>
+                                    Профиль-Арма использует современные токарные станки:
+                                </h3>
+                                <ul>
+                                    <li>Токарно-винторезный станок 1К63</li>
+                                    <li>Резьбонакатной станок UPW 25.1</li>
+                                    <li>Токарно-винторезный станок 16K20</li>
+                                    <li>Токарно-винторезный станок 1A616</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manufacture__tabs-content tabs__content" data-tab-content="group-5">
+                        <div class="manufacture__tabs-content-wrap">
+                            <div class="manufacture__tabs-pic">
+                                <picture>
+                                    <img src="./img/other/tab-5.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="manufacture__tabs-info wysiwyg wysiwyg--tabs">
+                                <p>
+                                    Токарная группа необходима для обработки цилиндрических элементов, точной обработки внешних и&#160;внутренних диаметров, нарезания резьбы, создания гладких торцевых поверхностей и&#160;обеспечения требуемых размеров.
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+                                <h3>
+                                    Профиль-Арма использует современные токарные станки:
+                                </h3>
+                                <ul>
+                                    <li>Токарно-винторезный станок 1К63</li>
+                                    <li>Резьбонакатной станок UPW 25.1</li>
+                                    <li>Токарно-винторезный станок 16K20</li>
+                                    <li>Токарно-винторезный станок 1A616</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tender tender--feedback">
+    <div class="tender__body container-right">
+        <div class="tender__columns">
+            <div class="tender__col tender__col--left">
+                <h3 class="tender__heading title title--big title--white title--w-bold title--uppercase">
+                    Получите расчет стоимости заказа
+                </h3>
+                <div class="tender__subtitle text text--medium text--white text--w-regular">
+                    Перезвоним в&#160;течение 20 минут
+                </div>
+                <svg width="325" height="435" class="tender__decor-big">
+                    <use href="./img/svgsprite/sprite.symbol.svg#decor-tender-big"></use>
+                </svg>
+                <form action="" class="tender__form form js-form">
+                    <div class="tender__form-wrapper-fields form__wrapper-fields d-flex">
+                        <label for="name-feedback" class="form__field is-error">
+                            <input type="text" class="form__input js-input" id="name-feedback">
+                            <span class="form__placeholder is-required text text--large text--white text--w-semibold">
+                                Имя или название организации
+                            </span>
+                        </label>
+                        <label for="phone-feedback" class="form__field form__field--phone">
+                            <input type="tel" class="form__input js-input" id="phone-feedback">
+                            <span class="form__placeholder is-required text text--large text--white text--w-semibold">
+                                Номер телефона
+                            </span>
+                        </label>
+                        <label for="email-feedback" class="form__field form__field--email">
+                            <input type="email" class="form__input js-input" id="email-feedback">
+                            <span class="form__placeholder is-required text text--large text--white text--w-semibold">
+                                E-mail
+                            </span>
+                        </label>
+                    </div>
+                    <label for="message-feedback" class="form__field form__field--textarea">
+                        <textarea class="form__input js-input" name="message" id="message-feedback" rows="1"></textarea>
+                        <span class="form__placeholder text text--large text--white text--w-semibold">
+                            Ваше сообщение
+                        </span>
+                    </label>
+                    <div class="form__actions d-flex flex-align-center">
+                        <div class="form__field">
+                            <label for="file-feedback" class="form__file">
+                                <input class="visually-hidden js-file" type="file" name="file-tender" id="file-feedback">
+                                <span class="js-name-file">Прикрепить файл</span>
+                            </label>
+                        </div>
+                        <div class="form__captcha">
+                            <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual smart-captcha" id="smart-captcha-2" data-testid="smartCaptcha-container"></div>
+                        </div>
+                        <div class="form__wrap-buttons d-flex flex-align-center">
+                            <div class="form__agreement text text--small text--primary text--w-regular">
+                                Нажимая на&#160;кнопку, вы&#160;соглашаетесь на&#160;<a href="">обработку персональных данных</a>
+                            </div>
+                            <button class="form__button button button--thirty" type="submit">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#airbus-white"></use>
+                                </svg>
+                                <span>Отправить</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tender__col tender__col--right">
+                <div class="tender__features d-flex flex-align-center flex-justify-sb">
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#verified"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--white text--w-regular">
+                            Поможем выбрать изделия по&#160;вашим требованиям: нормативы, размеры, марка стали. При необходимости подберем аналоги.
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#document-scanner"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--white text--w-regular">
+                            Можем изготовить изделия <br>
+                            по&#160;вашим чертежам
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#pending-actions"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--white text--w-regular">
+                            Срок изготовления&#160;&#8212; 15-18 дней
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quality">
+    <div class="quality__body container">
+        <div class="quality__top">
+            <h3 class="quality__heading title title--big title--primary title--w-bold">
+                Качество подтверждает наше прохождение технического аудита
+                <span class="title title--orange">Роснефть</span> и
+                <span class="title title--orange">Иркутской Нефтянной компании</span>
+            </h3>
+            <div class="quality__logos">
+                <div class="quality__logo d-flex flex-justify-center">
+                    <svg width="79" height="92">
+                        <use href="./img/svgsprite/sprite.symbol.svg#logo-inf"></use>
+                    </svg>
+                </div>
+                <div class="quality__logo d-flex flex-justify-center">
+                    <svg width="137" height="90">
+                        <use href="./img/svgsprite/sprite.symbol.svg#logo-rosneft"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="quality__items">
+            <div class="quality__item">
+                <div class="quality__item-icon">
+                    <svg width="80" height="80">
+                        <use href="./img/svgsprite/sprite.symbol.svg#gost"></use>
+                    </svg>
+                </div>
+                <div class="quality__item-info">
+                    <div class="quality__item-title title title--medium title--primary title--w-semibold">
+                        ГОСТ и&#160;мировые стандарты
+                    </div>
+                    <div class="quality__item-excerpt text text--pre-medium text--subtext text--w-regular">
+                        Изготавливаем изделия, которые соответствуют ГОСТу и&#160;международным стандартам ANSI, DIN и&#160;EN
+                    </div>
+                </div>
+            </div>
+            <div class="quality__item">
+                <div class="quality__item-icon">
+                    <svg width="80" height="80">
+                        <use href="./img/svgsprite/sprite.symbol.svg#presentation"></use>
+                    </svg>
+                </div>
+                <div class="quality__item-info">
+                    <div class="quality__item-title title title--medium title--primary title--w-semibold">
+                        Современное оборудование
+                    </div>
+                    <div class="quality__item-excerpt text text--pre-medium text--subtext text--w-regular">
+                        Используем современное металлообрабатывающее оборудование с&#160;ЧПУ зарубежного производства
+                    </div>
+                </div>
+            </div>
+            <div class="quality__item">
+                <div class="quality__item-icon">
+                    <svg width="80" height="80">
+                        <use href="./img/svgsprite/sprite.symbol.svg#warranty"></use>
+                    </svg>
+                </div>
+                <div class="quality__item-info">
+                    <div class="quality__item-title title title--medium title--primary title--w-semibold">
+                        Гарантируем отсутствие брака
+                    </div>
+                    <div class="quality__item-excerpt text text--pre-medium text--subtext text--w-regular">
+                        Отдел технического контроля (ОТК) тщательно проверяет продукцию на&#160;каждом этапе изготовления
+                    </div>
+                </div>
+            </div>
+            <div class="quality__item">
+                <div class="quality__item-icon">
+                    <svg width="80" height="80">
+                        <use href="./img/svgsprite/sprite.symbol.svg#implement"></use>
+                    </svg>
+                </div>
+                <div class="quality__item-info">
+                    <div class="quality__item-title title title--medium title--primary title--w-semibold">
+                        Точность геометрии и&#160;чистота
+                    </div>
+                    <div class="quality__item-excerpt text text--pre-medium text--subtext text--w-regular">
+                        Обеспечиваем точность изделий до&#160;1-2 мкм и&#160;высокую чистоту обрабатываемой поверхности
+                    </div>
+                </div>
+            </div>
+            <div class="quality__item">
+                <div class="quality__item-icon">
+                    <svg width="80" height="80">
+                        <use href="./img/svgsprite/sprite.symbol.svg#thermostat"></use>
+                    </svg>
+                </div>
+                <div class="quality__item-info">
+                    <div class="quality__item-title title title--medium title--primary title--w-semibold">
+                        Любая температура
+                        и&#160;давление
+                    </div>
+                    <div class="quality__item-excerpt text text--pre-medium text--subtext text--w-regular">
+                        Изготавливаем изделия для работы в&#160;температурном режиме от&#160;-253 до&#160;600&#176;С и&#160;давлениях до&#160;200 кгс/см&#178;
+                    </div>
+                </div>
+            </div>
+            <div class="quality__item">
+                <div class="quality__item-icon">
+                    <svg width="80" height="80">
+                        <use href="./img/svgsprite/sprite.symbol.svg#insurance"></use>
+                    </svg>
+                </div>
+                <div class="quality__item-info">
+                    <div class="quality__item-title title title--medium title--primary title--w-semibold">
+                        Стойкость к&#160;воздействию агрессивных сред
+                    </div>
+                    <div class="quality__item-excerpt text text--pre-medium text--subtext text--w-regular">
+                        Изготавливаем изделия, которые присоблены для работы в&#160;различных агрессиных средах
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery">
+    <div class="gallery__body container">
+        <div class="gallery__grid">
+            <div class="gallery__item">
+                <picture>
+                    <img src="./img/other/gallery-1.jpg" alt="">
+                </picture>
+            </div>
+            <div class="gallery__item">
+                <picture>
+                    <img src="./img/other/gallery-2.jpg" alt="">
+                </picture>
+            </div>
+            <div class="gallery__item">
+                <picture>
+                    <img src="./img/other/gallery-3.jpg" alt="">
+                </picture>
+            </div>
+            <div class="gallery__item">
+                <picture>
+                    <img src="./img/other/gallery-4.jpg" alt="">
+                </picture>
+            </div>
+            <div class="gallery__item">
+                <picture>
+                    <img src="./img/other/gallery-5.jpg" alt="">
+                </picture>
+            </div>
+            <div class="gallery__item">
+                <a href="" class="gallery__button button button--secondary">
+                    <span>Показать больше изображений</span>
+                    <svg width="45" height="23" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts-info">
+    <div class="contacts-info__decor">
+        <svg width="191" height="256">
+            <use href="./img/svgsprite/sprite.symbol.svg#word-a"></use>
+        </svg>
+    </div>
+    <div class="contacts-info__body container">
+        <div class="contacts-info__column">
+            <div class="contacts-info__left d-flex d-flex-column">
+                <h3 class="contacts-info__heading title title--huge title--white title--w-bold title--uppercase">
+                    Сделать заказ
+                </h3>
+                <div class="contacts-info__wrap d-flex d-flex-column">
+                    <a href="tel:+7 (3513) 62‒67‒74"
+                       class="contacts-info__contact contacts-info__contact--tel text text--white text--w-bold">
+                        +7 (3513) 62&#8211;67&#8211;74
+                    </a>
+                    <a href="mailto:zakaz3@profil-arma.ru"
+                       class="contacts-info__contact contacts-info__contact--email text text--white text--w-bold">
+                        zakaz3@profil-arma.ru
+                    </a>
+                </div>
+                <div class="contacts-info__wrap">
+                    <div class="contacts-info__time-title text text--white text--w-bold">
+                        Время работы:
+                    </div>
+                    <div class="contact-info__work-time text text--pre-medium text--white text--w-regular">
+                        Пн-Пт: 9:00&#160;&#8212; 18:00 (Челябинск)
+                    </div>
+                    <div class="contact-info__work-time text text--pre-medium text--white text--w-regular">
+                        Пн-Пт: 7:00&#160;&#8212; 16:00 (Москва)
+                    </div>
+                </div>
+                <div class="contacts-info__wrap">
+                    <div class="contacts-info__address-title text text--white text--w-bold">
+                        Адрес офиса, склада и&#160;производства:
+                    </div>
+                    <address class="contact-info__address text text--pre-medium text--white text--w-regular">
+                        Челябинская область, г.&#160;Златоуст, ул.&#160;Спецдревесины, 26А, строение
+                    </address>
+                </div>
+                <div class="contacts-info__wrap">
+                    <a href="" class="contact-info__button button button--text">
+                        <span>Сделать заказ</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-info__right">
+                <div class="contacts-info__wrap-info">
+                    <svg width="507" height="154">
+                        <use href="./img/svgsprite/sprite.symbol.svg#full-word"></use>
+                    </svg>
+                    <div class="contacts-info__logo-subtitle text text--large text--primary text--w-regular">
+                        Производитель трубопроводной
+                        арматуры и&#160;деталей трубопровода
+                        любого диаметра и&#160;стандарта
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="specialists">
+    <div class="specialists__body">
+        <div class="specialists__top container">
+            <h3 class="specialists__heading title title--big title--primary title--w-bold">
+                СПЕЦИАЛИСТЫ с&#160;5-летним отраслевым <br> опытом помогут оформить заказ
+            </h3>
+        </div>
+        <div class="specialists__slider-wrap container-right">
+            <div class="specialists__splide splide js-specialists-slider-init">
+                <div class="specialists__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
+                    <a href="" class="button button--text">
+                        <span>Все специалисты</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                    <div class="specialist__splide-arrows slider-nav splide__arrows">
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="specialists__splide-track splide__track">
+                    <div class="specialists__splide-list splide__list">
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tender">
+    <div class="tender__body container">
+        <div class="tender__columns">
+            <div class="tender__col tender__col--left">
+                <h3 class="tender__heading title title--huge title--primary title--w-bold title--uppercase">
+                    Пригласить в&#160;тендер
+                </h3>
+                <div class="tender__subtitle text text--normal text--primary text--w-regular">
+                    Принимаем участие в&#160;тендерных закупках коммерческих организаций, а&#160;также в&#160;соответствии с&#160;44-ФЗ и&#160;223-ФЗ
+                </div>
+                <form action="" class="tender__form form js-form">
+                    <div class="tender__form-wrapper-fields form__wrapper-fields d-flex">
+                        <label for="name-tender" class="form__field is-error">
+                            <input type="text" class="form__input js-input" id="name-tender">
+                            <span class="form__placeholder is-required text text--large text--primary text--w-semibold">
+                                Имя или название организации
+                            </span>
+                        </label>
+                        <label for="phone-tender" class="form__field">
+                            <input type="tel" class="form__input js-input" id="phone-tender">
+                            <span class="form__placeholder is-required text text--large text--primary text--w-semibold">
+                                Номер телефона
+                            </span>
+                        </label>
+                        <label for="email-tender" class="form__field">
+                            <input type="email" class="form__input js-input" id="email-tender">
+                            <span class="form__placeholder is-required text text--large text--primary text--w-semibold">
+                                E-mail
+                            </span>
+                        </label>
+                    </div>
+                    <label for="message-tender" class="form__field form__field--textarea">
+                        <textarea class="form__input js-input" name="message" id="message-tender" rows="1"></textarea>
+                        <span class="form__placeholder text text--large text--primary text--w-semibold">
+                            Ваше сообщение
+                        </span>
+                    </label>
+                    <div class="form__actions d-flex flex-align-center">
+                        <div class="form__field">
+                            <label for="file-tender" class="form__file">
+                                <input class="visually-hidden js-file" type="file" name="file-tender" id="file-tender">
+                                <span class="js-name-file">Прикрепить файл</span>
+                            </label>
+                        </div>
+                        <div class="form__captcha">
+                            <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual smart-captcha" id="smart-captcha-1" data-testid="smartCaptcha-container"></div>
+                        </div>
+                        <div class="form__wrap-buttons d-flex flex-align-center">
+                            <div class="form__agreement text text--small text--primary text--w-regular">
+                                Нажимая на&#160;кнопку, вы&#160;соглашаетесь на&#160;<a href="">обработку персональных данных</a>
+                            </div>
+                            <button class="form__button button button--thirty" type="submit">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#airbus"></use>
+                                </svg>
+                                <span>Отправить</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tender__col tender__col--right">
+                <div class="tender__features d-flex d-flex-column">
+                    <div class="tender__feature d-flex">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#verified"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__Feature-text text text--pre-medium text--primary text--w-regular">
+                            Поможем выбрать изделия по&#160;вашим требованиям: нормативы, размеры, марка стали. При необходимости подберем аналоги.
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#document-scanner"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__Feature-text text text--pre-medium text--primary text--w-regular">
+                            Можем изготовить изделия
+                            по&#160;вашим чертежам
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#pending-actions"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__Feature-text text text--pre-medium text--primary text--w-regular">
+                            Срок изготовления&#160;&#8212; 15-18 дней
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Модалка -->
+<div class="modal modal--feedback hystmodal" id="feedback" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__title title title--large title--primary title--w-regular text-center">
+                Оставьте заявку и&#160;мы&#160;подберем
+                для вас оборудование
+            </div>
+            <div class="modal__subtitle text text--normal text--primary text--w-regular text-center">
+                Заполните данную форму, если у&#160;вас имеется техническое задание или чертеж,
+                и&#160;прикрепите файлы.
+            </div>
+            <form action="./upload/" class="main-form__form form form--modal js-form-1"
+				  enctype="multipart/form-data"
+				  method="post">
+                <div class="main-form__wrapper-fields form__wrapper-fields">
+                    <label class="main-form__form-input form__field" for="service-form-name">
+                        <input class="main-form__form-input form__input" type="text" name="name"
+							   id="modal-form-name" required>
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                            Как к&#160;вам обращаться?
+                        </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--industry" for="modal-form-industry">
+                        <select class="form__select js-select-form" id="modal-form-industry">
+                            <option data-placeholder="true">Применение</option>
+                            <option value="Медицина">Медицина</option>
+                            <option value="Авто">Авто</option>
+                            <option value="Промышленность">Промышленность</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field" for="service-form-company">
+                        <input class="main-form__form-input form__input js-input" type="text" name="company"
+							   id="modal-form-company">
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                Название компании
+                            </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--material" for="modal-form-material">
+                        <select class="form__select js-select-form" id="modal-form-material">
+                            <option data-placeholder="true">Используемый материал</option>
+                            <option value="Металл">Металл</option>
+                            <option value="Дерево">Дерево</option>
+                            <option value="Алмазы">Алмазы</option>
+                            <option value="Платы">Платы</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field is-error" for="modal-form-phone">
+                        <input class="main-form__form-input form__input js-input" type="tel" name="phone"
+							   id="modal-form-phone" required>
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                Контактный телефон
+                            </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--category" for="modal-form-category">
+                        <select class="form__select js-select-form" id="modal-form-category">
+                            <option data-placeholder="true">Категория</option>
+                            <option value="Аниме">Аниме</option>
+                            <option value="Фильмы">Фильмы</option>
+                            <option value="Металл">Металл</option>
+                            <option value="Рок">Рок</option>
+                            <option value="Герои III">Герои III</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field" for="service-form-email">
+                        <input class="main-form__form-input form__input js-input" type="email" name="email"
+							   id="modal-form-email" required>
+                        <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                E&#8212;mail
+                            </span>
+                    </label>
+                    <label class="main-form__form-input form__field form__field--type" for="modal-form-type">
+                        <select class="form__select js-select-form" id="modal-form-type">
+                            <option data-placeholder="true">Тип лазера</option>
+                            <option value="Обжигающий">Обжигающий</option>
+                            <option value="Сжигающий">Сжигающий</option>
+                            <option value="Пронзающий">Пронзающий</option>
+                            <option value="Испепеляющий">Испепеляющий</option>
+                        </select>
+                    </label>
+                    <label class="main-form__form-input form__field" for="modal-form-textarea">
+                            <textarea class="main-form__text-area form__input form__input--textarea" name="message"
+									  id="modal-form-textarea"
+									  cols="30" rows="1" placeholder="Опишите вашу задачу"></textarea>
+                    </label>
+                </div>
+                <div class="main-form__form-files-wrapper form__files-wrapper">
+                    <div class="form__dropzone">
+                        <input class="js-input-drag-adn-drop"
+							   type="file"
+							   name="FILES[]"
+							   data-max-file-size="25MB"
+							   multiple />
+                    </div>
+                </div>
+                <div class="main-form__captcha form__captcha">
+                    <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
+                </div>
+                <div class="main-form__actions form__actions d-flex flex-justify-sb flex-align-center">
+                    <button type="button" class="main-form__form-button form__button button button--primary"
+							data-hystmodal="#thanks">
+                        Отправить заявку
+                    </button>
+                    <div class="main-form__accept form__accept">
+                        <input class="main-form__checkbox form__checkbox" type="checkbox" id="modal-form-agreement"
+							   name="agreement"
+							   checked>
+                        <label for="modal-form-agreement"
+							   class="main-form__accept-label form__accept-label text text--normal text--primary text--w-regular">
+                                <span class="main-form__accept-text form__accept-text">
+                                    <a href="">Согласен на&#160;обработку персональных данных</a>
+                                </span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Модалка успешной отправки -->
+<div class="modal modal--thanks hystmodal js-modal-success" id="thanks" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__inner">
+                <div class="modal__inner-text">
+                    <div class="modal__title title title--large title--primary title--w-bold">
+                        Спасибо! Ваша заявка принята.
+                    </div>
+                    <div class="modal__subtitle text text--large text--primary text--w-regular">
+                        Наши менеджеры свяжутся с&#160;вами в&#160;ближайшее время для обсуждения деталей
+                    </div>
+                    <button class="modal__thanks-btn button button--primary" data-hystclose>
+                        Вернуться назад
+                    </button>
+                </div>
+                <div class="modal__pic">
+                    <picture>
+<source srcset="./img/other/thanks.webp 1x, ./img/other/thanks@2x.webp 2x" type="image/webp">
+<source srcset="./img/other/thanks.png 1x, ./img/other/thanks@2x.png 2x" type="image/png">
+<img src="./img/other/thanks.png" alt="">
+</picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer js-reveal gs-reveal">
+    <div class="footer__top">
+        <div class="footer__top-wrap container">
+            <div class="footer__top-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__logo-wrap d-flex flex-align-center">
+                    <div class="footer__logo logo">
+                        <svg width="265" height="87" class="footer__logo-svg logo__svg">
+                            <use href="./img/svgsprite/sprite.symbol.svg#logo"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__logo-description text text--large text--primary text--w-regular">
+                        Производитель трубопроводной
+                        арматуры и&#160;деталей трубопровода
+                        любого диаметра и&#160;стандарта
+                    </div>
+                </div>
+                <a href="mailto:zakaz3@profil-arma.ru" class="footer__contact contact d-flex flex-align-center">
+                    <svg width="40" height="40" class="contact__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                    </svg>
+                    zakaz3@profil-arma.ru
+                </a>
+                <a href="tel:+7 (3513) 62‒67‒74" class="footer__contact contact d-flex flex-align-center">
+                    <svg width="40" height="40" class="contact__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                    </svg>
+                    +7 (3513) 62&#8211;67&#8211;74
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__center">
+        <div class="footer__center-wrap container">
+            <div class="footer__center-inner d-flex flex-justify-sb">
+                <div class="footer__menu footer__menu--catalog">
+                    <div class="footer__menu-name title title--pre-big title--primary title--w-semibold js-menu">
+                        Каталог
+                    </div>
+                    <ul class="footer__menu-list js-mobile-menu">
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Фланцевая продукция
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Точеные детали трубопроводов
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Детали трубопровода
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Трубные решетки
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Устьевая арматура
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Фонтанная арматура
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Котельное оборудование
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Устройства для контроля и&#160;измерений
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Поковка
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Автоклав и&#160;парогенератор
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Дымовые трубы и&#160;воздуховоды
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__menu-name title title--pre-big title--primary title--w-semibold js-menu">
+                        Клиентам
+                    </div>
+                    <ul class="footer__menu-list js-mobile-menu">
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Отгрузки
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                О&#160;компании
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Сертификаты
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Доставка и&#160;оплата
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Калькуляторы
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__tender">
+                    <div class="footer__tender-title title title--pre-big title--primary title--w-semibold">
+                        Участие в&#160;тендере
+                    </div>
+                    <div class="footer__tender-excerpt text text--normal text--primary text--w-medium">
+                        Принимаем участие в&#160;тендерных закупках коммерческих организаций,
+                        а&#160;также в&#160;соответствии с&#160;44-ФЗ и&#160;223-ФЗ
+                    </div>
+                    <a href="javascript:;" class="footer__tender-button button button--secondary">
+                        <span>Пригласить в&#160;тендер</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom-wrap container">
+            <div class="footer__bottom-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__copyright text text--small text--secondary text--w-regular">
+                    2002-2025 &#169; profil-arma.ru
+                </div>
+                <div class="footer__copy-page text text--small text--primary text--w-regular">
+                    Чтобы не&#160;потерять этот сайт,
+                    нажмите CTRL + D
+                </div>
+                <div class="footer__links d-flex d-flex-column text text--secondary text--small text--w-regular">
+                    <a href="" class="footer__link-policy">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="" class="footer__link-policy">
+                        Пользовательское соглашение
+                    </a>
+                </div>
+                <a href="https://saitcraft.ru"
+				   class="footer__develop d-flex flex-align-center text text--small text--primary text--w-regular">
+                    <svg width="23" height="23">
+                        <use href="./img/svgsprite/sprite.symbol.svg#saitcraft"></use>
+                    </svg>
+                    <span>Сайткрафт&#160;&#8212; маркетинг на&#160;промышленном рынке</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>

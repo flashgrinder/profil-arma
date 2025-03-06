@@ -17,11 +17,11 @@
 }
 
 .wysiwyg h2 {
-  @extend .title--large
+  @extend .title--large;
 }
 
 .wysiwyg h3 {
-  @extend .title--medium
+  @extend .title--medium;
 }
 
 .wysiwyg h4 {
@@ -29,7 +29,7 @@
 }
 
 .wysiwyg h5 {
-  @extend .text--normal
+  @extend .text--normal;
 }
 
 .wysiwyg ul,
