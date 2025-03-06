@@ -2,3 +2,69 @@
 	padding: 64px 0 80px;
 	background-color: var(--secondary-bg-2, #ECEFF1);
 }
+
+.page-head.page-head--dark {
+	background-color: var(--dark-bg, #16161C);
+}
+
+.page-head.page-head--white {
+	background-color: var(--primary-bg, #FFFFFF);
+}
+
+.page-head.page-head--contacts {
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	@include mobile {
+		background-size: 100%;
+		background-position: bottom center;
+	}
+}
+
+.page-head.page-head--contacts .page-head__wrap {
+	margin-top: 80px;
+	@include mobile {
+		margin-top: 32px;
+	}
+}
+
+.page-head.page-head--contacts .page-head__description {
+	max-width: 390px;
+	@include mobile {
+		padding-bottom: 48px;
+	}
+}
+
+.page-head.page-head--contacts .page-head__wrap {
+	gap: 30px;
+	@include to(1200px) {
+		flex-wrap: wrap;
+	}
+	@include mobile {
+		gap: 48px;
+	}
+}
+
+.page-head.page-head--contacts .page-head__contacts-wrap {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 100px 30px;
+	width: 100%;
+	max-width: 1076px;
+	@include tablet {
+		gap: 30px;
+	}
+	@include mobile {
+		gap: 24px;
+	}
+}
+
+.page-head.page-head--contacts .page-head__prop-name {
+	margin-bottom: 24px;
+	@include tablet {
+		margin-bottom: 16px;
+	}
+	@include mobile {
+		margin-bottom: 12px;
+	}
+}

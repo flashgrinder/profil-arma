@@ -1,0 +1,40 @@
+.page-404 {
+	background-color: var(--dark-bg, #16161C);
+}
+
+.page-404__inner {
+	min-height: 90vh;
+	position: relative;
+}
+
+.page-404__subtitle {
+	margin-top: 12px;
+}
+
+.page-404__heading,
+.page-404__subtitle,
+.page-404__num {
+	position: relative;
+	z-index: 1;
+}
+
+.page-404__num {
+	font-size: responsive 160px 240px;
+	font-range: 768px 1600px;
+	line-height: 100%;
+	margin-top: 80px;
+}
+
+.page-404__action {
+	margin-top: 80px;
+}
+
+.page-404__decor {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 694px;
+	max-height: 700px;
+	width: 100%;
+}

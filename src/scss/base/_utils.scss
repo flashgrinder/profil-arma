@@ -51,6 +51,22 @@
 	align-items: center;
 }
 
+.link {
+	transition: color var(--hover-time) ease;
+}
+
+.link:hover,
+.link:target,
+.link:focus {
+	color: var(--primary);
+}
+
+.link:active,
+.link:visited {
+	color: var(--primary);
+	opacity: .8;
+}
+
 .b-padding-48 {
 	padding: var(--padding-block-48);
 }

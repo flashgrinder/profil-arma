@@ -1,0 +1,40 @@
+.payment-details {
+	padding: 80px 0 120px;
+	@include tablet {
+		padding: 64px 0;
+		border-bottom: 1px solid var(--secondary-bg-2, #ECEFF1);
+	}
+}
+
+.payment-details__columns {
+	display: grid;
+	grid-template-columns: minmax(350px, 396px) 1fr;
+	gap: 80px;
+	@include tablet {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+}
+
+.payment-details__button {
+	margin-top: 32px;
+}
+
+.payment-details__tr-name,
+.payment-details__tr-value {
+	padding: 21px 21px 21px 16px;
+	@include tablet {
+		padding: 10px 16px;
+		font-size: 14px;
+	}
+}
+
+.payment-details__tr {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+
+.payment-details__tr:nth-child(even) {
+	background-color: var(--secondary-bg-2, #ECEFF1);
+}
