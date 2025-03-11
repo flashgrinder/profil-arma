@@ -10,6 +10,7 @@ import reviewsSlider from "./modules/reviews-slider";
 import shipmentsSlider from "./modules/shipments-slider";
 import clientsSlider from "./modules/clients-slider";
 import officeSlider from "./modules/office-slider";
+import certificatesSlider from "./modules/certificates-slider";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     shipmentsSlider();
     clientsSlider();
     officeSlider();
+    certificatesSlider();
     Fancybox.bind('[data-fancybox]');
 
 })

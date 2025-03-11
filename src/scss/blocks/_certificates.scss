@@ -1,0 +1,67 @@
+.certificates {
+	padding: 120px 0;
+	@include tablet {
+		padding: 64px 0;
+	}
+}
+
+.certificates__slider-nav-wrap {
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+	max-width: var(--container-width);
+	width: 100%;
+	margin-bottom: 64px;
+	@include mobile {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 32px;
+	}
+}
+
+.certificates__item {
+	background-color: var(--secondary-bg-2, #ECEFF1);
+	padding: 32px;
+	height: 100%;
+	gap: 50px;
+	overflow: hidden;
+	transition: background-color var(--hover-time) ease;
+}
+
+.certificates__item:hover {
+	background-color: var(--blue-gray-bg, #CFD8DC);
+}
+
+.certificates__item-pic {
+	align-self: center;
+	box-shadow: 0 12px 32px 0 #0000001F;
+	transform: matrix(1, -0.1, 0.25, 1, 0, 0) translate(0, 0);
+	transition:  transform var(--hover-time) ease;
+}
+
+.certificates__item:hover .certificates__item-pic {
+	transform: matrix(1, -0.1, 0.25, 1, 0, 0) translate(15px,-50px);
+	@include mobile {
+		transform: matrix(1, -0.1, 0.25, 1, 0, 0) translate(15px,-20px);
+	}
+}
+
+.certificates__item-pic picture,
+.certificates__item-pic img {
+	max-width: 206px;
+}
+
+.certificates__item-button.button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	width: max-content;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.certificates__item:hover .certificates__item-button.button {
+	opacity: 1;
+	visibility: visible;
+}

@@ -1,6 +1,9 @@
 .page-head {
 	padding: 64px 0 80px;
 	background-color: var(--secondary-bg-2, #ECEFF1);
+	@include tablet {
+		padding: 32px 0 48px;
+	}
 }
 
 .page-head.page-head--dark {
@@ -11,6 +14,7 @@
 	background-color: var(--primary-bg, #FFFFFF);
 }
 
+/* Contacts */
 .page-head.page-head--contacts {
 	background-position: center right;
 	background-repeat: no-repeat;
@@ -66,5 +70,36 @@
 	}
 	@include mobile {
 		margin-bottom: 12px;
+	}
+}
+
+/* Areas-of-application */
+.page-head.page-head--areas-application .page-head__wrap {
+	margin-top: 60px;
+	gap: 60px;
+	@include tablet {
+		flex-direction: column;
+		margin-top: 32px;
+		gap: 12px;
+		align-items: flex-start;
+	}
+}
+
+.page-head.page-head--areas-application .page-head__application-years {
+	font-size: responsive 64px 80px;
+	font-range: 1024px 1600px;
+	padding-top: 60px;
+	border-top: 1px solid var(--blue-gray-bg, #CFD8DC);
+	@include tablet {
+		padding-top: 32px;
+	}
+}
+
+.page-head.page-head--areas-application .page-head__application-description {
+	font-size: responsive 20px 38px;
+	font-range: 1024px 1600px;
+	padding-top: 60px;
+	@include tablet {
+		padding-top: 0;
 	}
 }

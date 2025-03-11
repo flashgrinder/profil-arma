@@ -1,6 +1,9 @@
 .breadcrumbs {
 	font-family: var(--font-secondary);
 	margin-bottom: 60px;
+	@include tablet {
+		margin-bottom: 32px;
+	}
 }
 
 .breadcrumbs a:first-child::before {

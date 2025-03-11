@@ -1,0 +1,29 @@
+.answer {
+	padding: 80px 0 120px;
+	background-color: var(--secondary-bg-2, #ECEFF1);
+	@include tablet {
+		padding: 80px 0;
+	}
+}
+
+.answer__columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 32px;
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+}
+
+.answer__contact.answer__contact--phone {
+	font-size: responsive 32px 48px;
+	font-range: 576px 1600px;
+}
+
+.answer__contacts + .answer__contacts {
+	margin-top: 32px;
+}
+
+.answer__prop-value {
+	margin-top: 10px;
+}
