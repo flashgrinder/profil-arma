@@ -19,6 +19,7 @@
 }
 
 .certificates__item {
+	position: relative;
 	background-color: var(--secondary-bg-2, #ECEFF1);
 	padding: 32px;
 	height: 100%;
@@ -34,12 +35,12 @@
 .certificates__item-pic {
 	align-self: center;
 	box-shadow: 0 12px 32px 0 #0000001F;
-	transform: matrix(1, -0.1, 0.25, 1, 0, 0) translate(0, 0);
+	transform: matrix(1, -0.1, 0.15, 1, 0, 0) translate(0, 0);
 	transition:  transform var(--hover-time) ease;
 }
 
 .certificates__item:hover .certificates__item-pic {
-	transform: matrix(1, -0.1, 0.25, 1, 0, 0) translate(15px,-50px);
+	transform: matrix(1, -0.1, 0.25, 1, 0, 0) translate(15px,-30px);
 	@include mobile {
 		transform: matrix(1, -0.1, 0.25, 1, 0, 0) translate(15px,-20px);
 	}
@@ -64,4 +65,63 @@
 .certificates__item:hover .certificates__item-button.button {
 	opacity: 1;
 	visibility: visible;
+}
+
+.certificates__item-download {
+	padding: 32px;
+	border: 1px solid var(--blue-gray-bg);
+	gap: 12px;
+	transition: color var(--hover-time) ease;
+}
+
+.certificates__item-download:hover {
+	color: var(--primary);
+}
+
+.certificates__item-download-icon {
+	min-width: 40px;
+}
+
+/* Certificates-page */
+.certificates.certificates--page {
+	padding: 80px 0;
+}
+
+.certificates.certificates--page .certificates__tabs {
+	display: grid;
+	grid-template-columns: minmax(280px, 300px) 1fr;
+	align-items: start;
+	gap: 80px;
+}
+
+.certificates.certificates--page .certificates__items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 32px;
+}
+
+.certificates__tabs-buttons.tabs__buttons {
+	gap: 0;
+	border-left: 1px solid var(--blue-gray-bg);
+	margin-top: 0;
+}
+
+.certificates.certificates--page .certificates__tabs-button.tabs__button {
+	@extend .text--pre-medium;
+	@extend .text--primary;
+	padding: 16px 0 16px 32px;
+	border-left: 4px solid transparent;
+}
+
+.certificates.certificates--page .certificates__tabs-button.tabs__button.is-active {
+	border-left: 4px solid var(--primary);
+}
+
+.certificates.certificates--page .certificates__items-download {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
 }
