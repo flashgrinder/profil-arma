@@ -42,7 +42,7 @@
 	padding-left: calc(
 		(100% - var(--container-width)) / 2 + var(--container-padding)
 	);
-
+	margin-left: 16px;
 	@include mobile {
 		margin: 0 auto;
 		padding: 0 var(--container-padding);
