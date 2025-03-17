@@ -144,3 +144,11 @@
 	height: 100%;
 	object-fit: contain;
 }
+
+/* Payment details */
+.page-head.page-head--payment-details .page-head__top {
+	gap: 50px;
+	@include tablet {
+		flex-wrap: wrap;
+	}
+}

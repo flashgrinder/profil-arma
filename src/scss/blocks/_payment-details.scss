@@ -33,8 +33,19 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
+	background-color: var(--primary-bg, #FFFFFF);
 }
 
 .payment-details__tr:nth-child(even) {
 	background-color: var(--secondary-bg-2, #ECEFF1);
+}
+
+/* Payment-details page */
+.payment-details.payment-details--page {
+	padding: 0 0 120px;
+	background-color: var(--secondary-bg-2, #ECEFF1);
+}
+
+.payment-details.payment-details--page .payment-details__table {
+	border: 1px solid var(--blue-gray-bg, #CFD8DC);
 }
