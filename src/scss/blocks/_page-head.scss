@@ -159,3 +159,11 @@
 		padding: 48px 0 96px;
 	}
 }
+
+/* Post detail */
+.page-head.page-head--post {
+	padding-bottom: 240px;
+	@include tablet {
+		padding-bottom: 48px;
+	}
+}

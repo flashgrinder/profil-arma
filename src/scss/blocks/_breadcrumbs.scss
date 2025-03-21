@@ -1,6 +1,9 @@
 .breadcrumbs {
 	font-family: var(--font-secondary);
 	margin-bottom: 60px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	@include tablet {
 		margin-bottom: 32px;
 	}
@@ -43,4 +46,7 @@
 	width: 40px;
 	height: 1px;
 	background-color: #CFCFCF;
+	@include mobile {
+		width: 8px;
+	}
 }

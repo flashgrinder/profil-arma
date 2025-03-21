@@ -12,6 +12,8 @@ import clientsSlider from "./modules/clients-slider";
 import officeSlider from "./modules/office-slider";
 import certificatesSlider from "./modules/certificates-slider";
 import galleryManufactureSliders from "./modules/gallery-manufacture-sliders";
+import contentsAnchors from "./modules/contents-anchors";
+import otherPostsSlider from "./modules/other-posts-slider";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -27,6 +29,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     officeSlider();
     certificatesSlider();
     galleryManufactureSliders();
+    contentsAnchors();
+    otherPostsSlider();
     Fancybox.bind('[data-fancybox]');
 
 })
