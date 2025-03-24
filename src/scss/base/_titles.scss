@@ -55,7 +55,7 @@
 	}
 }
 
-.title span {
+.title span:not([class]) {
 	color: var(--primary);
 }
 
