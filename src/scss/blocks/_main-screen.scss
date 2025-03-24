@@ -72,7 +72,8 @@
 	}
 }
 
-.main-screen__feature:hover .main-screen__feature-name {
+.main-screen__feature:hover .main-screen__feature-name,
+.main-screen__feature:hover .main-screen__feature-name.title span {
 	transform: scale(1.5);
 	color: var(--primary);
 	@include mobile {
@@ -87,10 +88,12 @@
 	}
 }
 
-.main-screen__feature-name span {
+.main-screen__feature-name.title span {
 	font-size: 44px;
+	color: var(--primary-bg);
 }
 
+.main-screen__feature-name.title span,
 .main-screen__feature-name,
 .main-screen__feature-excerpt {
 	transition: color var(--hover-time) ease, transform var(--hover-time) ease;
