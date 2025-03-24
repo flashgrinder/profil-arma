@@ -55,6 +55,10 @@
 	}
 }
 
+.title span {
+	color: var(--primary);
+}
+
 .title--indent {
 	margin-bottom: 48px;
 	@include mobile {
