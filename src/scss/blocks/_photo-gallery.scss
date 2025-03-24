@@ -5,7 +5,8 @@
 	}
 }
 
-.photo-gallery__tabs {
+.photo-gallery__tabs,
+.photo-gallery__grid-wrap {
 	display: grid;
 	grid-template-columns: minmax(300px, 396px) 1fr;
 	gap: 42px;
