@@ -14,6 +14,10 @@
 	background-color: var(--primary-bg, #FFFFFF);
 }
 
+.page-head__heading {
+	position: relative;
+}
+
 /* Contacts */
 .page-head.page-head--contacts {
 	background-position: center right;
@@ -166,4 +170,52 @@
 	@include tablet {
 		padding-bottom: 48px;
 	}
+}
+
+/* Payment and delivery */
+.page-head.page-head--pad {
+	position: relative;
+	padding-bottom: 0;
+}
+
+.page-head.page-head--pad::before {
+	content: '';
+	position: absolute;
+	background-color: #0000008A;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	user-select: none;
+}
+
+.page-head.page-head--pad .page-head__wrap {
+	position: relative;
+	margin-top: 60px;
+	max-width: 873px;
+}
+
+.page-head.page-head--pad .page-head__description a {
+	font-weight: bold;
+	color: var(--primary-bg);
+}
+
+.page-head.page-head--pad .page-head__description a:hover {
+	@extend .link;
+}
+
+.page-head.page-head--pad .page-head__anchors {
+	position: relative;
+	gap: 32px;
+	margin-top: 120px;
+}
+
+.page-head.page-head--pad .page-head__anchor {
+	padding: 32px 0;
+	border-bottom: 2px solid transparent;
+}
+
+.page-head.page-head--pad .page-head__anchor.is-active {
+	border-bottom: 2px solid var(--primary);
 }

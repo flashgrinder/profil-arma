@@ -1,0 +1,31 @@
+.delivery {
+	padding: 80px;
+	background-color: var(--secondary-bg-2);
+	@include mobile {
+		padding: 48px 0;
+	}
+}
+
+.delivery__heading,
+.delivery__subtitle {
+	margin-bottom: 32px;
+}
+
+.delivery__items {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 32px;
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+}
+
+.delivery__item {
+	padding: 24px 24px 48px;
+	background-color: var(--primary-bg);
+}
+
+.delivery__item-name,
+.delivery__item-excerpt {
+	margin-top: 16px;
+}

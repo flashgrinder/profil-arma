@@ -1,0 +1,52 @@
+.pickup {
+	background-color: var(--dark-bg, #ECEFF1);
+}
+
+.pickup__body {
+	display: grid;
+	grid-template-columns: 364px 1fr;
+	gap: 64px;
+	@include mobile {
+		grid-template-columns: 1fr;
+		padding: 0;
+	}
+}
+
+.pickup__inner {
+	padding: 80px 0;
+	@include mobile {
+		padding: 48px var(--container-padding);
+	}
+}
+
+.pickup__description {
+	color: #ECEFF1;
+	margin-top: 32px;
+}
+
+.pickup__description a {
+	font-weight: bold;
+	color: var(--primary-bg);
+}
+
+.pickup__description a:hover {
+	@extend .link;
+}
+
+.pickup__action {
+	margin-top: 32px;
+}
+
+.pickup__map {
+	aspect-ratio: 16/5;
+	@include mobile {
+		aspect-ratio: 5/7;
+	}
+}
+
+.pickup__map img,
+.pickup__map iframe {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

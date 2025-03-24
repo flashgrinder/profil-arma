@@ -1,0 +1,49 @@
+.pad-contacts {
+	padding: 100px 0;
+	@include mobile {
+		padding: 48px 0;
+		border-bottom: 1px solid var(--secondary-bg-2, #ECEFF1);
+	}
+}
+
+.pad-contacts__description {
+	max-width: 390px;
+	@include mobile {
+		padding-bottom: 48px;
+	}
+}
+
+.pad-contacts__outer {
+	gap: 60px;
+	@include tablet {
+		flex-direction: column;
+		margin-top: 32px;
+		gap: 12px;
+		align-items: flex-start;
+	}
+}
+
+.pad-contacts__wrap {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 500px));
+	gap: 100px 30px;
+	margin-left: auto;
+	@include tablet {
+		gap: 30px;
+		margin-left: 0;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+	}
+	@include mobile {
+		gap: 24px;
+	}
+}
+
+.pad-contacts__prop-name {
+	margin-bottom: 24px;
+	@include tablet {
+		margin-bottom: 16px;
+	}
+	@include mobile {
+		margin-bottom: 12px;
+	}
+}

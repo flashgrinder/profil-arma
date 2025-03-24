@@ -4,6 +4,7 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	position: relative;
 	@include tablet {
 		margin-bottom: 32px;
 	}
