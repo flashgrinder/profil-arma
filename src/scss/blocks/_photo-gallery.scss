@@ -35,6 +35,7 @@
 	@extend .text--pre-medium;
 	@extend .text--primary;
 	padding: 16px 0 16px 32px;
+	font-weight: 600;
 	border-left: 4px solid transparent;
 	@include mobile {
 		border-radius: 63px;
