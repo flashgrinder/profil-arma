@@ -166,14 +166,11 @@
 }
 
 .page-head.page-head--gallery .page-head__anchors {
-	margin-top: 80px;
-}
-
-.page-head.page-head--gallery .page-head__anchors {
 	position: relative;
 	gap: 32px;
-	margin-top: 120px;
+	margin-top: 80px;
 	@include tablet {
+		margin-top: 48px;
 		overflow: auto;
 	}
 }
