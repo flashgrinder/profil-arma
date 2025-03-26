@@ -24,3 +24,20 @@
 .gallery-manufacture__splide-arrows.slider-nav .slider-nav__splide-arrow {
 	background-color: var(--secondary-bg-2);
 }
+
+/* Gallery-manufacture */
+.gallery-manufacture__slider-nav-wrap {
+	padding-right: var(--container-padding);
+	max-width: var(--container-width);
+	width: 100%;
+	margin-bottom: 64px;
+	@include mobile {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 32px;
+	}
+}
+
+.gallery-manufacture.gallery-manufacture--vacancy .gallery-manufacture__splide-arrows.slider-nav {
+	margin-top: 0;
+}

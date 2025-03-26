@@ -1,0 +1,16 @@
+.vacancy {
+	padding: 80px 0;
+	background-color: var(--secondary-bg-2, #ECEFF1);
+	@include tablet {
+		padding: 64px 0;
+	}
+}
+
+.vacancy__outer {
+	display: grid;
+	grid-template-columns: minmax(320px, 396px) 1fr;
+	gap: 32px;
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
+}

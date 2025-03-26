@@ -14,6 +14,7 @@ import certificatesSlider from "./modules/certificates-slider";
 import galleryManufactureSliders from "./modules/gallery-manufacture-sliders";
 import contentsAnchors from "./modules/contents-anchors";
 import otherPostsSlider from "./modules/other-posts-slider";
+import initAccordion from "./modules/accordion";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     galleryManufactureSliders();
     contentsAnchors();
     otherPostsSlider();
+    initAccordion();
     Fancybox.bind('[data-fancybox]');
 
 })

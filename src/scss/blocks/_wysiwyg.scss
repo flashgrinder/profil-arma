@@ -109,3 +109,26 @@
 .wysiwyg.wysiwyg--tabs {
   color: var(--primary-bg);
 }
+
+/* Wysiwyg-accordion */
+.wysiwyg.wysiwyg--accordion {
+  font-family: var(--font-secondary);
+  color: var(--secondary-font-color);
+  font-size: responsive 16px 18px;
+  font-range: 576px 1024px;
+}
+
+.wysiwyg.wysiwyg--accordion ul,
+.wysiwyg.wysiwyg--accordion ol {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.wysiwyg.wysiwyg--accordion ul li ~ li,
+.wysiwyg.wysiwyg--accordion ol li ~ li {
+  margin-top: 10px;
+}
+
+.wysiwyg.wysiwyg--accordion p {
+  color: inherit;
+}

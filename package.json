@@ -54,6 +54,7 @@
 		"@splidejs/splide": "^4.1.4",
 		"@splidejs/splide-extension-auto-scroll": "^0.5.3",
 		"@splidejs/splide-extension-grid": "^0.4.1",
+		"accordion-js": "^3.4.0",
 		"autoprefixer": "^10.4.20",
 		"avif-webp-checker": "^1.0.0",
 		"filepond": "^4.32.5",

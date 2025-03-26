@@ -1,0 +1,155 @@
+.team-face {
+	padding: 80px 0;
+	background-color: var(--secondary-bg-2, #ECEFF1);
+	@include tablet {
+		padding: 64px 0;
+	}
+}
+
+.team-face__outer {
+	display: grid;
+	grid-template-columns: minmax(320px, 396px) 1fr;
+	gap: 32px;
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
+	@include mobile {
+		overflow: hidden;
+	}
+}
+
+.team-face__grid {
+	display: grid;
+	grid-template-columns: repeat(9, minmax(200px, 200px));
+	row-gap: 24px;
+	@include to(1600px) {
+		grid-template-columns: repeat(6, minmax(200px, 200px));
+	}
+	@include to(1200px) {
+		grid-template-columns: repeat(6, minmax(150px, 150px));
+	}
+	@include mobile {
+		grid-template-columns: repeat(6, minmax(100px, 100px));
+		max-width: 375px;
+	}
+}
+
+.team-face__item {
+	border-radius: 50%;
+	border: 2px solid var(--primary-bg);
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin-left: 5vw;
+	@include to(1200px) {
+		width: 150px;
+		height: 150px;
+	}
+	@include tablet {
+		margin-left: 0;
+	}
+	@include mobile {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+.team-face__item:nth-child(2) {
+	left: -5vw;
+	@include mobile {
+		left: -50px;
+	}
+}
+.team-face__item:nth-child(3) {
+	left: -10vw;
+	@include mobile {
+		left: -100px;
+	}
+}
+.team-face__item:nth-child(4) {
+	left: -15vw;
+	@include mobile {
+		left: -150px;
+	}
+}
+.team-face__item:nth-child(5) {
+	left: -20vw;
+	@include mobile {
+		left: -200px;
+	}
+}
+.team-face__item:nth-child(6) {
+	left: -25vw;
+	@include mobile {
+		left: -250px;
+	}
+}
+.team-face__item:nth-child(7) {
+	left: -30vw;
+	@include to(1600px) {
+		left: 0;
+	}
+}
+.team-face__item:nth-child(8) {
+	left: -35vw;
+	@include to(1600px) {
+		left: -5vw;
+	}
+	@include mobile {
+		left: -50px;
+	}
+}
+.team-face__item:nth-child(9) {
+	left: -40vw;
+	@include to(1600px) {
+		left: -10vw;
+	}
+	@include mobile {
+		left: -100px;
+	}
+}
+.team-face__item:nth-child(10) {
+	left: 0;
+	@include to(1600px) {
+		left: -15vw;
+	}
+	@include mobile {
+		left: -150px;
+	}
+}
+.team-face__item:nth-child(11) {
+	left: -5vw;
+	@include to(1600px) {
+		left: -20vw;
+	}
+	@include mobile {
+		display: none;
+	}
+}
+
+.team-face__item picture,
+.team-face__item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team-face__item.team-face__item--last {
+	background-color: var(--primary);
+}
+
+.team-face__item.team-face__item--last .title {
+	@include to(1200px) {
+		font-size: 16px;
+	}
+}
+
+.team-face__action-mobile {
+	max-width: 375px;
+	display: none;
+	@include mobile {
+		display: block;
+	}
+}

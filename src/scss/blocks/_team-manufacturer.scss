@@ -1,0 +1,110 @@
+.team-manufacturer {
+	padding: 80px 0;
+	@include tablet {
+		padding: 64px 0;
+	}
+}
+
+.team-manufacturer__outer {
+	display: grid;
+	grid-template-columns: minmax(320px, 396px) 1fr;
+	gap: 32px;
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
+}
+
+.team-manufacturer__grid {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	height: 100%;
+	gap: 24px;
+	@include mobile {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+
+.team-manufacturer__item:nth-child(1) {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 3;
+	grid-column-end: 3;
+}
+.team-manufacturer__item:nth-child(2) {
+	grid-row-start: 1;
+	grid-column-start: 3;
+	grid-row-end: 4;
+	grid-column-end: 5;
+
+}
+.team-manufacturer__item:nth-child(3) {
+	grid-row-start: 1;
+	grid-column-start: 5;
+	grid-row-end: 3;
+	grid-column-end: 7;
+}
+.team-manufacturer__item:nth-child(4) {
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-row-end: 7;
+	grid-column-end: 3;
+}
+.team-manufacturer__item:nth-child(5) {
+	grid-row-start: 3;
+	grid-column-start: 5;
+	grid-row-end: 7;
+	grid-column-end: 7;
+}
+.team-manufacturer__item:nth-child(6) {
+	grid-row-start: 4;
+	grid-column-start: 3;
+	grid-row-end: 6;
+	grid-column-end: 5;
+}
+
+.team-manufacturer__item:nth-child(7) {
+	grid-row-start: 6;
+	grid-column-start: 3;
+	grid-row-end: 9;
+	grid-column-end: 5;
+}
+.team-manufacturer__item:nth-child(8) {
+	grid-row-start: 7;
+	grid-column-start: 1;
+	grid-row-end: 9;
+	grid-column-end: 3;
+}
+.team-manufacturer__item:nth-child(9) {
+	grid-row-start: 7;
+	grid-column-start: 5;
+	grid-row-end: 9;
+	grid-column-end: 7;
+}
+
+.team-manufacturer__item:nth-child(odd),
+.team-manufacturer__item:nth-child(even), {
+	@include mobile {
+		grid-row-start: unset;
+		grid-column-start: unset;
+		grid-row-end: unset;
+		grid-column-end: unset;
+	}
+}
+
+.team-manufacturer__item picture,
+.team-manufacturer__item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team-manufacturer__button.button {
+	height: 100%;
+	font-size: 18px;
+	padding: 20px;
+	width: 100%;
+	max-width: 100%;
+}
