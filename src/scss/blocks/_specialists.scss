@@ -5,6 +5,10 @@
 	}
 }
 
+.specialists__item-name span {
+	display: block;
+}
+
 .specialists.specialists--page + .specialists.specialists--page .specialists__items {
 	border-bottom: 1px solid var(--blue-gray-bg);
 	padding-bottom: 80px;
