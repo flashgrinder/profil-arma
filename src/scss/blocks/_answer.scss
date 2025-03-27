@@ -27,3 +27,8 @@
 .answer__prop-value {
 	margin-top: 10px;
 }
+
+/* Answer fabrication */
+.answer.answer--fabrication {
+	background-color: var(--primary-bg, #FFFFFF);
+}

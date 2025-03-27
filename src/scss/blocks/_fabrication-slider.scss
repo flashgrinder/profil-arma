@@ -1,0 +1,63 @@
+.fabrication-slider {
+	background-color: var(--secondary-bg, #ECEFF1);
+	border-bottom: 2px solid var(--secondary-bg-2, #ECEFF1);
+	padding: 80px 0;
+	@include tablet {
+		padding: 64px 0;
+	}
+}
+
+.fabrication-slider__outer {
+	display: grid;
+	grid-template-columns: minmax(320px, 396px) 1fr;
+	gap: 32px;
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+}
+
+.fabrication-slider__action {
+	margin-top: 32px;
+}
+
+.fabrication-slider__splide--thumb {
+	margin-top: 12px;
+}
+
+.fabrication-slider__item-big {
+	aspect-ratio: 16/9;
+}
+
+.fabrication-slider__item-big picture,
+.fabrication-slider__item-big img,
+.fabrication-slider__item-thumb picture,
+.fabrication-slider__item-thumb img, {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fabrication-slider__item-thumb {
+	height: 100%;
+}
+
+.fabrication-slider__splide-slide {
+	overflow: hidden;
+}
+
+.fabrication-slider__splide--thumb.splide .splide__track--nav>.splide__list>.splide__slide.is-active {
+	width: 128px !important;
+	border: none;
+	opacity: 1;
+	border-bottom: 3px solid var(--primary);
+	@include mobile {
+		width: auto;
+	}
+}
+
+.fabrication-slider__splide--thumb .splide__track--nav>.splide__list>.splide__slide {
+	border-bottom: 3px solid transparent;
+	opacity: .5;
+	transition: width var(--hover-time) ease, opacity var(--hover-time) ease;
+}
