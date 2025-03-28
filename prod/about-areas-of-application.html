@@ -17,6 +17,34 @@
     <button class="mobile-nav-btn burger js-mobile-nav-burger">
         <div class="nav-icon burger__icon"></div>
     </button>
+    <div style="display: flex; gap: 50px; margin: 20px">
+        <div><a href="/">Главная</a></div>
+        <div><a href="/katalog/">Каталог</a></div>
+        <div><a href="/otgruzki/">Отгрузки</a></div>
+        <ul>
+            <li><a href="/about.html">О&#160;компании</a></li>
+            <li><a href="/o-kompanii/fotogalereya/">О&#160;компании&#160;&#8212; Фотогалерея</a></li>
+            <li><a href="/o-kompanii/journal/">О&#160;компании&#160;&#8212; Журнал</a></li>
+            <li><a href="/o-kompanii/klienty-i-otzyvy/">О&#160;компании&#160;&#8212; Клиенты и&#160;отзывы</a></li>
+            <li><a href="/o-kompanii/nasha-komanda/">О&#160;компании&#160;&#8212; Наша команда</a></li>
+            <li><a href="/o-kompanii/partnery/">О&#160;компании&#160;&#8212; Партнеры</a></li>
+            <li><a href="/o-kompanii/proizvodstvo/">О&#160;компании&#160;&#8212; Производство</a></li>
+            <li><a href="/o-kompanii/rekvizity/">О&#160;компании&#160;&#8212; Реквизиты</a></li>
+            <li><a href="/o-kompanii/sfery-primeneniya/">О&#160;компании&#160;&#8212; Сферы применения</a></li>
+            <li><a href="/o-kompanii/standarty/">О&#160;компании&#160;&#8212; Стандарты</a></li>
+            <li><a href="/o-kompanii/stati/">О&#160;компании&#160;&#8212; Статьи</a></li>
+        </ul>
+        <div><a href="/sertifikat/">Сертификаты</a></div>
+        <div><a href="/dostavka-i-oplata/">Доставка и&#160;оплата</a></div>
+        <div><a href="/katalog/">Каталог</a></div>
+        <ul>
+            <li><a href="/kalkulyatory/">Калькуляторы</a></li>
+            <li><a href="/kalkulyatory/kalkulyator-krep/">Калькулятор крепежа</a></li>
+            <li><a href="/kalkulyatory/kalkulyator-kof/">Калькулятор коф</a></li>
+        </ul>
+        <div><a href="/vakansii/">Вакансии</a></div>
+        <div><a href="/contacts/">Контакты</a></div>
+    </div>
 </header>
 <div class="mobile-nav">
     <ul class="mobile-nav__list">
@@ -25,7 +53,7 @@
     </ul>
 </div>
 
-<main>
+<main id="swup" class="transition-main">
 
 <section class="page-head page-head--areas-application">
     <div class="page-head__body container">
@@ -955,7 +983,13 @@
 </section>
 
 </main>
-
+<div class="overlay transition-overlay">
+    <div class="overlay__left"></div>
+    <svg width="182" height="176" class="overlay__logo">
+        <use href="./img/svgsprite/sprite.symbol.svg#logo-trs"></use>
+    </svg>
+    <div class="overlay__right"></div>
+</div>
 <!-- Модалка -->
 <div class="modal modal--feedback hystmodal" id="feedback" aria-hidden="true">
     <div class="modal__wrap hystmodal__wrap">

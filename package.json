@@ -62,7 +62,8 @@
 		"hystmodal": "^1.0.1",
 		"jquery": "^3.7.1",
 		"slim-select": "^2.9.2",
-		"swiper": "^11.0.6"
+		"swiper": "^11.0.6",
+		"swup": "^4.8.1"
 	},
 	"repository": {
 		"type": "git",

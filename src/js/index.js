@@ -16,9 +16,11 @@ import contentsAnchors from "./modules/contents-anchors";
 import otherPostsSlider from "./modules/other-posts-slider";
 import initAccordion from "./modules/accordion";
 import fabricationSliders from "./modules/fabrication-slider";
+import animationPage from "./modules/animation-page";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
+    animationPage();
     mobileNav();
     mobileCatalog();
     specialistsSlider();
