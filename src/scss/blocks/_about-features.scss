@@ -1,0 +1,17 @@
+.about-features {
+	padding: 80px 0;
+	background-color: var(--dark-bg, #16161C);
+	@include tablet {
+		padding: 64px 0;
+	}
+}
+
+.about-features__items {
+	gap: 32px;
+	@include to(1200px) {
+		flex-wrap: wrap;
+	}
+	@include mobile {
+		flex-direction: column;
+	}
+}

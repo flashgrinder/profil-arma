@@ -323,3 +323,84 @@
 	height: 100%;
 	background: linear-gradient(0deg, #16161C 0%, rgba(22, 22, 28, 0) 100%);
 }
+
+/* About */
+.page-head.page-head--about {
+	position: relative;
+	background-color: var(--dark-bg, #16161C);
+	padding-bottom: 28px;
+}
+
+.page-head.page-head--about .page-head__pic-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page-head.page-head--about .page-head__pic-bg picture,
+.page-head.page-head--about .page-head__pic-bg img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.page-head.page-head--about .page-head__wrap {
+	position: relative;
+	margin-top: 110px;
+	padding-left: 90px;
+	max-width: 900px;
+	@include mobile {
+		padding-left: 0;
+		margin-top: 80px;
+	}
+}
+
+.page-head.page-head--about .page-head__blockquote-wrap {
+	max-width: 745px;
+}
+
+.page-head.page-head--about .page-head__blockquote-decor {
+	position: absolute;
+	@include mobile {
+		display: none;
+	}
+}
+
+.page-head__blockquote-decor--left {
+	left: 0;
+}
+
+.page-head__blockquote-decor--right {
+	right: 0;
+	bottom: 48px;
+}
+
+.page-head.page-head--about .page-head__blockquote-text {
+	margin-top: 32px;
+}
+
+.page-head.page-head--about .page-head__blockquote-text {
+	@include mobile {
+		max-width: 300px;
+	}
+}
+
+.page-head.page-head--about .page-head__blockquote-text:last-child {
+	@include mobile {
+		max-width: 230px;
+	}
+}
+
+.page-head.page-head--about .page-head__blockquote-author {
+	margin-top: 75px;
+	@include mobile {
+		margin-top: 63px;
+	}
+}
+
+.page-head.page-head--about .page-head__blockquote-position {
+	margin-top: 12px;
+}

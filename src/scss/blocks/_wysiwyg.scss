@@ -132,3 +132,23 @@
 .wysiwyg.wysiwyg--accordion p {
   color: inherit;
 }
+
+/* Wysiwyg-about */
+.wysiwyg.wysiwyg--about {
+  font-family: var(--font-secondary);
+  color: var(--primary-font-color);
+  font-size: responsive 16px 18px;
+  font-range: 576px 1024px;
+}
+
+.wysiwyg.wysiwyg--about ul,
+.wysiwyg.wysiwyg--about ol {
+  font-size: responsive 16px 18px;
+  font-range: 576px 1024px;
+  line-height: inherit;
+}
+
+.wysiwyg.wysiwyg--about p {
+  color: inherit;
+  font-size: inherit;
+}
