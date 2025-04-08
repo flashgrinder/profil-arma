@@ -23,9 +23,9 @@ function galleryManufactureSliders () {
                     next  : 'splide__arrow--next slider-nav__splide-arrow--next',
                 },
                 breakpoints: {
-                    576: {
-                        perPage: 1,
-                        height: '240px',
+                    768: {
+                        perPage: 1.2,
+                        height: '250px',
                     }
                 }
             } );

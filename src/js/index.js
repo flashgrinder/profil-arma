@@ -17,6 +17,7 @@ import otherPostsSlider from "./modules/other-posts-slider";
 import initAccordion from "./modules/accordion";
 import fabricationSliders from "./modules/fabrication-slider";
 import animationPage from "./modules/animation-page";
+import otherShipmentsSlider from "./modules/other-shipments-slider";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     otherPostsSlider();
     initAccordion();
     fabricationSliders();
+    otherShipmentsSlider();
     Fancybox.bind('[data-fancybox]');
 
 })

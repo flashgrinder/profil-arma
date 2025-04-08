@@ -1,0 +1,511 @@
+@@include('blocks/header.html')
+
+<section class="page-head page-head--shipment-detail">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs">
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs__nav d-flex flex-align-center">
+                    <a href="/">
+                        Главная
+                    </a>
+                    <a href="/otgruzki/">
+                        Отгрузки
+                    </a>
+                    <span>Отгрузка для роснефти</span>
+                </nav>
+            </div>
+        </div>
+        <div class="page-head__top-wrap d-flex flex-align-center flex-justify-sb">
+            <h1 class="page-head__heading title title--big title--primary title--w-semibold title--uppercase">
+                Отгрузка для роснефти
+            </h1>
+            <div class="page-head__shipment-logo d-flex flex-justify-center flex-align-center">
+                <picture>
+                    <img src="./img/other/rosneft.svg" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="page-head__shipment-props d-flex">
+            <div class="page-head__shipment-prop d-flex flex-align-center">
+                <div class="page-head__shipment-prop-name d-flex flex-align-center text text--pre-medium text--secondary text--w-regular">
+                    <svg class="page-head__shipment-prop-name" width="32px" height="32px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#map-pin-orange"></use>
+                    </svg>
+                    Место поставки:
+                </div>
+                <div class="page-head__shipment-prop-value text text--pre-medium text--primary text--w-semibold">
+                    Челябинск
+                </div>
+            </div>
+            <div class="page-head__shipment-prop d-flex flex-align-center">
+                <div class="page-head__shipment-prop-name d-flex flex-align-center text text--pre-medium text--secondary text--w-regular">
+                    <svg class="page-head__shipment-prop-name" width="32px" height="32px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#calendar-orange"></use>
+                    </svg>
+                    Срок поставки:
+                </div>
+                <div class="page-head__shipment-prop-value text text--pre-medium text--primary text--w-semibold">
+                    20 рабочих дней
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery-manufacture gallery-manufacture--shipment">
+    <div class="gallery-manufacture__body container-right">
+        <div class="gallery-manufacture__splide splide js-gallery-manufacture-slider-init"
+             id="slider-1">
+            <div class="gallery-manufacture__splide-track splide__track">
+                <div class="gallery-manufacture__splide-list splide__list">
+                    <div class="gallery-manufacture__splide-slide splide__slide">
+                        <picture>
+                            <img src="./img/other/gallery-1.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="gallery-manufacture__splide-slide splide__slide">
+                        <picture>
+                            <img src="./img/other/gallery-2.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="gallery-manufacture__splide-slide splide__slide">
+                        <picture>
+                            <img src="./img/other/gallery-3.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="gallery-manufacture__splide-slide splide__slide">
+                        <picture>
+                            <img src="./img/other/gallery-4.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-manufacture__splide-arrows slider-nav splide__arrows">
+                <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                    <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                    </svg>
+                </button>
+                <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                    <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="order-composition">
+    <div class="order-composition__body container">
+        <div class="order-composition__outer">
+            <div class="order-composition__grid-wrap">
+                <h3 class="order-composition__heading title title--big title--primary title--w-bold title--uppercase">
+                    Состав заказа
+                </h3>
+                <div class="order-composition__table">
+                    <div class="order-composition__th text text--normal text--w-semibold">
+                        <div class="order-composition__td">
+                            №  <span>п/п</span>
+                        </div>
+                        <div class="order-composition__td">
+                            Наименование изделия
+                        </div>
+                        <div class="order-composition__td order-composition__td--std text-center">
+                            гост, ту
+                        </div>
+                        <div class="order-composition__td order-composition__td--link text-center">
+                            Ссылки
+                        </div>
+                    </div>
+                    <div class="order-composition__tr">
+                        <div class="order-composition__td order-composition__td--num text text--pre-medium text--primary text--w-semibold text-center">
+                            1
+                        </div>
+                        <div class="order-composition__td order-composition__td--name text text--medium text--primary text--w-semibold">
+                            Фланец плоский стальной - полное наименование
+                        </div>
+                        <div class="order-composition__td order-composition__td--std text text--pre-medium text--primary text--w-semibold text-center">
+                            ГОСТ 33259-2015
+                        </div>
+                        <div class="order-composition__td order-composition__td--link text-center">
+                            <a href="" class="order-composition__td-link text text--small">
+                                Ссылка на раздел
+                            </a>
+                        </div>
+                    </div>
+                    <div class="order-composition__tr">
+                        <div class="order-composition__td order-composition__td--num text text--pre-medium text--primary text--w-semibold text-center">
+                            2
+                        </div>
+                        <div class="order-composition__td order-composition__td--name text text--medium text--primary text--w-semibold">
+                            Фланец плоский стальной - полное наименование
+                        </div>
+                        <div class="order-composition__td order-composition__td--std text text--pre-medium text--primary text--w-semibold text-center">
+                            ГОСТ 33259-2015
+                        </div>
+                        <div class="order-composition__td order-composition__td--link text-center">
+                            <a href="" class="order-composition__td-link text text--small">
+                                Ссылка на раздел
+                            </a>
+                        </div>
+                    </div>
+                    <div class="order-composition__tr">
+                        <div class="order-composition__td order-composition__td--num text text--pre-medium text--primary text--w-semibold text-center">
+                            3
+                        </div>
+                        <div class="order-composition__td order-composition__td--name text text--medium text--primary text--w-semibold">
+                            Фланец плоский стальной - полное наименование
+                        </div>
+                        <div class="order-composition__td order-composition__td--std text text--pre-medium text--primary text--w-semibold text-center">
+                            ГОСТ 33259-2015
+                        </div>
+                        <div class="order-composition__td order-composition__td--link text-center">
+                            <a href="" class="order-composition__td-link text text--small">
+                                Ссылка на раздел
+                            </a>
+                        </div>
+                    </div>
+                    <div class="order-composition__tr">
+                        <div class="order-composition__td order-composition__td--num text text--pre-medium text--primary text--w-semibold text-center">
+                            4
+                        </div>
+                        <div class="order-composition__td order-composition__td--name text text--medium text--primary text--w-semibold">
+                            Фланец плоский стальной - полное наименование
+                        </div>
+                        <div class="order-composition__td order-composition__td--std text text--pre-medium text--primary text--w-semibold text-center">
+                            ГОСТ 33259-2015
+                        </div>
+                        <div class="order-composition__td order-composition__td--link text-center">
+                            <a href="" class="order-composition__td-link text text--small">
+                                Ссылка на раздел
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="other-shipments">
+    <div class="other-shipments__body container">
+        <div class="other-shipments__splide splide js-other-shipments-slider-init">
+            <div class="other-shipments__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
+                <h3 class="other-shipments__heading title title--big title--primary title--w-bold title--uppercase">
+                    Смотрите другие наши отгрузки
+                </h3>
+                <div class="other-shipments__splide-arrows slider-nav splide__arrows">
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="other-shipments__splide-track splide__track">
+                <div class="other-shipments__splide-list splide__list">
+                    <div class="other-shipments__splide-slide splide__slide">
+                        <div class="other-shipments__item d-flex d-flex-column">
+                            <div class="other-shipments__item-pic">
+                                <picture>
+                                    <img src="./img/other/shipments-1.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h3 class="other-shipments__item-title text text--large text--primary text--w-bold">
+                                Отгрузка фонарей смотровых 3-1-32-0,6-1-20 АТК 26-01-1-89
+                            </h3>
+                            <div class="other-shipments__item-action">
+                                <a href="" class="other-shipments__item-button button button--text">
+                                    <span>Смотреть</span>
+                                    <svg width="45" height="23" class="button__icon">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-shipments__splide-slide splide__slide">
+                        <div class="other-shipments__item d-flex d-flex-column">
+                            <div class="other-shipments__item-pic">
+                                <picture>
+                                    <img src="./img/other/shipments-2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h3 class="other-shipments__item-title text text--large text--primary text--w-bold">
+                                Заглушка с рукояткой
+                            </h3>
+                            <div class="other-shipments__item-action">
+                                <a href="" class="other-shipments__item-button button button--text">
+                                    <span>Смотреть</span>
+                                    <svg width="45" height="23" class="button__icon">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-shipments__splide-slide splide__slide">
+                        <div class="other-shipments__item d-flex d-flex-column">
+                            <div class="other-shipments__item-pic">
+                                <picture>
+                                    <img src="./img/other/shipments-3.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h3 class="other-shipments__item-title text text--large text--primary text--w-bold">
+                                Тройники с фланцами ANSI по разработанным чертежам ООО "Профиль-Арма"
+                            </h3>
+                            <div class="other-shipments__item-action">
+                                <a href="" class="other-shipments__item-button button button--text">
+                                    <span>Смотреть</span>
+                                    <svg width="45" height="23" class="button__icon">
+                                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="answer">
+    <div class="answer__body container">
+        <div class="answer__columns">
+            <div class="answer__col">
+                <h3 class="answer__heading title title--big title--primary title--w-semibold title--uppercase">
+                    Расскажем
+                    <br>
+                    про цены, сроки
+                    <br>
+                    и условия поставки
+                </h3>
+            </div>
+            <div class="answer__col">
+                <div class="answer__contacts d-flex d-flex-column">
+                    <a href="tel:+7(3513)62‒67‒74"
+                       class="answer__contact answer__contact--phone text text--primary text--w-bold link">
+                        +7 (3513) 62‒67‒74
+                    </a>
+                    <a href="mailto:zakaz3@profil-arma.ru"
+                       class="answer__contact text text--huge text--primary text--w-bold link">
+                        zakaz3@profil-arma.ru
+                    </a>
+                </div>
+                <div class="answer__contacts">
+                    <div class="answer__prop-name text text--huge text--primary text--w-bold">
+                        Время работы:
+                    </div>
+                    <div class="answer__prop-value text text--large text--primary text--w-regular">
+                        Пн-Пт: 9:00 - 18:00 (Челябинск)
+                    </div>
+                    <div class="answer__prop-value text text--large text--primary text--w-regular">
+                        Пн-Пт: 7:00 - 16:00 (Москва)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="specialists">
+    <div class="specialists__body">
+        <div class="specialists__top container">
+            <h3 class="specialists__heading title title--big title--primary title--w-bold title--uppercase">
+                СПЕЦИАЛИСТЫ с 5-летним отраслевым <br> опытом помогут оформить заказ
+            </h3>
+        </div>
+        <div class="specialists__slider-wrap container-right">
+            <div class="specialists__splide splide js-specialists-slider-init">
+                <div class="specialists__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
+                    <a href="" class="button button--text">
+                        <span>Все специалисты</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                    <div class="specialist__splide-arrows slider-nav splide__arrows">
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="specialists__splide-track splide__track">
+                    <div class="specialists__splide-list splide__list">
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна 2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела 2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна 2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела 2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна 2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела 2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна 2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела 2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('blocks/footer.html')
