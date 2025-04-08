@@ -445,3 +445,56 @@
 .page-head.page-head--shipment-detail .page-head__shipment-prop {
 	gap: 12px;
 }
+
+/* Shipments */
+.page-head.page-head--shipments {
+	padding-bottom: 0;
+}
+
+.page-head.page-head--shipments .page-head__wrap {
+	margin-top: 80px;
+	@include mobile {
+		margin-top: 32px;
+	}
+}
+
+.page-head.page-head--shipments .page-head__anchors {
+	position: relative;
+	gap: 32px;
+	@include mobile {
+		overflow: auto;
+	}
+}
+
+.page-head.page-head--shipments .page-head__anchor {
+	padding: 32px 0;
+	border-bottom: 2px solid transparent;
+	@include mobile {
+		white-space: nowrap;
+	}
+}
+
+.page-head.page-head--shipments .page-head__anchor.is-active {
+	border-bottom: 2px solid var(--primary);
+}
+
+.page-head.page-head--shipments .page-head__views {
+	gap: 24px;
+	@include mobile {
+		display: none;
+	}
+}
+
+.page-head.page-head--shipments .page-head__view {
+	width: 48px;
+	height: 48px;
+	background-color: transparent;
+	opacity: .5;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.page-head.page-head--shipments .page-head__view.is-active {
+	background-color: var(--primary-bg, #FFFFFF);
+	opacity: 1;
+}
