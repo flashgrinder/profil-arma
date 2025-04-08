@@ -111,6 +111,7 @@
 }
 
 .post-detail__product::after {
+	display: none;
 	content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.6 12.542L8 7.94199L9.4 6.54199L15.4 12.542L9.4 18.542L8 17.142L12.6 12.542Z' fill='%23607D8B'/%3e%3c/svg%3e");
 	position: absolute;
 	width: 24px;
@@ -118,6 +119,9 @@
 	top: 50%;
 	right: 24px;
 	transform: translateY(-50%);
+	@include mobile {
+		display: block;
+	}
 }
 
 .post-detail__product-name {

@@ -498,3 +498,15 @@
 	background-color: var(--primary-bg, #FFFFFF);
 	opacity: 1;
 }
+
+/* Calculator-choose */
+.page-head.page-head--calculator-choose {
+	padding: 32px 0;
+}
+
+.page-head.page-head--calculator-choose .page-head__wrap {
+	margin-top: 120px;
+	@include mobile {
+		margin-top: 32px;
+	}
+}
