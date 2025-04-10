@@ -114,6 +114,10 @@
   padding: 3px;
 }
 
+.button--text-secondary {
+  color: var(--secondary-font-color);
+}
+
 .button--text:hover,
 .button--text:focus,
 .button--text:target {

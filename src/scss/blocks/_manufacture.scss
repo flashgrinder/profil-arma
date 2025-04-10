@@ -109,3 +109,13 @@
 		padding: 24px;
 	}
 }
+
+/* Manufacture-catalog */
+.manufacture.manufacture--catalog .manufacture__heading span {
+	color: var(--primary-font-color, #16161C);
+}
+
+.manufacture.manufacture--catalog .manufacture__outer-top {
+	background-color: var(--primary-bg);
+	padding-top: 130px;
+}

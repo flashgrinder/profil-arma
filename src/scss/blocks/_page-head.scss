@@ -510,3 +510,26 @@
 		margin-top: 32px;
 	}
 }
+
+/* Catalog */
+.page-head.page-head--catalog {
+	background-color: var(--primary-bg);
+	padding-bottom: 180px;
+	@include mobile {
+		padding-bottom: 48px;
+	}
+}
+
+.page-head.page-head--catalog .page-head__wrap {
+	margin-top: 48px;
+	align-items: flex-start;
+	gap: 32px;
+	@include mobile {
+		margin-top: 24px;
+		flex-direction: column;
+	}
+}
+
+.page-head.page-head--catalog .page-head__description {
+	max-width: 1024px;
+}

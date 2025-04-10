@@ -55,7 +55,7 @@
 
 <main id="swup" class="transition-main">
 
-<section class="page-head page-head--fabrication" style="background-image: url('./img/other/bg-fabrication.png')">
+<section class="page-head page-head--catalog">
     <div class="page-head__body container">
         <div class="page-head__breadcrumbs">
             <div class="breadcrumbs">
@@ -63,57 +63,370 @@
                     <a href="/">
                         Главная
                     </a>
-                    <a href="/0-kompanii/">
-                        О&#160;компании
-                    </a>
-                    <span>Производство</span>
+                    <span>Каталог</span>
                 </nav>
             </div>
         </div>
-        <h1 class="page-head__heading title title--big title--white title--w-semibold title--uppercase">
-            Производство
+        <h1 class="page-head__heading title title--big title--primary title--w-semibold title--uppercase">
+            Каталог
         </h1>
+        <div class="page-head__wrap d-flex flex-justify-sb">
+            <div class="page-head__description text text--large text--primary text--w-regular">
+                Изготовливаем изделия к&#160;различным системам трубопроводов нефти, газа, воды, различных жидкостей, работающих в&#160;большом диапазоне давлений и&#160;температур в&#160;условиях средней и&#160;повышенной агрессивности.
+            </div>
+            <form action="/search/" method="get" class="form-search">
+                <div class="form-search__field">
+                    <input class="form-search__input" type="text" name="q" placeholder="что вы ищете?">
+                    <button class="form-search__form-btn" type="submit">
+                        <svg class="form-search__svg-search" width="24" height="24">
+                            <use xlink:href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="page-head__outer">
-        <div class="page-head__wrap container">
-            <div class="page-head__feature">
-                <div class="page-head__feature-big title title--huge title--white title--w-bold title--uppercase">
-                    > 3 000&#160;м&#178;
+</section>
+
+<section class="catalog">
+    <div class="catalog__body">
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/flanec.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Фланцевая продукция
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фланцы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Заглушки
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Линзы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Изолирующие соединения
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Прокладки разного сечения
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фланцевый крепеж
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="page-head__feature-excerpt text text--large text--white text--w-regular">
-                    производственных площадей
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/troinik.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Детали трубопровода
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Тройники
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Отводы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Переходы
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Опоры трубопроводов
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="page-head__feature">
-                <div class="page-head__feature-big title title--huge title--white title--w-bold title--uppercase">
-                    90 <span class="title title--pre-big">человек</span>
+        </div>
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/tochechnaya_1.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Точеные детали
+                            трубопроводов
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Переходы точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Тройники точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Угольники точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Штуцера точеные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Бобышки стальные
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="page-head__feature-excerpt text text--large text--white text--w-regular">
-                    работает в&#160;компании официально
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/trubnaya_reshetka.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Трубные решетки
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Неподвижные трубные решетки для теплообменников
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски аппаратов со&#160;встроенным компенсатором
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски кожухотрубчатых теплообменников с&#160;плавающей головкой
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски теплообменников с&#160;U&#160;образными трубами
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Трубные доски пучков теплообменников
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="page-head__feature">
-                <div class="page-head__feature-big title title--huge title--white title--w-bold title--uppercase">
-                    3
+        </div>
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/filtr_setchatiy.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Котельное
+                            оборудование
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фильтры сетчатые
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Грязевики
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Бак разрыва струи
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Сосуды конденсационные СК
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="page-head__feature-excerpt text text--large text--white text--w-regular">
-                    Производственных цеха
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/pokovka.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Поковки
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Поковка стальная круглая
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Поковка прямоугольная
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Поковка стальная квадратная
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="page-head__feature">
-                <div class="page-head__feature-big title title--huge title--white title--w-bold title--uppercase">
-                    5
+        </div>
+        <div class="catalog__outer">
+            <div class="catalog__inner container">
+                <div class="catalog__menu js-menu">
+                    <div class="catalog__menu-wrap-top">
+                        <div class="catalog__menu-decor">
+                            <picture>
+                                <img src="./img/sections/smotrovoi_fonar.png" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="catalog__menu-name title title--pre-big title--primary title--w-bold title--uppercase">
+                            Устройства
+                            для контроля и&#160;измерений
+                        </h3>
+                    </div>
+                    <ul class="catalog__menu-list js-mobile-menu">
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Узлы для отбора проб
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Камеры уровнемера выносные
+                            </a>
+                        </li>
+                        <li class="catalog__menu-item">
+                            <a href="" class="catalog__menu-link">
+                                Фонари смотровые
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="page-head__feature-excerpt text text--large text--white text--w-regular">
-                    групп оборудования
+                <div class="catalog__menu catalog__menu--link">
+                    <a href="" class="button button--text">
+                        <span>Проконсультироваться по&#160;наличию</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="manufacture">
+<section class="manufacture manufacture--catalog">
     <div class="manufacture__body">
+        <div class="manufacture__outer-top">
+            <div class="manufacture__inner container">
+                <div class="manufacture__top d-flex flex-align-center flex-justify-sb">
+                    <h3 class="manufacture__heading title title--big title--blue-gray title--w-bold title--uppercase">
+                        Мощность наших <span>ПРОИЗВОДСТВЕННЫХ ГРУПП</span> <br> позволяет изготовить любые <br>
+                        трубопроводные
+                        изделия
+                    </h3>
+                    <a href="" class="button button--transparent button--text button--text-secondary">
+                        <span>о&#160;производстве</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="manufacture__features d-flex flex-justify-sb">
+                    <div class="manufacture__feature">
+                        <div class="manufacture__feature-name title title--huge title--orange title--w-bold title--uppercase">
+                            90
+                        </div>
+                        <div class="manufacture__feature-excerpt text text--large text--primary text--w-regular">
+                            Человек работает в&#160;компании
+                        </div>
+                    </div>
+                    <div class="manufacture__feature">
+                        <div class="manufacture__feature-name title title--huge title--orange title--w-bold title--uppercase">
+                            3 000&#160;м&#178;
+                        </div>
+                        <div class="manufacture__feature-excerpt text text--large text--primary text--w-regular">
+                            Производственных площадей
+                        </div>
+                    </div>
+                    <div class="manufacture__feature">
+                        <div class="manufacture__feature-name title title--huge title--orange title--w-bold title--uppercase">
+                            97
+                        </div>
+                        <div class="manufacture__feature-excerpt text text--large text--primary text--w-regular">
+                            Единиц оборудования
+                        </div>
+                    </div>
+                    <div class="manufacture__feature">
+                        <div class="manufacture__feature-name title title--huge title--orange title--w-bold title--uppercase">
+                            > 10 000
+                        </div>
+                        <div class="manufacture__feature-excerpt text text--large text--primary text--w-regular">
+                            Можем выпускать изделий в&#160;меся
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="manufacture__wrap-top container">
+            <h3 class="manufacture__heading title title--big title--white title--w-bold title--uppercase">
+                <span class="title title--orange title--huge">5</span> <span class="title title--orange">групп</span>
+                современного оборудования
+            </h3>
+        </div>
         <div class="manufacture__tabs-outer container-right">
             <div class="manufacture__tabs tabs js-tabs">
                 <div class="manufacture__tabs-buttons tabs__buttons">
@@ -295,118 +608,101 @@
     </div>
 </section>
 
-<section class="certificates">
-    <div class="certificates__body container-right">
-        <div class="certificates__splide splide js-certificates-slider-init">
-            <div class="certificates__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
-                <h3 class="certificates__heading title title--big title--primary title--w-bold title--uppercase">
-                    Сертификаты
-                    <br>
-                    на&#160;продукцию
+<section class="tender tender--feedback">
+    <div class="tender__body container-right">
+        <div class="tender__columns">
+            <div class="tender__col tender__col--left">
+                <h3 class="tender__heading title title--big title--white title--w-bold title--uppercase">
+                    Получите расчет стоимости заказа
                 </h3>
-                <div class="certificates__splide-arrows slider-nav splide__arrows">
-                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
-                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
-                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
-                        </svg>
-                    </button>
-                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
-                        <svg class="slider-nav__arrow-icon" width="32px" height="16px">
-                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
-                        </svg>
-                    </button>
+                <div class="tender__subtitle text text--medium text--white text--w-regular">
+                    Перезвоним в&#160;течение 20 минут
                 </div>
+                <svg width="325" height="435" class="tender__decor-big">
+                    <use href="./img/svgsprite/sprite.symbol.svg#decor-tender-big"></use>
+                </svg>
+                <form action="" class="tender__form form js-form">
+                    <div class="tender__form-wrapper-fields form__wrapper-fields d-flex">
+                        <label for="name-feedback" class="form__field is-error">
+                            <input type="text" class="form__input js-input" id="name-feedback">
+                            <span class="form__placeholder is-required text text--large text--white text--w-semibold">
+                                Имя или название организации
+                            </span>
+                        </label>
+                        <label for="phone-feedback" class="form__field form__field--phone">
+                            <input type="tel" class="form__input js-input" id="phone-feedback">
+                            <span class="form__placeholder is-required text text--large text--white text--w-semibold">
+                                Номер телефона
+                            </span>
+                        </label>
+                        <label for="email-feedback" class="form__field form__field--email">
+                            <input type="email" class="form__input js-input" id="email-feedback">
+                            <span class="form__placeholder is-required text text--large text--white text--w-semibold">
+                                E-mail
+                            </span>
+                        </label>
+                    </div>
+                    <label for="message-feedback" class="form__field form__field--textarea">
+                        <textarea class="form__input js-input" name="message" id="message-feedback" rows="1"></textarea>
+                        <span class="form__placeholder text text--large text--white text--w-semibold">
+                            Ваше сообщение
+                        </span>
+                    </label>
+                    <div class="form__actions d-flex flex-align-center">
+                        <div class="form__field">
+                            <label for="file-feedback" class="form__file">
+                                <input class="visually-hidden js-file" type="file" name="file-tender" id="file-feedback">
+                                <span class="js-name-file">Прикрепить файл</span>
+                            </label>
+                        </div>
+                        <div class="form__captcha">
+                            <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual smart-captcha" id="smart-captcha-2" data-testid="smartCaptcha-container"></div>
+                        </div>
+                        <div class="form__wrap-buttons d-flex flex-align-center">
+                            <div class="form__agreement text text--small text--primary text--w-regular">
+                                Нажимая на&#160;кнопку, вы&#160;соглашаетесь на&#160;<a href="">обработку персональных данных</a>
+                            </div>
+                            <button class="form__button button button--thirty" type="submit">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#airbus-white"></use>
+                                </svg>
+                                <span>Отправить</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="certificates__splide-track splide__track">
-                <div class="certificates__splide-list splide__list">
-                    <div class="certificates__splide-slide splide__slide">
-                        <div class="certificates__item d-flex d-flex-column flex-justify-sb">
-                            <div class="certificates__item-name text text--pre-medium text--primary text--w-semibold">
-                                Сертификат на&#160;фланцы, заглушки, крышки
-                            </div>
-                            <a href="./img/other/reviews.jpg" class="certificates__item-button button button--primary button--medium" data-fancybox="">
-                                Смотреть оригинал
-                            </a>
-                            <div class="certificates__item-pic">
-                                <picture>
-                                    <img src="./img/other/reviews.jpg" alt="">
-                                </picture>
-                            </div>
+            <div class="tender__col tender__col--right">
+                <div class="tender__features d-flex flex-align-center flex-justify-sb">
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#verified"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--white text--w-regular">
+                            Поможем выбрать изделия по&#160;вашим требованиям: нормативы, размеры, марка стали. При необходимости подберем аналоги.
                         </div>
                     </div>
-                    <div class="certificates__splide-slide splide__slide">
-                        <div class="certificates__item d-flex d-flex-column flex-justify-sb">
-                            <div class="certificates__item-name text text--pre-medium text--primary text--w-semibold">
-                                Сертификат на&#160;фланцы, заглушки, крышки
-                            </div>
-                            <a href="./img/other/reviews.jpg" class="certificates__item-button button button--primary button--medium" data-fancybox="">
-                                Смотреть оригинал
-                            </a>
-                            <div class="certificates__item-pic">
-                                <picture>
-                                    <img src="./img/other/reviews.jpg" alt="">
-                                </picture>
-                            </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#document-scanner"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--white text--w-regular">
+                            Можем изготовить изделия <br>
+                            по&#160;вашим чертежам
                         </div>
                     </div>
-                    <div class="certificates__splide-slide splide__slide">
-                        <div class="certificates__item d-flex d-flex-column flex-justify-sb">
-                            <div class="certificates__item-name text text--pre-medium text--primary text--w-semibold">
-                                Сертификат на&#160;фланцы, заглушки, крышки
-                            </div>
-                            <a href="./img/other/reviews.jpg" class="certificates__item-button button button--primary button--medium" data-fancybox="">
-                                Смотреть оригинал
-                            </a>
-                            <div class="certificates__item-pic">
-                                <picture>
-                                    <img src="./img/other/reviews.jpg" alt="">
-                                </picture>
-                            </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#pending-actions"></use>
+                            </svg>
                         </div>
-                    </div>
-                    <div class="certificates__splide-slide splide__slide">
-                        <div class="certificates__item d-flex d-flex-column flex-justify-sb">
-                            <div class="certificates__item-name text text--pre-medium text--primary text--w-semibold">
-                                Сертификат на&#160;фланцы, заглушки, крышки
-                            </div>
-                            <a href="./img/other/reviews.jpg" class="certificates__item-button button button--primary button--medium" data-fancybox="">
-                                Смотреть оригинал
-                            </a>
-                            <div class="certificates__item-pic">
-                                <picture>
-                                    <img src="./img/other/reviews.jpg" alt="">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="certificates__splide-slide splide__slide">
-                        <div class="certificates__item d-flex d-flex-column flex-justify-sb">
-                            <div class="certificates__item-name text text--pre-medium text--primary text--w-semibold">
-                                Сертификат на&#160;фланцы, заглушки, крышки
-                            </div>
-                            <a href="./img/other/reviews.jpg" class="certificates__item-button button button--primary button--medium" data-fancybox="">
-                                Смотреть оригинал
-                            </a>
-                            <div class="certificates__item-pic">
-                                <picture>
-                                    <img src="./img/other/reviews.jpg" alt="">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="certificates__splide-slide splide__slide">
-                        <div class="certificates__item d-flex d-flex-column flex-justify-sb">
-                            <div class="certificates__item-name text text--pre-medium text--primary text--w-semibold">
-                                Сертификат на&#160;фланцы, заглушки, крышки
-                            </div>
-                            <a href="./img/other/reviews.jpg" class="certificates__item-button button button--primary button--medium" data-fancybox="">
-                                Смотреть оригинал
-                            </a>
-                            <div class="certificates__item-pic">
-                                <picture>
-                                    <img src="./img/other/reviews.jpg" alt="">
-                                </picture>
-                            </div>
+                        <div class="tender__feature-text text text--pre-medium text--white text--w-regular">
+                            Срок изготовления&#160;&#8212; 15-18 дней
                         </div>
                     </div>
                 </div>
@@ -415,422 +711,258 @@
     </div>
 </section>
 
-<section class="fabrication-slider">
-    <div class="fabrication-slider__body container">
-        <div class="fabrication-slider__outer">
-            <div class="fabrication-slider__info">
-                <h3 class="fabrication-slider__heading title title--pre-big title--primary title--w-bold title--uppercase">
-                    Производство флайнцевой продукции
-                </h3>
-                <div class="fabrication-slider__action">
-                    <a href="" class="fabrication-slider__button button button--text">
-                        <span>В&#160;каталог</span>
-                        <svg width="45" height="23" class="button__icon">
-                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="fabrication-slider__wrap-sliders js-fabrication-sliders">
-                <div class="fabrication-slider__splide splide js-fabrication-slider-big-init">
-                    <div class="fabrication-slider__splide-track splide__track">
-                        <div class="fabrication-slider__splide-list splide__list">
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-1.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-2.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-3.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-4.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-5.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fabrication-slider__splide fabrication-slider__splide--thumb splide js-fabrication-slider-thumb-init">
-                    <div class="fabrication-slider__splide-track splide__track">
-                        <div class="fabrication-slider__splide-list splide__list">
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-1.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-2.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-3.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-4.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-5.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="contacts-info">
+    <div class="contacts-info__decor">
+        <svg width="191" height="256">
+            <use href="./img/svgsprite/sprite.symbol.svg#word-a"></use>
+        </svg>
     </div>
-</section>
-
-<section class="fabrication-slider">
-    <div class="fabrication-slider__body container">
-        <div class="fabrication-slider__outer">
-            <div class="fabrication-slider__info">
-                <h3 class="fabrication-slider__heading title title--pre-big title--primary title--w-bold title--uppercase">
-                    Производство точеныХ деталей трубопроводов
+    <div class="contacts-info__body container">
+        <div class="contacts-info__column">
+            <div class="contacts-info__left d-flex d-flex-column">
+                <h3 class="contacts-info__heading title title--huge title--white title--w-bold title--uppercase">
+                    Сделать заказ
                 </h3>
-                <div class="fabrication-slider__action">
-                    <a href="" class="fabrication-slider__button button button--text">
-                        <span>В&#160;каталог</span>
-                        <svg width="45" height="23" class="button__icon">
-                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="fabrication-slider__wrap-sliders js-fabrication-sliders">
-                <div class="fabrication-slider__splide splide js-fabrication-slider-big-init">
-                    <div class="fabrication-slider__splide-track splide__track">
-                        <div class="fabrication-slider__splide-list splide__list">
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-1.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-2.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-3.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-4.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-5.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fabrication-slider__splide splide fabrication-slider__splide--thumb js-fabrication-slider-thumb-init">
-                    <div class="fabrication-slider__splide-track splide__track">
-                        <div class="fabrication-slider__splide-list splide__list">
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-1.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-2.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-3.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-4.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-5.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="fabrication-slider">
-    <div class="fabrication-slider__body container">
-        <div class="fabrication-slider__outer">
-            <div class="fabrication-slider__info">
-                <h3 class="fabrication-slider__heading title title--pre-big title--primary title--w-bold title--uppercase">
-                    производство
-                    деталей трубопроводов
-                </h3>
-                <div class="fabrication-slider__action">
-                    <a href="" class="fabrication-slider__button button button--text">
-                        <span>В&#160;каталог</span>
-                        <svg width="45" height="23" class="button__icon">
-                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="fabrication-slider__wrap-sliders js-fabrication-sliders">
-                <div class="fabrication-slider__splide splide js-fabrication-slider-big-init">
-                    <div class="fabrication-slider__splide-track splide__track">
-                        <div class="fabrication-slider__splide-list splide__list">
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-1.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-2.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-3.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-4.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-big">
-                                    <picture>
-                                        <img src="./img/other/gallery-5.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fabrication-slider__splide splide fabrication-slider__splide--thumb js-fabrication-slider-thumb-init">
-                    <div class="fabrication-slider__splide-track splide__track">
-                        <div class="fabrication-slider__splide-list splide__list">
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-1.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-2.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-3.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-4.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="fabrication-slider__splide-slide splide__slide">
-                                <div class="fabrication-slider__item-thumb">
-                                    <picture>
-                                        <img src="./img/other/gallery-5.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="team-manufacturer team-manufacturer--fabrication">
-    <div class="team-manufacturer__body container">
-        <div class="team-manufacturer__outer">
-            <h3 class="team-manufacturer__heading title title--pre-big title--primary title--w-bold title--uppercase">
-                Наша команда
-                <br>
-                на&#160;производстве
-            </h3>
-            <div class="team-manufacturer__grid">
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/img-1.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/img-2.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/img-3.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/img-4.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/gallery-1.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/gallery-2.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/gallery-3.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <picture>
-                        <img src="./img/other/gallery-4.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="team-manufacturer__item">
-                    <a href="about-photo-gallery.html" class="team-manufacturer__button button button--secondary">
-                        <span>Показать больше изображений</span>
-                        <svg width="45" height="23" class="button__icon">
-                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="answer answer--fabrication">
-    <div class="answer__body container">
-        <div class="answer__columns">
-            <div class="answer__col">
-                <h3 class="answer__heading title title--big title--primary title--w-semibold title--uppercase">
-                    Ответим на&#160;все вопросы
-                    <br>
-                    и&#160;предложим лучшее
-                    <br>
-                    решение
-                </h3>
-            </div>
-            <div class="answer__col">
-                <div class="answer__contacts d-flex d-flex-column">
-                    <a href="tel:+7(3513)62‒67‒74"
-                       class="answer__contact answer__contact--phone text text--primary text--w-bold link">
+                <div class="contacts-info__wrap d-flex d-flex-column">
+                    <a href="tel:+7 (3513) 62‒67‒74"
+                       class="contacts-info__contact contacts-info__contact--tel text text--white text--w-bold">
                         +7 (3513) 62&#8211;67&#8211;74
                     </a>
                     <a href="mailto:zakaz3@profil-arma.ru"
-                       class="answer__contact text text--huge text--primary text--w-bold link">
+                       class="contacts-info__contact contacts-info__contact--email text text--white text--w-bold">
                         zakaz3@profil-arma.ru
                     </a>
                 </div>
-                <div class="answer__contacts">
-                    <div class="answer__prop-name text text--huge text--primary text--w-bold">
+                <div class="contacts-info__wrap">
+                    <div class="contacts-info__time-title text text--white text--w-bold">
                         Время работы:
                     </div>
-                    <div class="answer__prop-value text text--large text--primary text--w-regular">
+                    <div class="contact-info__work-time text text--pre-medium text--white text--w-regular">
                         Пн-Пт: 9:00&#160;&#8212; 18:00 (Челябинск)
                     </div>
-                    <div class="answer__prop-value text text--large text--primary text--w-regular">
+                    <div class="contact-info__work-time text text--pre-medium text--white text--w-regular">
                         Пн-Пт: 7:00&#160;&#8212; 16:00 (Москва)
                     </div>
                 </div>
-                <div class="answer__contacts">
-                    <div class="answer__prop-name text text--huge text--primary text--w-bold">
+                <div class="contacts-info__wrap">
+                    <div class="contacts-info__address-title text text--white text--w-bold">
                         Адрес офиса, склада и&#160;производства:
                     </div>
-                    <div class="answer__prop-value text text--large text--primary text--w-regular">
-                        Челябинская область, г.&#160;Златоуст,
-                        ул.&#160;Спецдревесины, 26А, строение&#160;1
+                    <address class="contact-info__address text text--pre-medium text--white text--w-regular">
+                        Челябинская область, г.&#160;Златоуст, ул.&#160;Спецдревесины, 26А, строение
+                    </address>
+                </div>
+                <div class="contacts-info__wrap">
+                    <a href="" class="contact-info__button button button--text">
+                        <span>Сделать заказ</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-info__right">
+                <div class="contacts-info__wrap-info">
+                    <svg width="507" height="154">
+                        <use href="./img/svgsprite/sprite.symbol.svg#full-word"></use>
+                    </svg>
+                    <div class="contacts-info__logo-subtitle text text--large text--primary text--w-regular">
+                        Производитель трубопроводной
+                        арматуры и&#160;деталей трубопровода
+                        любого диаметра и&#160;стандарта
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="specialists">
+    <div class="specialists__body">
+        <div class="specialists__top container">
+            <h3 class="specialists__heading title title--big title--primary title--w-bold title--uppercase">
+                СПЕЦИАЛИСТЫ с&#160;5-летним отраслевым <br> опытом помогут оформить заказ
+            </h3>
+        </div>
+        <div class="specialists__slider-wrap container-right">
+            <div class="specialists__splide splide js-specialists-slider-init">
+                <div class="specialists__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
+                    <a href="" class="button button--text">
+                        <span>Все специалисты</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                    <div class="specialist__splide-arrows slider-nav splide__arrows">
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="specialists__splide-track splide__track">
+                    <div class="specialists__splide-list splide__list">
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+                                       class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

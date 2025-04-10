@@ -1,0 +1,36 @@
+.form-search {
+	max-width: 539px;
+	width: 100%;
+	@include mobile {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.form-search__field {
+	position: relative;
+	background-color: #F8F8F8;
+	border: 2px solid #16161C1A;
+	transition: border var(--hover-time) ease;
+}
+
+.form-search__field:hover {
+	border: 2px solid var(--primary);
+}
+
+.form-search__input {
+	padding: 17px 24px 17px 58px;
+}
+
+.form-search__input::placeholder {
+	color: var(--primary-font-color);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.form-search__form-btn {
+	position: absolute;
+	left: 24px;
+	top: 50%;
+	transform: translateY(-50%);
+}
