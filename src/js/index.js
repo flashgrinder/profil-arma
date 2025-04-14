@@ -19,6 +19,8 @@ import fabricationSliders from "./modules/fabrication-slider";
 import animationPage from "./modules/animation-page";
 import otherShipmentsSlider from "./modules/other-shipments-slider";
 import shipmentsItems from "./modules/shipments-items";
+import multiSelectFilters from "./modules/MultiSelect";
+import selectFiltersCategory from "./modules/select-filters-category";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -41,6 +43,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     fabricationSliders();
     otherShipmentsSlider();
     shipmentsItems();
+    // multiSelectFilters();
+    selectFiltersCategory();
     Fancybox.bind('[data-fancybox]');
 
 })

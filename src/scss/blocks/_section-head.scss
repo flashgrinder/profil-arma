@@ -1,0 +1,80 @@
+.section-head {
+	background-color: var(--secondary-bg-2);
+	padding-bottom: 80px;
+	@include mobile {
+		padding-bottom: 48px;
+	}
+}
+
+.section-head__grid {
+	display: grid;
+	grid-template-columns: minmax(200px, 228px) minmax(500px, 854px) minmax(300px, 334px);
+	align-items: start;
+	gap: 60px;
+	@include tablet {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+}
+
+.section-head__pic {
+	border: 1px solid var(--blue-gray-bg, #CFD8DC);
+	min-height: 228px;
+	max-height: 228px;
+	overflow: hidden;
+	@include tablet {
+		display: none;
+	}
+}
+
+.section-head__pic picture,
+.section-head__pic img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section-head__info {
+	gap: 48px;
+	@include mobile {
+		gap: 32px;
+	}
+}
+
+.section-head__description {
+	@include mobile {
+		font-size: 16px;
+	}
+}
+
+.section-head__features {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(272px, 300px));
+	gap: 24px 54px;
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+}
+
+.section-head__feature {
+	gap: 12px;
+}
+
+.section-head__feature a {
+	border-bottom: 1px solid var(--secondary-font-color, #607D8BFF);
+}
+
+.section-head__contacts {
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.section-head__button {
+	border: 1px solid var(--blue-gray-bg, #CFD8DC);
+	@include mobile {
+		font-size: 24px;
+	}
+}
+

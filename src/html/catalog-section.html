@@ -1,6 +1,6 @@
 @@include('blocks/header.html')
 
-<section class="page-head page-head--catalog">
+<section class="page-head page-head--section">
     <div class="page-head__body container">
         <div class="page-head__breadcrumbs">
             <div class="breadcrumbs">
@@ -18,62 +18,431 @@
                 </nav>
             </div>
         </div>
-        <h1 class="page-head__heading title title--big title--primary title--w-semibold title--uppercase">
-            Каталог
-        </h1>
-        <div class="page-head__wrap d-flex flex-justify-sb">
-            <div class="page-head__description text text--large text--primary text--w-regular">
-                Изготовливаем изделия к различным системам трубопроводов нефти, газа, воды,  различных жидкостей, работающих в большом диапазоне давлений и температур  в условиях средней и повышенной агрессивности.
+    </div>
+</section>
+
+<section class="section-head">
+    <div class="section-head__body container">
+        <div class="section-head__grid">
+            <div class="section-head__pic">
+                <picture>
+                    <img src="./img/other/flanes-section.png" alt="">
+                </picture>
             </div>
-            <form action="/search/" method="get" class="form-search">
-                <div class="form-search__field">
-                    <input class="form-search__input" type="text" name="q" placeholder="что вы ищете?">
-                    <button class="form-search__form-btn" type="submit">
-                        <svg class="form-search__svg-search" width="24" height="24">
-                            <use xlink:href="./img/svgsprite/sprite.symbol.svg#search"></use>
-                        </svg>
-                    </button>
+            <div class="section-head__info d-flex d-flex-column">
+                <h1 class="section-head__heading title title--big title--primary title--w-semibold title--uppercase">
+                    Фланцы стальные приварные
+                </h1>
+                <div class="section-head__description text text--large text--primary text--w-regular">
+                    С их помощью выполняется присоединение отдельных узлов системы,  например, труб с запорной аппаратурой или патрубками резервуарами.  Болтовые (или шпилечные) фланцевые соединения относятся к  сборно-разборным конструкциям.
                 </div>
-            </form>
+                <div class="section-head__features">
+                    <div class="section-head__feature d-flex flex-align-center">
+                        <svg width="24" height="24">
+                            <use href="./img/svgsprite/sprite.symbol.svg#check-circle"></use>
+                        </svg>
+                        <div class="section-head__feature-text text text--normal text--secondary text--w-regular">
+                            Изготовление от 15 до 18 дней
+                        </div>
+                    </div>
+                    <div class="section-head__feature d-flex flex-align-center">
+                        <svg width="24" height="24">
+                            <use href="./img/svgsprite/sprite.symbol.svg#check-circle"></use>
+                        </svg>
+                        <div class="section-head__feature-text text text--normal text--secondary text--w-regular">
+                            Можем изготовить по чертежам
+                        </div>
+                    </div>
+                    <div class="section-head__feature d-flex flex-align-center">
+                        <svg width="24" height="24">
+                            <use href="./img/svgsprite/sprite.symbol.svg#check-circle"></use>
+                        </svg>
+                        <div class="section-head__feature-text text text--normal text--secondary text--w-regular">
+                            Гарантия — 12 месяцев
+                        </div>
+                    </div>
+                    <div class="section-head__feature d-flex flex-align-center">
+                        <svg width="24" height="24">
+                            <use href="./img/svgsprite/sprite.symbol.svg#check-circle"></use>
+                        </svg>
+                        <a href=""
+                           class="section-head__feature-text text text--normal text--secondary text--w-regular text--underline link">
+                            Посмотреть производство
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-head__contacts d-flex d-flex-column">
+                <a href="tel:+73513250586"
+                   class="section-head__contact text text--huge text--primary text--w-semibold link">
+                    +7 (3513) 25-05-86
+                </a>
+                <a href="mailto:zakaz3@profil-arma.ru"
+                   class="section-head__contact text text--huge text--primary text--w-semibold link">
+                    zakaz3@profil-arma.ru
+                </a>
+                <button class="section-head__button button button--secondary" data-hystmodal="#get-kp">
+                    <span>Получить КП</span>
+                    <svg width="45" height="23" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="gallery gallery--section">
+<div class="sections">
+    <div class="sections__body container">
+        <div class="sections__items">
+            <a href="" class="sections__item">
+                <div class="sections__item-name text text--normal text--primary text--w-bold text--uppercase">
+                    Фланцы плоские
+                </div>
+                <div class="sections__item-pic">
+                    <picture>
+                        <img src="./img/other/flanes-section.png" alt="">
+                    </picture>
+                </div>
+            </a>
+            <a href="" class="sections__item">
+                <div class="sections__item-name text text--normal text--primary text--w-bold text--uppercase">
+                    Фланцы воротниковые
+                </div>
+                <div class="sections__item-pic">
+                    <picture>
+                        <img src="./img/other/flanec-section-2.png" alt="">
+                    </picture>
+                </div>
+            </a>
+            <a href="" class="sections__item">
+                <div class="sections__item-name text text--normal text--primary text--w-bold text--uppercase">
+                    Фланцы свободные
+                </div>
+                <div class="sections__item-pic">
+                    <picture>
+                        <img src="./img/other/flanec-section-3.png" alt="">
+                    </picture>
+                </div>
+            </a>
+            <a href="" class="sections__item">
+                <div class="sections__item-name text text--normal text--primary text--w-bold text--uppercase">
+                    Фланцы резьбовые
+                </div>
+                <div class="sections__item-pic">
+                    <picture>
+                        <img src="./img/other/flanec-section-4.png" alt="">
+                    </picture>
+                </div>
+            </a>
+            <a href="" class="sections__item">
+                <div class="sections__item-name text text--normal text--primary text--w-bold text--uppercase">
+                    Фланцы по чертежам заказчика
+                </div>
+                <div class="sections__item-pic">
+                    <picture>
+                        <img src="./img/other/flanec-section-5.png" alt="">
+                    </picture>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<section class="filters">
+    <div class="filters__body container">
+        <h3 class="filters__heading title title--big title--primary title--w-bold title--uppercase">
+            Каталог фланцев
+        </h3>
+        <div class="filters__grid">
+            <div class="filters__pic">
+                <picture>
+                    <img src="./img/other/flanes-section.png" alt="">
+                </picture>
+            </div>
+            <div class="filters__wrap">
+                <div class="filters__table">
+                    <form action="" class="filters__th">
+                        <div class="filters__td filters__td--name text text--normal text--w-semibold">
+                            Наименование изделия
+                        </div>
+                        <div class="filters__td text text--normal text--w-semibold">
+                            <label for="type">
+                                Тип присоединения
+                            </label>
+                            <select id="type" class="filters__th-select js-select-filter-category" >
+                                <option value="Все">Все</option>
+                                <option value="Плойский">Плоский</option>
+                                <option value="Воротниковый">Воротниковый</option>
+                                <option value="Свободный">Свободный</option>
+                                <option value="Приварной">Приварной</option>
+                            </select>
+                        </div>
+                        <div class="filters__td text text--normal text--w-semibold">
+                            <label for="diametr-du">
+                                Диаметр (ДУ)
+                            </label>
+                            <select id="diametr-du" class="filters__th-select js-select-filter-category" >
+                                <option value="Все">Все</option>
+                                <option value="10">10</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                                <option value="1000">1000</option>
+                            </select>
+                        </div>
+                        <div class="filters__td text text--normal text--w-semibold">
+                            <label for="davlenie-ru">
+                                Давление (РУ)
+                            </label>
+                            <select id="davlenie-ru" class="filters__th-select js-select-filter-category" >
+                                <option value="Все">Все</option>
+                                <option value="10">16</option>
+                                <option value="30">32</option>
+                                <option value="50">56</option>
+                                <option value="1000">96</option>
+                            </select>
+                        </div>
+                        <div class="filters__td text text--normal text--w-semibold">
+                            <label for="steel">
+                                Сталь
+                            </label>
+                            <select id="steel" class="filters__th-select js-select-filter-category" >
+                                <option value="Все">Все</option>
+                                <option value="12Х18Н10Т">12Х18Н10Т</option>
+                                <option value="12Х18Н10Т1">12Х18Н10Т1</option>
+                                <option value="8Х18Н10Т">8Х18Н10Т</option>
+                                <option value="12Х18Н10Т123">12Х18Н10Т123</option>
+                            </select>
+                        </div>
+                        <div class="filters__td text text--normal text--w-semibold">
+                            <label for="do">
+                                Исполнение
+                            </label>
+                            <select id="do" class="filters__th-select js-select-filter-category">
+                                <option value="Все">Все</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                        </div>
+                        <div class="filters__td text text--normal text--w-semibold">
+                            Заказать
+                        </div>
+                    </form>
+                    <div class="filters__tr">
+                        <div class="filters__td filters__td--first">
+                            <div class="filters__td-first-wrap">
+                                <div class="filters__td-title text text--medium text--primary text--w-medium">
+                                    Фланец плоский стальной 15-6-01-1-B-Ст.20-IV
+                                </div>
+                                <div class="filters__td-std text text--medium text--w-regular">
+                                    ГОСТ 33259-2015
+                                </div>
+                            </div>
+                            <button class="filters__button filters__button--mobile button button--primary button--small">
+                                <span>Получить КП</span>
+                            </button>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Тип присоединения
+                            </span>
+                            <span>Плоский</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Диаметр(ДУ)
+                            </span>
+                            <span>1000</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Давление (РУ)
+                            </span>
+                            <span>16</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Сталь
+                            </span>
+                            <span>12Х18Н10Т</span>
+                        </div>
+                        <div class="filters__td filters__td--props filters__td--props-last text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Исполнение
+                            </span>
+                            <span>В</span>
+                        </div>
+                        <div class="filters__td filters__td--last text text--pre-medium text--primary text--w-medium">
+                            <button class="filters__button button button--primary button--small">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#check-white"></use>
+                                </svg>
+                                <span>Получить КП</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="filters__tr">
+                        <div class="filters__td filters__td--first">
+                            <div class="filters__td-first-wrap">
+                                <div class="filters__td-title text text--medium text--primary text--w-medium">
+                                    Фланец плоский стальной 15-6-01-1-B-Ст.20-IV
+                                </div>
+                                <div class="filters__td-std text text--medium text--w-regular">
+                                    ГОСТ 33259-2015
+                                </div>
+                            </div>
+                            <button class="filters__button filters__button--mobile button button--primary button--small">
+                                <span>Получить КП</span>
+                            </button>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Тип присоединения
+                            </span>
+                            <span>Плоский</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Диаметр(ДУ)
+                            </span>
+                            <span>1000</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Давление (РУ)
+                            </span>
+                            <span>16</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Сталь
+                            </span>
+                            <span>12Х18Н10Т</span>
+                        </div>
+                        <div class="filters__td filters__td--props filters__td--props-last text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Исполнение
+                            </span>
+                            <span>В</span>
+                        </div>
+                        <div class="filters__td filters__td--last text text--pre-medium text--primary text--w-medium">
+                            <button class="filters__button button button--primary button--small">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#check-white"></use>
+                                </svg>
+                                <span>Получить КП</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="filters__tr">
+                        <div class="filters__td filters__td--first">
+                            <div class="filters__td-first-wrap">
+                                <div class="filters__td-title text text--medium text--primary text--w-medium">
+                                    Фланец плоский стальной 15-6-01-1-B-Ст.20-IV
+                                </div>
+                                <div class="filters__td-std text text--medium text--w-regular">
+                                    ГОСТ 33259-2015
+                                </div>
+                            </div>
+                            <button class="filters__button filters__button--mobile button button--primary button--small">
+                                <span>Получить КП</span>
+                            </button>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Тип присоединения
+                            </span>
+                            <span>Плоский</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Диаметр(ДУ)
+                            </span>
+                            <span>1000</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Давление (РУ)
+                            </span>
+                            <span>16</span>
+                        </div>
+                        <div class="filters__td filters__td--props text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Сталь
+                            </span>
+                            <span>12Х18Н10Т</span>
+                        </div>
+                        <div class="filters__td filters__td--props filters__td--props-last text text--pre-medium text--primary text--w-medium">
+                            <span class="filter__td-name-mobile text text--small text--primary text--w-regular">
+                                Исполнение
+                            </span>
+                            <span>В</span>
+                        </div>
+                        <div class="filters__td filters__td--last text text--pre-medium text--primary text--w-medium">
+                            <button class="filters__button button button--primary button--small">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#check-white"></use>
+                                </svg>
+                                <span>Получить КП</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters__action d-flex flex-justify-center">
+                    <a href="javascript:;" class="filters__button-show-more button button--text-secondary button--text">
+                        <span>Показать еще</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery gallery--catalog">
     <div class="gallery__body container">
-        <div class="gallery__grid">
-            <div class="gallery__item">
-                <picture>
-                    <img src="./img/other/gallery-1.jpg" alt="">
-                </picture>
-            </div>
-            <div class="gallery__item">
-                <picture>
-                    <img src="./img/other/gallery-2.jpg" alt="">
-                </picture>
-            </div>
-            <div class="gallery__item">
-                <picture>
-                    <img src="./img/other/gallery-3.jpg" alt="">
-                </picture>
-            </div>
-            <div class="gallery__item">
-                <picture>
-                    <img src="./img/other/gallery-4.jpg" alt="">
-                </picture>
-            </div>
-            <div class="gallery__item">
-                <picture>
-                    <img src="./img/other/gallery-5.jpg" alt="">
-                </picture>
-            </div>
-            <div class="gallery__item">
-                <a href="" class="gallery__button button button--secondary">
-                    <span>Показать больше изображений</span>
-                    <svg width="45" height="23" class="button__icon">
-                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
-                    </svg>
-                </a>
+        <div class="gallery__outer">
+            <h3 class="gallery__heading title title--big title--primary title--w-bold title--uppercase">
+                Наше производство фланцев
+            </h3>
+            <div class="gallery__grid">
+                <div class="gallery__item">
+                    <picture>
+                        <img src="./img/other/gallery-1.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="gallery__item">
+                    <picture>
+                        <img src="./img/other/gallery-2.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="gallery__item">
+                    <picture>
+                        <img src="./img/other/gallery-3.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="gallery__item">
+                    <picture>
+                        <img src="./img/other/gallery-4.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="gallery__item">
+                    <picture>
+                        <img src="./img/other/gallery-5.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="gallery__item">
+                    <a href="" class="gallery__button button button--secondary">
+                        <span>Показать больше изображений</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
