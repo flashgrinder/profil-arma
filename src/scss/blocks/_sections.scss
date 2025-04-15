@@ -75,3 +75,17 @@
 		max-width: 80px;
 	}
 }
+
+.sections.sections--product {
+	padding: 80px 0;
+	@include mobile {
+		padding: 48px 0;
+	}
+}
+
+.sections.sections--product .sections__heading {
+	margin-bottom: 64px;
+	@include mobile {
+		margin-bottom: 32px;
+	}
+}
