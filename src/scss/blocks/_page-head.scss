@@ -535,6 +535,10 @@
 }
 
 /* Section */
+.page-head.page-head--section {
+	background-color: var(--secondary-bg);
+}
+
 .page-head.page-head--section .breadcrumbs {
 	margin-bottom: 0;
 }

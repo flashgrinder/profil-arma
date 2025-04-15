@@ -154,3 +154,31 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+.button-tag {
+  position: relative;
+  font-family: var(--font-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 63px;
+  background-color: var(--secondary-bg-2);
+  color: var(--secondary-font-color);
+  transition: background-color var(--hover-time) ease, color var(--hover-time) ease;
+}
+
+.button-tag.is-active::before {
+  content: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.36641 12.5001L2.56641 8.70007L3.51641 7.75007L6.36641 10.6001L12.4831 4.4834L13.4331 5.4334L6.36641 12.5001Z' fill='white'/%3E%3C/svg%3E");
+  height: 16px;
+}
+
+.button-tag.is-active,
+.button-tag:hover {
+  background-color: var(--primary);
+  color: var(--primary-bg);
+}
