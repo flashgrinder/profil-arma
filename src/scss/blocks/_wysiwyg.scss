@@ -134,7 +134,8 @@
 }
 
 /* Wysiwyg-about */
-.wysiwyg.wysiwyg--about {
+.wysiwyg.wysiwyg--about,
+.wysiwyg.wysiwyg--product {
   font-family: var(--font-secondary);
   color: var(--primary-font-color);
   font-size: responsive 16px 18px;
@@ -142,13 +143,16 @@
 }
 
 .wysiwyg.wysiwyg--about ul,
-.wysiwyg.wysiwyg--about ol {
+.wysiwyg.wysiwyg--product ul,
+.wysiwyg.wysiwyg--about ol,
+  .wysiwyg.wysiwyg--product ol {
   font-size: responsive 16px 18px;
   font-range: 576px 1024px;
   line-height: inherit;
 }
 
-.wysiwyg.wysiwyg--about p {
+.wysiwyg.wysiwyg--about p,
+  .wysiwyg.wysiwyg--product p {
   color: inherit;
   font-size: inherit;
 }

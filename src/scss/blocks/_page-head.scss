@@ -534,11 +534,19 @@
 	max-width: 1024px;
 }
 
-/* Section */
-.page-head.page-head--section {
+/* Section/Product */
+.page-head.page-head--section,
+.page-head.page-head--product {
 	background-color: var(--secondary-bg);
 }
 
 .page-head.page-head--section .breadcrumbs {
 	margin-bottom: 0;
+}
+
+.page-head.page-head--product {
+	padding: 64px 0;
+	@include mobile {
+		padding: 24px 0 64px;
+	}
 }

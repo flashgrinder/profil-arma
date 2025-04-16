@@ -22,6 +22,7 @@ import shipmentsItems from "./modules/shipments-items";
 import multiSelectFilters from "./modules/MultiSelect";
 import selectFiltersCategory from "./modules/select-filters-category";
 import showHideItems from "./modules/show-hide-items";
+import showMoreText from "./modules/show-more-text";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     // multiSelectFilters();
     selectFiltersCategory();
     showHideItems();
+    showMoreText();
     Fancybox.bind('[data-fancybox]');
 
 })

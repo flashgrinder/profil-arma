@@ -1,0 +1,75 @@
+.characteristics {
+	padding: 80px 0;
+	@include mobile {
+		padding: 64px 0;
+	}
+}
+
+.characteristics__grid {
+	display: grid;
+	grid-template-columns: minmax(300px, 396px) 1fr;
+	gap: 32px;
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
+}
+
+.characteristics__tables {
+	display: grid;
+	grid-template-columns: repeat(2,minmax(350px, 1fr));
+	gap: 30px;
+	@include tablet {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+}
+
+.characteristics__inner-table {
+	border: 1px solid var(--secondary-bg);
+}
+
+.characteristics__inner-table:first-child {
+	@include tablet {
+		border-bottom: none;
+	}
+}
+
+.characteristics__inner-table:last-child {
+	@include tablet {
+		border-top: none;
+	}
+}
+
+.characteristics__tr {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	@include mobile {
+		font-size: 14px;
+	}
+}
+
+.characteristics__inner-table:first-child .characteristics__tr:nth-child(even) {
+	background-color: var(--secondary-bg);
+}
+
+.characteristics__inner-table:last-child .characteristics__tr:nth-child(even) {
+	background-color: var(--secondary-bg);
+	@include tablet {
+		background-color: transparent;
+	}
+}
+
+.characteristics__inner-table:last-child .characteristics__tr:nth-child(odd) {
+	@include tablet {
+		background-color: var(--secondary-bg);
+	}
+}
+
+.characteristics__td-prop-name,
+.characteristics__td-prop-value {
+	padding: 21px 16px;
+}
+
+.characteristics__td-prop-name {
+	padding-right: 0;
+}
