@@ -79,9 +79,12 @@
 
 .tender.tender--feedback .container-right {
 	margin: 0 auto;
-	padding: 0 var(--container-padding);
+	padding-left: 0 var(--container-padding);
 	max-width: var(--container-width);
 	width: 100%;
+	@include tablet {
+		padding: 0 var(--container-padding);
+	}
 }
 
 .tender.tender--feedback .tender__columns {
@@ -162,4 +165,36 @@
 
 .tender.tender--feedback .form__agreement a:hover {
 	color: var(--primary-bg);
+}
+
+.tender.tender--feedback .form__agreement {
+	margin-top: 32px;
+}
+
+/* Tender-gray */
+.tender.tender--gray {
+	padding: 50px 0 50px;
+}
+
+.tender.tender--gray,
+.tender.tender--gray .tender__col--right {
+	background-color: var(--primary-bg);
+}
+
+.tender.tender--gray .tender__decor-big {
+	@include mobile {
+		display: none;
+	}
+}
+
+.tender.tender--gray .tender__columns {
+	background-color: var(--secondary-bg);
+}
+
+.tender.tender--gray .form__input {
+	color: var(--primary-font-color);
+}
+
+.tender.tender--gray .form__agreement a:hover {
+	color: var(--primary);
 }
