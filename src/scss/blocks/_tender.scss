@@ -173,7 +173,9 @@
 
 /* Tender-gray */
 .tender.tender--gray {
-	padding: 50px 0 50px;
+	@include mobile {
+		padding: 50px 0 50px;
+	}
 }
 
 .tender.tender--gray,
