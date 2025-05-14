@@ -19,10 +19,12 @@ import fabricationSliders from "./modules/fabrication-slider";
 import animationPage from "./modules/animation-page";
 import otherShipmentsSlider from "./modules/other-shipments-slider";
 import shipmentsItems from "./modules/shipments-items";
-import multiSelectFilters from "./modules/MultiSelect";
+// import multiSelectFilters from "./modules/MultiSelect";
 import selectFiltersCategory from "./modules/select-filters-category";
 import showHideItems from "./modules/show-hide-items";
 import showMoreText from "./modules/show-more-text";
+import { modalWindow } from "./modules/modal";
+import { modalThanks } from "./modules/modal";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -49,6 +51,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     selectFiltersCategory();
     showHideItems();
     showMoreText();
+    modalWindow();
+    window.modalThanks = modalThanks;
     Fancybox.bind('[data-fancybox]');
 
 })
