@@ -2,14 +2,14 @@
 .burger {
 	--time: .150s;
 
-	--width: 30px;
+	--width: 28px;
 	--height: 24px;
 
-	--line-height: 4px;
-	--spacing: 5px;
+	--line-height: 2px;
+	--spacing: 8px;
 
 	--color: var(--primary);
-	--radius: 3px;
+	--radius: 0;
 
 	/* Fixed height and width */
 	/* height: var(--height); */
@@ -23,7 +23,7 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 101;
-	@include mobile {
+	@include tablet {
 		display: flex;
 	}
 }

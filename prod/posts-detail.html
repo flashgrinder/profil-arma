@@ -13,37 +13,112 @@
 </head>
 <body>
 <!-- Убираешь класс header--dark и меняет цвета на белый -->
-<header class="header js-header-mobile header--dark">
-    <button class="mobile-nav-btn burger js-mobile-nav-burger">
-        <div class="nav-icon burger__icon"></div>
-    </button>
-    <div style="display: flex; gap: 50px; margin: 20px">
-        <div><a href="/">Главная</a></div>
-        <div><a href="/katalog/">Каталог</a></div>
-        <div><a href="/otgruzki/">Отгрузки</a></div>
-        <ul>
-            <li><a href="/about.html">О&#160;компании</a></li>
-            <li><a href="/o-kompanii/fotogalereya/">О&#160;компании&#160;&#8212; Фотогалерея</a></li>
-            <li><a href="/o-kompanii/journal/">О&#160;компании&#160;&#8212; Журнал</a></li>
-            <li><a href="/o-kompanii/klienty-i-otzyvy/">О&#160;компании&#160;&#8212; Клиенты и&#160;отзывы</a></li>
-            <li><a href="/o-kompanii/nasha-komanda/">О&#160;компании&#160;&#8212; Наша команда</a></li>
-            <li><a href="/o-kompanii/partnery/">О&#160;компании&#160;&#8212; Партнеры</a></li>
-            <li><a href="/o-kompanii/proizvodstvo/">О&#160;компании&#160;&#8212; Производство</a></li>
-            <li><a href="/o-kompanii/rekvizity/">О&#160;компании&#160;&#8212; Реквизиты</a></li>
-            <li><a href="/o-kompanii/sfery-primeneniya/">О&#160;компании&#160;&#8212; Сферы применения</a></li>
-            <li><a href="/o-kompanii/standarty/">О&#160;компании&#160;&#8212; Стандарты</a></li>
-            <li><a href="/o-kompanii/stati/">О&#160;компании&#160;&#8212; Статьи</a></li>
-        </ul>
-        <div><a href="/sertifikat/">Сертификаты</a></div>
-        <div><a href="/dostavka-i-oplata/">Доставка и&#160;оплата</a></div>
-        <div><a href="/katalog/">Каталог</a></div>
-        <ul>
-            <li><a href="/kalkulyatory/">Калькуляторы</a></li>
-            <li><a href="/kalkulyatory/kalkulyator-krep/">Калькулятор крепежа</a></li>
-            <li><a href="/kalkulyatory/kalkulyator-kof/">Калькулятор коф</a></li>
-        </ul>
-        <div><a href="/vakansii/">Вакансии</a></div>
-        <div><a href="/contacts/">Контакты</a></div>
+<header class="header js-header-mobile header--darks">
+    <div class="header__top container">
+        <div class="header__top-wrap d-flex flex-justify-sb flex-align-center">
+            <div class="header__logo-wrap d-flex flex-justify-sb flex-align-center">
+                <a href="./" class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <div class="header__excerpt text text--normal text--w-regular">
+                    Производитель трубопроводной
+                    арматуры и&#160;деталей трубопровода
+                    любого диаметра и&#160;стандарта
+                </div>
+            </div>
+            <a href="javascript:;" class="header__button button button--secondary button--medium"
+               data-hystmodal="#feedback">
+                <svg width="24" height="24" class="button__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#pdf-file-header"></use>
+                </svg>
+                <span>Получить КП</span>
+            </a>
+            <a href="mailto:zakaz3@profil-arma.ru" class="header__contact contact d-flex flex-align-center">
+                <svg width="32" height="32" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                </svg>
+                zakaz3@profil-arma.ru
+            </a>
+            <a href="tel:+7 (3513) 62‒67‒74" class="header__contact contact d-flex flex-align-center">
+                +7 (3513) 62&#8211;67&#8211;74
+                <svg width="40" height="40" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                </svg>
+            </a>
+            <svg width="32" height="32" class="header__search-btn header__search-btn--top js-search-btn-header">
+                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+            </svg>
+            <button class="mobile-nav-btn burger js-mobile-nav-burger">
+                <span class="nav-icon burger__icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="header__outer container">
+        <div class="header__inner d-flex flex-justify-sb">
+            <nav class="header__menu menu">
+                <ul class="header__menu-list menu__list">
+                   <li class="header__menu-item menu__item menu__item--catalog">
+                       <a href="/katalog/" class="header__menu-link menu__link">
+                           Каталог
+                       </a>
+                   </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/otgruzki/" class="header__menu-link menu__link">
+                            Отгрузки
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/o-kompanii/" class="header__menu-link menu__link">
+                            О&#160;компании
+                        </a>
+                        <ul class="header__menu-sub-menu menu__sub-menu">
+                            <li class="menu__item"><a href="" class="menu__link">Фотогалерея</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/journal/" class="menu__link">Журнал</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/klienty-i-otzyvy/" class="menu__link">Клиенты и&#160;отзывы</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/nasha-komanda/" class="menu__link">Наша команда</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/partnery/" class="menu__link">Партнеры</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/proizvodstvo/" class="menu__link">Производство</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/rekvizity/" class="menu__link">Реквизиты</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/sfery-primeneniya/" class="menu__link">Сферы применения</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/standarty/" class="menu__link">Стандарты</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/stati/" class="menu__link">Статьи</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/sertifikat/" class="header__menu-link menu__link">
+                            Сертификаты
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/dostavka-i-oplata/" class="header__menu-link menu__link">
+                            Доставка и&#160;оплата
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/kalkulyatory/" class="header__menu-link menu__link">
+                            Калькуляторы
+                        </a>
+                        <ul class="header__menu-sub-menu menu__sub-menu">
+                            <li class="menu__item"><a href="/kalkulyatory/kalkulyator-krep/" class="menu__link">Калькулятор крепежа</a></li>
+                            <li class="menu__item"><a href="/kalkulyatory/kalkulyator-kof/" class="menu__link">Калькулятор коф</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/vakansii/" class="header__menu-link menu__link">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/contacts/" class="header__menu-link menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <svg width="32" height="32" class="header__search-btn header__search-btn--bottom js-search-btn-header">
+                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+            </svg>
+        </div>
     </div>
 </header>
 <div class="mobile-nav">
