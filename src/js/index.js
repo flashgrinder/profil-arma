@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     fabricationSliders();
     otherShipmentsSlider();
     shipmentsItems();
+    window.shipmentsItems = shipmentsItems;
     // multiSelectFilters();
     selectFiltersCategory();
     showHideItems();

@@ -1,4 +1,4 @@
-function shipmentsItems() {
+function shipmentsItems(container = document) {
 
     let sliderItems = document.querySelectorAll('.js-shipments-item');
 
