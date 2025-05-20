@@ -6,7 +6,21 @@
 }
 
 .header.header--dark {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	width: 100%;
 	color: var(--primary-bg);
+	background-color: transparent;
+	border-bottom: 1px solid transparent;
+}
+
+body.header--dark .main-screen {
+	padding-top: 200px;
+}
+
+body.header--dark .page-head {
+	padding-top: 264px;
 }
 
 .header__top-wrap {
@@ -30,6 +44,9 @@
 	@include to(1440px) {
 		font-size: 14px;
 		max-width: 280px;
+	}
+	@include to(1300px) {
+		display: none;
 	}
 	@include mobile {
 		display: none;
@@ -59,6 +76,19 @@
 	fill: var(--file-header-color);
 }
 
+.header--dark .header__button {
+	background-color: var(--secondary);
+	color: var(--primary-bg);
+}
+
+.header--dark .header__button:hover {
+	background-color: #37474F;
+}
+
+.header--dark .header__button .button__icon {
+	--file-header-color: var(--primary-bg);
+}
+
 a.header__contact[href^="mailto"] {
 	font-size: 18px;
 	font-weight: 600;
@@ -79,6 +109,39 @@ a.header__contact {
 	}
 }
 
+.header__outer {
+	position: relative;
+	@include tablet {
+		position: absolute;
+		top: 0;
+		right: -100%;
+		opacity: 0;
+		background: #00000091;
+		height: 100vh;
+		backdrop-filter: blur(10px);
+		max-width: 375px;
+		padding-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		padding-left: 45px;
+		transition: right var(--hover-time) linear, opacity .150s linear;
+	}
+}
+
+.header__outer.is-open {
+	right: 0;
+	opacity: 1;
+}
+
+.header__inner {
+	@include tablet {
+		justify-content: flex-end;
+		align-items: center;
+		height: 100%;
+	}
+}
+
 .header__search-btn {
 	--search-color: var(--primary);
 	fill: var(--search-color);
@@ -89,9 +152,70 @@ a.header__contact {
 	display: none;
 	@include tablet {
 		display: block;
+		position: relative;
+		z-index: 1;
+		opacity: 0;
+		transition: opacity .150s linear;
 	}
-	@include mobile {
+	@include mobileXS {
 		margin-left: auto;
 	}
 }
 
+.header__search-btn.header__search-btn--top.is-active {
+	@include tablet {
+		opacity: 1;
+	}
+}
+
+.header__search-btn.header__search-btn--bottom {
+	@include tablet {
+		display: none;
+	}
+}
+
+.header__form-search {
+	position: absolute;
+	right: 16px;
+	left: 16px;
+	top: 0;
+	margin: 0 auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility var(--hover-time) ease, opacity var(--hover-time) ease;
+	@include tablet {
+		position: relative;
+		right: auto;
+		left: auto;
+		order: -1;
+		margin: 0;
+	}
+}
+
+.header__form-search.is-open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.header__form-input {
+	padding: 18px 15px 18px 24px;
+	border: 2px solid #16161C1A;
+	background-color: #ECEFF1;
+	width: 100%;
+	color: var(--primary-font-color);
+}
+
+.header__form-input::placeholder {
+	font-family: var(--font-main);
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--primary-font-color);
+}
+
+.header__form-btn {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}

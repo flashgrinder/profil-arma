@@ -25,10 +25,12 @@ import showHideItems from "./modules/show-hide-items";
 import showMoreText from "./modules/show-more-text";
 import { modalWindow } from "./modules/modal";
 import { modalThanks } from "./modules/modal";
+import toggleSearch from "./modules/search";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
     animationPage();
+    toggleSearch();
     mobileNav();
     mobileCatalog();
     specialistsSlider();
