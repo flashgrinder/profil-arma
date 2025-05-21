@@ -26,6 +26,8 @@ import showMoreText from "./modules/show-more-text";
 import { modalWindow } from "./modules/modal";
 import { modalThanks } from "./modules/modal";
 import toggleSearch from "./modules/search";
+import $ from "jquery";
+import mapDeliveryTooltip from "./modules/map-delivery-tooltip";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -56,6 +58,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     showMoreText();
     modalWindow();
     window.modalThanks = modalThanks;
+    mapDeliveryTooltip();
     Fancybox.bind('[data-fancybox]');
 
 })
