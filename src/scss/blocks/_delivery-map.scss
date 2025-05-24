@@ -220,3 +220,83 @@
 .delivery-map.delivery-map--white .delivery-map__tooltip-logo::before {
 	content: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 12L0 0L20 1.21137e-06L10 12Z' fill='%23F48A0B'/%3E%3C/svg%3E");
 }
+
+.delivery-map__table.delivery-map__table--desktop {
+	margin-top: -120px;
+	z-index: 10;
+	position: relative;
+	@include to(1300px) {
+		overflow-x: auto;
+	}
+	@include mobile {
+		display: none;
+	}
+}
+
+.delivery-map__table.delivery-map__table--mobile {
+	display: none;
+	@include mobile {
+		display: block;
+	}
+}
+
+.delivery-map__th,
+.delivery-map__tr {
+	display: flex;
+	flex-wrap: nowrap;
+	text-align: center;
+	align-items: stretch;
+}
+
+.delivery-map__th .delivery-map__td:first-child,
+.delivery-map__tr .delivery-map__td:first-child  {
+	max-width: 396px;
+	width: 100%;
+	padding-left: 24px;
+	justify-content: flex-start;
+	text-align: left;
+	@include to(1300px) {
+		min-width: 396px;
+	}
+}
+
+.delivery-map__th .delivery-map__td,
+.delivery-map__tr .delivery-map__td  {
+	max-width: 141px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include to(1300px) {
+		min-width: 141px;
+	}
+}
+
+.delivery-map__th .delivery-map__td {
+	background-color: #16161CE5;
+	padding: 28px 11px;
+}
+
+.delivery-map__tr .delivery-map__td {
+	background-color: #263238;
+	border-top: 1px solid #546E7A;
+	padding: 21px 11px;
+}
+
+.delivery-map__table-item {
+	background-color: #37474F;
+}
+
+.delivery-map__thm {
+	border: 1px solid #546E7A;
+	padding: 12px 16px;
+}
+
+.delivery-map__tdm {
+	padding: 5px 16px;
+}
+
+.delivery-map__trm {
+	display: grid;
+	grid-template-columns: minmax(230px, 244px) 122px;
+}
