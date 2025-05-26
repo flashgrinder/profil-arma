@@ -1,0 +1,27 @@
+.search-page {
+	padding: 80px 0;
+	@include tablet {
+		padding: 48px 0 0;
+	}
+}
+
+.search-page__item {
+	padding: 24px 0;
+}
+
+.search-page__item + .search-page__item {
+	border-top: 1px solid var(--blue-gray-bg);
+	margin-top: 24px;
+}
+
+.search-page__item-excerpt {
+	margin-top: 16px;
+}
+
+.search-page__action {
+	margin-top: 50px;
+}
+
+.search-page__button-show-more {
+	color: #607D8B;
+}
