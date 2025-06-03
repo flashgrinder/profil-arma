@@ -21,6 +21,113 @@
     </div>
 </section>
 
+<div class="calculator">
+    <div class="calculator__body container">
+        <form action="" class="calculator__form">
+            <template class="js-calculator-container" id="tmpl">
+                <div class="calculator__item js-calculator-item">
+                    <label class="calculator__label">
+                        <span class="text text--subtext text--w-semibold">Вид метиза</span>
+                        <select name="" id="" class="calculator__select js-calculator-select" data-name="Тип метизов">
+                            <option value="Болт">Болт</option>
+                            <option value="Гайка">Гайка</option>
+                        </select>
+                    </label>
+                    <label class="calculator__label">
+                        <span class="text text--subtext text--w-semibold">Стандарт</span>
+                        <select name="" id="" class="calculator__select js-calculator-select">
+                            <option value="ГОСТ 7798-70">ГОСТ 7798-70</option>
+                            <option value="ГОСТ 7798-80">ГОСТ 7798-80</option>
+                            <option value="ГОСТ 7798-90">ГОСТ 7798-90</option>
+                        </select>
+                    </label>
+                    <label class="calculator__label">
+                        <span class="text text--subtext text--w-semibold">Диаметр</span>
+                        <select name="" id="" class="calculator__select js-calculator-select">
+                            <option value="10мм">10мм</option>
+                            <option value="20мм">20мм</option>
+                            <option value="30мм">30мм</option>
+                        </select>
+                    </label>
+                    <label for="" class="calculator__label">
+                        <span class="text text--subtext text--w-semibold">Длина</span>
+                        <select name="" id="" class="calculator__select js-calculator-select">
+                            <option value="10мм">100мм</option>
+                            <option value="20мм">200мм</option>
+                            <option value="30мм">300мм</option>
+                        </select>
+                    </label>
+                    <label for="" class="calculator__label">
+                        <span class="text text--subtext text--w-semibold">Количество , шт</span>
+                        <input class="calculator__input" type="number">
+                    </label>
+                    <label for="" class="calculator__label">
+                        <span class="text text--subtext text--w-semibold">Вес, кг</span>
+                        <input class="calculator__input" type="number">
+                    </label>
+                </div>
+            </template>
+            <div class="calculator__top">
+                <div class="calculator__items">
+                    <div class="calculator__item js-calculator-item">
+                        <label class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Вид метиза</span>
+                            <select name="" id="" class="calculator__select js-calculator-select" data-name="Тип метизов">
+                                <option value="Болт">Болт</option>
+                                <option value="Гайка">Гайка</option>
+                            </select>
+                        </label>
+                        <label class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Стандарт</span>
+                            <select name="" id="" class="calculator__select js-calculator-select">
+                                <option value="ГОСТ 7798-70">ГОСТ 7798-70</option>
+                                <option value="ГОСТ 7798-80">ГОСТ 7798-80</option>
+                                <option value="ГОСТ 7798-90">ГОСТ 7798-90</option>
+                            </select>
+                        </label>
+                        <label class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Диаметр</span>
+                            <select name="" id="" class="calculator__select js-calculator-select">
+                                <option value="10мм">10мм</option>
+                                <option value="20мм">20мм</option>
+                                <option value="30мм">30мм</option>
+                            </select>
+                        </label>
+                        <label for="" class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Длина</span>
+                            <select name="" id="" class="calculator__select js-calculator-select">
+                                <option value="10мм">100мм</option>
+                                <option value="20мм">200мм</option>
+                                <option value="30мм">300мм</option>
+                            </select>
+                        </label>
+                        <label for="" class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Количество , шт</span>
+                            <input class="calculator__input" type="number">
+                        </label>
+                        <label for="" class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Вес, кг</span>
+                            <input class="calculator__input" type="number">
+                        </label>
+                    </div>
+                </div>
+                <div class="calculator__add-button button js-calculator-add-item">
+                    <span>+</span>
+                    <span>Добавить еще позицию</span>
+                </div>
+            </div>
+            <div class="calculator__bottom">
+                <div class="calculator__export-button button">
+                    <svg width="24" height="24" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#file-download"></use>
+                    </svg>
+                    <span>Экспортировать данные (excel)</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
 <section class="answer">
     <div class="answer__body container">
         <div class="answer__columns">

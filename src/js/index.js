@@ -28,6 +28,8 @@ import { modalThanks } from "./modules/modal";
 import toggleSearch from "./modules/search";
 import $ from "jquery";
 import mapDeliveryTooltip from "./modules/map-delivery-tooltip";
+import selectCalculator from "./modules/calculator-select";
+import cloneCalculatorItem from "./modules/calculator-add-item";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -59,6 +61,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
     modalWindow();
     window.modalThanks = modalThanks;
     mapDeliveryTooltip();
+    selectCalculator();
+    window.selectCalculator = selectCalculator;
+    cloneCalculatorItem();
     Fancybox.bind('[data-fancybox]');
 
 })
