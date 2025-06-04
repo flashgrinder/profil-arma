@@ -61,6 +61,7 @@
 		"filepond-plugin-file-validate-type": "^1.2.9",
 		"hystmodal": "^1.0.1",
 		"jquery": "^3.7.1",
+		"sequence-canvas": "^1.0.0",
 		"slim-select": "^2.9.2",
 		"swiper": "^11.0.6",
 		"swup": "^4.8.1"

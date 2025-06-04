@@ -550,3 +550,12 @@
 		padding: 24px 0 64px;
 	}
 }
+
+.page-head.page-head--dark.page-head--404 {
+	position: relative;
+	background-color: #0e0f15;
+	z-index: 1;
+	@include mobile {
+		padding-top: 150px;
+	}
+}

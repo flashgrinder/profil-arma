@@ -1,5 +1,24 @@
 .page-404 {
-	background-color: var(--dark-bg, #16161C);
+	background-color: #0e0f15;
+	position: relative;
+	@include mobile {
+		padding-top: 150px;
+	}
+}
+
+.page-404 canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100% !important;
+	height: 100% !important;
+	transform: rotate(15deg);
+	@include mobile {
+		transform: rotate(0);
+		object-fit: cover;
+	}
 }
 
 .page-404__inner {
