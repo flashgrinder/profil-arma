@@ -2,6 +2,13 @@
 	background-color: var(--secondary-bg);
 }
 
+.product-head .page-head__heading {
+	margin-bottom: 64px;
+	@include tablet {
+		margin-bottom: 32px;
+	}
+}
+
 .product-head__grid {
 	display: grid;
 	grid-template-columns: minmax(350px, 480px) 1fr minmax(300px, 334px);

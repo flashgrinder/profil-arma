@@ -7,10 +7,23 @@
 
 .posts__columns {
 	display: grid;
-	grid-template-columns: minmax(230px, 253px) 1fr minmax(300px, 396px);
+	grid-template-columns: minmax(230px, 253px) 1fr;
 	gap: 80px;
 	@include to(1300px) {
 		grid-template-columns: minmax(230px, 253px) 1fr;
+		gap: 32px;
+	}
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+}
+
+.posts__news-col {
+	display: grid;
+	grid-template-columns: 1fr minmax(300px,396px);
+	gap: 80px;
+	@include to(1300px) {
+		grid-template-columns: 1fr;
 		gap: 32px;
 	}
 	@include mobile {
