@@ -156,6 +156,7 @@
 
 .delivery-map__tooltip.is-open .delivery-map__tooltip-wrap {
 	display: block;
+	z-index: 1;
 }
 
 .delivery-map__tooltip-wrap {
