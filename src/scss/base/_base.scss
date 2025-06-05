@@ -27,7 +27,7 @@ a {
 	transition: color .3s ease;
 }
 
-a:not([class]):hover {
+a:hover {
 	color: var(--primary-hover);
 }
 

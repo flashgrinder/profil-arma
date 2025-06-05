@@ -144,9 +144,9 @@
 	}
 }
 
-.footer__menu-link {
+a.footer__menu-link {
 	display: inline-block;
-	border-bottom: 1px solid var(--secondary-font-color);
+	text-decoration: underline;
 }
 
 .footer__tender {
