@@ -34,7 +34,7 @@ import animationFlans from "./modules/animation-flans";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
-    animationPage();
+    // animationPage();
     toggleSearch();
     mobileNav();
     mobileCatalog();
