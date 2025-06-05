@@ -6,7 +6,7 @@ function animationFlans() {
 
     if (exCanvas) {
         function createPathImage(index) {
-            return `../img/anim/frame_${index.toString().padStart(0, '0')}.webp`;
+            return location.hostname + `/prod/img/anim/frame_${index.toString().padStart(0, '0')}.webp`;
         }
         const arrayPathImages = [...new Array(237).fill('').map((_, i) => createPathImage(i + 3))];
 
