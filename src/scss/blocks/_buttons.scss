@@ -43,10 +43,12 @@
 .button--primary:hover,
 .button--primary:focus,
 .button--primary:target {
+  color: var(--primary-bg);
   background-color: var(--primary-hover);
 }
 
 .button--primary:active {
+  color: var(--primary-bg);
   background-color: var(--primary-pressed);
 }
 
