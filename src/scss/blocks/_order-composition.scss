@@ -14,6 +14,12 @@
 	display: grid;
 	grid-template-columns: minmax(300px, 396px) 1fr;
 	gap: 32px;
+	@include to(1200px) {
+		grid-template-columns: 1fr;
+	}
+	@include tablet {
+		overflow-x: auto;
+	}
 	@include mobile {
 		grid-template-columns: 1fr;
 		gap: 24px;
@@ -122,4 +128,61 @@
 	color: var(--primary);
 	text-decoration: underline;
 	border-bottom: 1px solid var(--primary);
+}
+
+.order-composition table {
+	@extend .text;
+	border-collapse: collapse;
+	width: 100%;
+	@include tablet {
+		overflow-x: auto;
+	}
+}
+
+.order-composition table thead {
+	color: #90A4AE;
+	height: 80px;
+}
+
+.order-composition table thead tr {
+	border-top: 1px solid var(--secondary-bg-2);
+	border-bottom: 1px solid var(--secondary-bg-2);
+}
+
+.order-composition table thead tr th:nth-child(2) {
+	padding: 30px 16px;
+	text-align: left;
+}
+
+.order-composition table tbody tr:nth-child(even) {
+	background-color: var(--secondary-bg-2);
+}
+
+.order-composition table tbody tr td {
+	@extend .text--pre-medium;
+	@include tablet {
+		font-size: 14px;
+	}
+}
+
+.order-composition table tbody tr td {
+	text-align: center;
+	padding: 30px 14px;
+}
+
+.order-composition table thead tr th,
+.order-composition table tbody tr td {
+	@include to(1200px) {
+		white-space: nowrap;
+	}
+}
+
+.order-composition table tbody tr td:first-child {
+	padding: 30px;
+}
+
+.order-composition table tbody tr td:nth-child(2) {
+	padding: 30px 16px;
+	text-align: left;
+	font-weight: 500;
 }

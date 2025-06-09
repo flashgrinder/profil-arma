@@ -228,7 +228,8 @@
 	border-bottom: 1px solid var(--blue-gray-bg, #CFD8DC);
 }
 
-.shipments.shipments--index .shipments__desktop-items-list .shipments__item + .shipments__item {
+.shipments.shipments--index .shipments__desktop-items-list .shipments__item + .shipments__item,
+.shipments__ajax-view-wrapper + .shipments__ajax-view-wrapper {
 	margin-top: 48px;
 }
 
