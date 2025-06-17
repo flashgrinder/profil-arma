@@ -1,7 +1,7 @@
 import SlimSelect from 'slim-select';
 import "../../../node_modules/slim-select/dist/slimselect.css";
 
-function selectCalculator () {
+function selectCalculator (container = document) {
     const allSelectCalculator = document.querySelectorAll('.js-calculator-select');
 
     const buildSelectCalculator = selectElem => {
