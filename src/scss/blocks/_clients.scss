@@ -90,7 +90,8 @@
 }
 
 .clients__slide-logo picture,
-.clients__slide-logo img {
+.clients__slide-logo img,
+.clients__slide-logo svg {
 	display: block;
 	margin: 0 auto;
 	filter: grayscale(1);
@@ -98,7 +99,8 @@
 }
 
 .clients__slide-logo:hover picture,
-.clients__slide-logo:hover img {
+.clients__slide-logo:hover img,
+.clients__slide-logo:hover svg {
 	filter: grayscale(0);
 }
 

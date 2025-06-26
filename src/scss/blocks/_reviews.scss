@@ -13,6 +13,10 @@
 	}
 }
 
+.reviews__items + .reviews__items {
+	margin-top: 32px;
+}
+
 .reviews__slider-nav-wrap {
 	padding-left: var(--container-padding);
 	padding-right: var(--container-padding);
