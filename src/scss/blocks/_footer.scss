@@ -147,6 +147,11 @@
 a.footer__menu-link {
 	display: inline-block;
 	text-decoration: underline;
+	color: #455A64;
+}
+
+a.footer__menu-link:hover {
+	color: var(--primary);
 }
 
 .footer__tender {

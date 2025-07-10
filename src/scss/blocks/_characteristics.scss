@@ -5,19 +5,14 @@
 	}
 }
 
-.characteristics__grid {
-	display: grid;
-	grid-template-columns: minmax(300px, 396px) 1fr;
-	gap: 32px;
-	@include tablet {
-		grid-template-columns: 1fr;
-	}
-}
-
 .characteristics__tables {
 	display: grid;
 	grid-template-columns: repeat(2,minmax(350px, 1fr));
 	gap: 30px;
+	margin-top: 48px;
+	@include mobile {
+		margin-top: 24px;
+	}
 	@include tablet {
 		grid-template-columns: 1fr;
 		gap: 0;

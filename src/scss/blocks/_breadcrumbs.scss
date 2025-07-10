@@ -10,8 +10,19 @@
 	}
 }
 
+.breadcrumbs__nav {
+	@include mobile {
+		flex-wrap: wrap;
+		gap: 10px 0;
+	}
+}
+
 .breadcrumbs a:first-child::before {
 	content: none;
+}
+
+.breadcrumbs a:first-child {
+	margin-left: 0;
 }
 
 .breadcrumbs a,

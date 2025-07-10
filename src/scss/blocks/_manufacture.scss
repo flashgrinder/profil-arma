@@ -5,6 +5,9 @@
 .manufacture__wrap-top {
 	padding-top: 120px;
 	padding-bottom: 0;
+	background-image: url('../img/other/manufacture-decor.svg');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .manufacture__top {
@@ -14,6 +17,14 @@
 		align-items: flex-start;
 		gap: 32px;
 	}
+}
+
+.manufacture__top .button {
+	white-space: nowrap;
+}
+
+.manufacture__top .button .button__icon {
+	min-width: 45px;
 }
 
 .manufacture__features {
@@ -37,7 +48,7 @@
 	gap: 80px;
 	padding: 130px 0;
 	@include tablet {
-		padding: 48px 0 64px;
+		padding: 24px 0 64px;
 		grid-template-columns: 1fr;
 		gap: 32px;
 	}

@@ -9,6 +9,14 @@
 	display: block;
 }
 
+.specialists__item-name {
+	color: #607D8B;
+}
+
+.specialists__item-position {
+	color: #78909C;
+}
+
 .specialists.specialists--page + .specialists.specialists--page .specialists__items {
 	border-bottom: 1px solid var(--blue-gray-bg);
 	padding-bottom: 80px;

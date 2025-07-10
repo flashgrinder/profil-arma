@@ -21,6 +21,9 @@ body.header--dark .main-screen {
 
 body.header--dark .page-head {
 	padding-top: 264px;
+	@include mobile {
+		padding-top: 180px;
+	}
 }
 
 .header__top-wrap {

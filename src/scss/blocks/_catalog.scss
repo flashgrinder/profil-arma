@@ -34,6 +34,9 @@
 .catalog__menu {
 	position: relative;
 	padding: 80px 120px;
+	@include to(1400px) {
+		padding: 80px 50px;
+	}
 	@include tablet {
 		padding: 24px 0;
 	}
@@ -71,13 +74,12 @@
 	position: absolute;
 	top: 50%;
 	right: 0;
-	opacity: 0;
-	visibility: hidden;
+	opacity: .4;
+	visibility: visible;
 	max-width: 400px;
 	transform: translateY(-50%);
 	user-select: none;
 	pointer-events: none;
-	transition: opacity .5s ease, visibility .5s ease;
 	@include tablet {
 		opacity: 1;
 		visibility: visible;
@@ -85,11 +87,6 @@
 		top: auto;
 		position: static;
 	}
-}
-
-.catalog__menu:hover .catalog__menu-decor {
-	opacity: 1;
-	visibility: visible;
 }
 
 .catalog__menu:first-child {
@@ -114,12 +111,16 @@
 	}
 }
 
+.catalog__menu.catalog__menu--link .button{
+	text-align: left;
+}
+
 .catalog__menu-list {
 	position: relative;
 	margin-top: 32px;
 	font-size: 18px;
 	color: var(--secondary-font-color);
-	max-width: 430px;
+	max-width: 60%;
 	@include tablet {
 		font-size: 16px;
 		max-width: 100%;
@@ -152,7 +153,7 @@
 }
 
 .catalog__menu-link {
-	color: inherit;
+	color: #8B93B4;
 }
 
 .catalog__menu--link {

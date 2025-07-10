@@ -16,7 +16,6 @@
   outline: var(--primary);
   background: transparent;
   transition: background .3s ease-out, color .3s ease-out, border .3s ease-out, opacity .3s ease-out, width .3s ease-out;
-  overflow: hidden;
   text-transform: uppercase;
   @include mobile {
     justify-content: center;

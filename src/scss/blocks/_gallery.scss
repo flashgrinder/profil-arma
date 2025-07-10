@@ -1,5 +1,8 @@
 .gallery {
 	padding: 110px 0;
+	@include mobile {
+		padding: 64px 0;
+	}
 }
 
 .gallery__grid {
@@ -119,4 +122,15 @@
 
 .gallery.gallery--catalog .gallery__item:last-child {
 	height: 118px;
+}
+
+.gallery.gallery--catalog .gallery__item:nth-child(1),
+.gallery.gallery--catalog .gallery__item:nth-child(2),
+.gallery.gallery--catalog .gallery__item:nth-child(3),
+.gallery.gallery--catalog .gallery__item:nth-child(4),
+.gallery.gallery--catalog .gallery__item:nth-child(5),
+.gallery.gallery--catalog .gallery__item:last-child {
+	@include tablet {
+		height: auto;
+	}
 }

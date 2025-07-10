@@ -5,23 +5,17 @@
 	}
 }
 
-.filters__grid {
-	display: grid;
-	grid-template-columns: minmax(200px, 228px) 1fr;
-	gap: 50px;
-	margin-top: 50px;
+.filters [data-catalog-items-container] div + div {
 	@include mobile {
-		grid-template-columns: 1fr;
+		margin-top: 24px;
+		border-top: 1px solid var(--blue-gray-bg, #CFD8DC);
 	}
 }
 
-.filters__pic {
-	border: 1px solid var(--blue-gray-bg, #CFD8DC);
-	min-height: 228px;
-	max-height: 228px;
-	overflow: hidden;
+.filters__grid {
+	margin-top: 50px;
 	@include mobile {
-		display: none;
+		grid-template-columns: 1fr;
 	}
 }
 

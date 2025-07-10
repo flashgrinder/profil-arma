@@ -5,32 +5,27 @@
 }
 
 .slider-pagination-dotted .slider-pagination-dotted__page {
-  height: 12px;
+  height: 6px;
   width: 12px;
   opacity: 1;
-  background: transparent;
-  border: 2px solid #C8D6E0;
+  background: var(--primary-bg);
+  border: 1px solid #C8D6E0;
   margin: 0;
+  border-radius: 0;
   transition: width .2s linear,
               background-color var(--hover-time) linear,
               border var(--hover-time) linear;
-  @include mobile {
-    width: 9px;
-    height: 9px;
-  }
 }
 
 .slider-pagination-dotted .slider-pagination-dotted__page:hover {
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
+  background: var(--primary-hover);
 }
 
 .slider-pagination-dotted .slider-pagination-dotted__page.is-active {
   background-color: var(--primary);
   transform: scale(1);
-  border: 2px solid var(--primary);
-  width: 52px;
-  border-radius: 20px;
-  @include mobile {
-    width: 9px;
-  }
+  border: 1px solid var(--primary);
+  width: 24px;
+  border-radius: 0;
 }

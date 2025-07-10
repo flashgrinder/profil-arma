@@ -2,6 +2,24 @@
 	padding: 130px 0 80px;
 }
 
+.tender.tender--decor,
+.tender.tender--decor.tender--gray {
+	position: relative;
+	@include mobile {
+		padding: 200px 0 80px;
+	}
+}
+
+.tender.tender--decor::before {
+	@include mobile {
+		content: url("../img/other/decor-form.svg");
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
 .tender__heading,
 .tender__subtitle {
 	@include mobile {
@@ -45,6 +63,7 @@
 
 .tender__subtitle {
 	margin-top: 12px;
+	color: #27272773;
 }
 
 .tender__form {
@@ -53,6 +72,12 @@
 
 .tender__features {
 	gap: 32px;
+	@include to(1500px){
+		flex-direction: row;
+	}
+	@include to(1300px){
+		flex-direction: column;
+	}
 }
 
 .tender__feature {
@@ -129,7 +154,7 @@
 
 .tender.tender--feedback .tender__features {
 	gap: 50px;
-	@include to(1500px) {
+	@include to(1400px) {
 		gap: 28px;
 		flex-wrap: wrap;
 		justify-content: flex-start;
@@ -141,7 +166,7 @@
 }
 
 .tender.tender--feedback .tender__feature {
-	max-width: 600px;
+	width: 100%;
 	@include to(1500px) {
 		max-width: 100%;
 	}

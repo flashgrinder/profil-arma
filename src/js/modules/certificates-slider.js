@@ -11,7 +11,7 @@ function certificatesSlider () {
             perPage: 5.2,
             focus: 0,
             trimSpace: false,
-            autoplay: false,
+            autoplay: true,
             arrows: true,
             gap: '16px',
             pagination: false,
@@ -20,8 +20,8 @@ function certificatesSlider () {
                 arrow : 'splide__arrow slider-nav__splide-arrow',
                 prev  : 'splide__arrow--prev slider-nav__splide-arrow--prev',
                 next  : 'splide__arrow--next slider-nav__splide-arrow--next',
-                // pagination: 'splide__pagination slider-pagination-dotted',
-                // page      : 'splide__pagination__page slider-pagination-dotted__page',
+                pagination: 'splide__pagination slider-pagination-dotted',
+                page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
                 1500: {
@@ -35,6 +35,7 @@ function certificatesSlider () {
                     perPage: 1.2,
                     gap: '16px',
                     arrows: false,
+                    pagination: true,
                 },
             }
         } );

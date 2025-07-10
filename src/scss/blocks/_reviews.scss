@@ -59,6 +59,7 @@
 	position: relative;
 	margin-top: 110px;
 	padding-left: 75px;
+	z-index: 1;
 	@include mobile {
 		padding-left: 0;
 		margin-top: 35px;
