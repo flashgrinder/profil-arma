@@ -85,6 +85,9 @@
 /* Certificates-page */
 .certificates.certificates--page {
 	padding: 80px 0;
+	@include mobile {
+		padding-top: 0;
+	}
 }
 
 .certificates.certificates--page .certificates__tabs {
@@ -92,6 +95,9 @@
 	grid-template-columns: minmax(280px, 300px) 1fr;
 	align-items: start;
 	gap: 80px;
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
 }
 
 .certificates.certificates--page .certificates__items {
@@ -104,6 +110,26 @@
 	gap: 0;
 	border-left: 1px solid var(--blue-gray-bg);
 	margin-top: 0;
+	@include mobile {
+		//position: relative;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 32px;
+		border-left: none;
+		margin-top: -91px;
+		overflow-x: auto;
+	}
+}
+
+.certificates__tabs-buttons.tabs__buttons {
+	overflow: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.certificates__tabs-buttons.tabs__buttons::-webkit-scrollbar {
+	width: 0;
+	height: 0;
 }
 
 .certificates.certificates--page .certificates__tabs-button.tabs__button {
@@ -111,10 +137,21 @@
 	@extend .text--primary;
 	padding: 16px 0 16px 32px;
 	border-left: 4px solid transparent;
+	@include mobile {
+		//position: relative;
+		padding: 32px 0;
+		border-left: none;
+		border-bottom: 4px solid transparent;
+		white-space: nowrap;
+	}
 }
 
 .certificates.certificates--page .certificates__tabs-button.tabs__button.is-active {
 	border-left: 4px solid var(--primary);
+	@include mobile {
+		border-left: none;
+		border-bottom: 4px solid var(--primary);
+	}
 }
 
 .certificates.certificates--page .certificates__items-download {

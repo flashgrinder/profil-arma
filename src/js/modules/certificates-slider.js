@@ -6,11 +6,11 @@ function certificatesSlider () {
     const certificatesSliderTrue = document.querySelector('.js-certificates-slider-init');
     if (certificatesSliderTrue) {
         const certificatesSlider = new Splide( '.js-certificates-slider-init', {
-            type   : 'slider',
+            type   : 'slide',
             height: '530px',
             perPage: 5.2,
+            perMove: 5.2,
             focus: 0,
-            trimSpace: false,
             autoplay: true,
             arrows: true,
             gap: '16px',
@@ -26,13 +26,16 @@ function certificatesSlider () {
             breakpoints: {
                 1500: {
                     perPage: 4.2,
+                    perMove: 4.2,
                 },
                 1200: {
                     perPage: 3.2,
+                    perMove: 3.2,
                 },
                 768: {
                     height: '475px',
                     perPage: 1.2,
+                    perMove: 1.2,
                     gap: '16px',
                     arrows: false,
                     pagination: true,

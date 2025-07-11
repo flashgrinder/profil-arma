@@ -47,7 +47,7 @@
 
 .section-head__features {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(272px, 300px));
+	grid-template-columns: repeat(auto-fit, minmax(272px, 300px));
 	gap: 24px 54px;
 	@include mobile {
 		grid-template-columns: 1fr;

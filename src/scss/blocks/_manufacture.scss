@@ -40,6 +40,9 @@
 	@include tablet {
 		margin-top: 64px;
 	}
+	@include mobile {
+		margin-top: 0;
+	}
 }
 
 .manufacture__tabs {

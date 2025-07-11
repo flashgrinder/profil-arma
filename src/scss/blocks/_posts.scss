@@ -31,6 +31,13 @@
 //	}
 //}
 
+.posts__col.posts__col--posts + .posts__col.posts__col--posts {
+	margin-top: 48px;
+	@include mobile {
+		margin-top: 24px;
+	}
+}
+
 .posts__col--sidebar {
 	@include to(1300px) {
 		display: none;
@@ -75,6 +82,9 @@
 
 .posts__item + .posts__item {
 	margin-top: 48px;
+	@include mobile {
+		margin-top: 24px;
+	}
 }
 
 .posts__item-pic {
