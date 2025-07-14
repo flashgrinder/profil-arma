@@ -12,6 +12,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png">
 </head>
 <body class="header--dark">
+
+<button class="button-feedback button" data-hystmodal="#feedback">
+    Написать нам
+</button>
 <!-- Убираешь класс header--dark и меняет цвета на белый -->
 <header class="header js-header-mobile header--dark">
     <div class="header__top container">
@@ -54,7 +58,7 @@
             </button>
         </div>
     </div>
-    <div class="header__outer container js-mobile-menu">
+    <div class="header__outer container js-mobile-main-menu">
         <div class="header__inner d-flex flex-justify-sb">
             <nav class="header__menu menu">
                 <ul class="header__menu-list menu__list">
@@ -2490,7 +2494,7 @@
                     <div class="footer__menu-name title title--pre-big title--primary title--w-semibold js-menu">
                         Каталог
                     </div>
-                    <ul class="footer__menu-list js-mobile-menu">
+                    <ul class="footer__menu-list js-mobile-menu is-open can-animate">
                         <li class="footer__menu-item">
                             <a href="" class="footer__menu-link">
                                 Фланцевая продукция

@@ -31,6 +31,7 @@ import mapDeliveryTooltip from "./modules/map-delivery-tooltip";
 import selectCalculator from "./modules/calculator-select";
 import cloneCalculatorItem from "./modules/calculator-add-item";
 import animationFlans from "./modules/animation-flans";
+import manufactureAccordion from "./modules/manufacture-accordion";
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -66,6 +67,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     window.selectCalculator = selectCalculator;
     cloneCalculatorItem();
     animationFlans();
+    manufactureAccordion();
     Fancybox.bind('[data-fancybox]');
 
 })

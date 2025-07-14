@@ -1,7 +1,7 @@
 function mobileNav() {
 	// Mobile nav button
 	const navBtn = document.querySelector('.js-mobile-nav-burger');
-	const nav = document.querySelector('.js-mobile-menu');
+	const nav = document.querySelector('.js-mobile-main-menu');
 	const btnSearchMobile = document.querySelector('.js-search-btn-header-mobile');
 	// const menuIcon = document.querySelector('.nav-icon');
 

@@ -183,3 +183,25 @@
   background-color: var(--primary);
   color: var(--primary-bg);
 }
+
+.button-feedback {
+  position: fixed;
+  top: 50%;
+  right: -81px;
+  transform: translateY(-50%) rotate(-90deg);
+  background: #F38707;
+  color: var(--primary-bg);
+  white-space:nowrap;
+  transition: transform var(--hover-time) ease, right var(--hover-time) ease;
+  z-index: 100;
+  @include mobile {
+    display: none;
+  }
+}
+
+.button-feedback:hover,
+.button-feedback:target,
+.button-feedback:focus {
+  transform: translateY(-50%) rotate(0deg);
+  right: 0;
+}
