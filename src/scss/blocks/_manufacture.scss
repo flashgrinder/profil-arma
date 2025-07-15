@@ -55,7 +55,7 @@
 	display: none;
 	@include mobile {
 		display: block;
-		margin-top: 48px;
+		padding-top: 48px;
 		padding-bottom: 64px;
 	}
 }

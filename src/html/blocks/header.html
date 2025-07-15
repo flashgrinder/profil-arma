@@ -42,7 +42,10 @@
         </div>
     </div>
     <div class="header__outer container js-mobile-main-menu">
-        <div class="header__inner d-flex flex-justify-sb">
+        <div class="header__inner d-flex flex-justify-sb flex-align-center">
+			<a href="./" class="header__logo header__logo--fixed">
+				<img src="./img/logo-white.svg" alt="">
+			</a>
             <nav class="header__menu menu">
                 <ul class="header__menu-list menu__list">
                    <li class="header__menu-item menu__item menu__item--catalog">
@@ -269,6 +272,16 @@
                     </li>
                 </ul>
             </nav>
+			<a href="mailto:zakaz3@profil-arma.ru" class="header__contact header__contact--fixed contact d-flex flex-align-center">
+				<svg width="32" height="32" class="contact__icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+				</svg>
+			</a>
+			<a href="tel:+7 (3513) 62‒67‒74" class="header__contact header__contact--fixed contact d-flex flex-align-center">
+				<svg width="32" height="32" class="contact__icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+				</svg>
+			</a>
             <svg width="32" height="32" class="header__search-btn header__search-btn--bottom js-search-btn-header">
                 <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
             </svg>
@@ -283,6 +296,27 @@
                 </button>
             </div>
         </form>
+		<div class="header__info-mobile">
+			<a href="mailto:zakaz3@profil-arma.ru" class="header__contact header__contact--mobile contact d-flex flex-align-center">
+				<svg width="32" height="32" class="contact__icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+				</svg>
+				zakaz3@profil-arma.ru
+			</a>
+			<a href="tel:+7 (3513) 62‒67‒74" class="header__contact header__contact--mobile contact d-flex flex-align-center">
+				<svg width="40" height="40" class="contact__icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+				</svg>
+				+7 (3513) 62‒67‒74
+			</a>
+			<a href="javascript:;" class="header__button header__button--mobile button button--primary"
+			   data-hystmodal="#feedback">
+				<svg width="24" height="24" class="button__icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#pdf-file-header"></use>
+				</svg>
+				<span>Получить КП</span>
+			</a>
+		</div>
     </div>
 </header>
 @@include('mobile-nav.html')

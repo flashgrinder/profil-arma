@@ -25,6 +25,8 @@
 	z-index: 101;
 	@include tablet {
 		display: flex;
+		--width: 34px;
+		--height: 34px;
 	}
 }
 
@@ -72,6 +74,9 @@
 	top: 0;
 	transition: top var(--time) linear,
 		transform var(--time) ease-in var(--time);
+	@include tablet {
+		background-color: var(--dark-bg);
+	}
 }
 
 .burger.is-active .burger__icon::before {

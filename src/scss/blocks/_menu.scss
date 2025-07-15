@@ -36,6 +36,9 @@
 .menu__item--catalog {
   position: relative;
   padding-left: 36px;
+  @include tablet {
+    padding-left: 0;
+  }
 }
 
 .menu__item--catalog::before {
@@ -45,6 +48,9 @@
   left: 0;
   height: 24px;
   transform: translateY(-50%);
+  @include tablet {
+    content: none;
+  }
 }
 
 .menu__list > .menu__item:hover > .menu__link {
@@ -53,6 +59,7 @@
 
 .menu__list > .menu__item > .menu__link {
   color: inherit;
+  white-space: nowrap;
 }
 
 .menu__sub-menu {
