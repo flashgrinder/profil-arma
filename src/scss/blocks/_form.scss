@@ -20,12 +20,12 @@
 }
 
 .form__input {
-  padding: 25px 32px 16px 0;
+  padding: 20px 32px 16px 0;
   background-color: transparent;
   border-bottom: 1px solid var(--secondary);
   border-radius: 0;
   width: 100%;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--primary-font-color);
   outline: none;
@@ -53,9 +53,7 @@
   transition: top .1s linear,
               transform .1s linear,
               font-size .1s linear;
-  @include mobile {
-    font-size: 18px;
-  }
+  font-size: 18px;
 }
 
 .form__input.is-dirty + .form__placeholder {

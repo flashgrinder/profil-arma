@@ -192,7 +192,7 @@
   background: #F38707;
   color: var(--primary-bg);
   white-space:nowrap;
-  transition: transform var(--hover-time) ease, right var(--hover-time) ease;
+  transition: background-color var(--hover-time) ease;
   z-index: 100;
   @include mobile {
     display: none;
@@ -202,6 +202,5 @@
 .button-feedback:hover,
 .button-feedback:target,
 .button-feedback:focus {
-  transform: translateY(-50%) rotate(0deg);
-  right: 0;
+  background-color: var(--primary-hover);
 }
