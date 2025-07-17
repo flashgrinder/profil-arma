@@ -174,10 +174,11 @@
 
 .tender.tender--feedback .form__field--phone,
 .tender.tender--feedback .form__field--email {
-	max-width: 268px;
-	@include tablet {
-		max-width: 100%;
-	}
+	max-width: 100%;
+	//max-width: 268px;
+	//@include tablet {
+	//	max-width: 100%;
+	//}
 }
 
 .tender.tender--feedback .form__input {

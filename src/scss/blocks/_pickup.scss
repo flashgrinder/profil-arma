@@ -38,9 +38,10 @@
 }
 
 .pickup__map {
-	aspect-ratio: 16/5;
+	max-height: 700px;
 	@include mobile {
 		aspect-ratio: 5/7;
+		max-height: 450px;
 	}
 }
 

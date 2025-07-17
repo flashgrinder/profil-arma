@@ -35,7 +35,7 @@
 }
 
 .main-screen__inner {
-	min-height: 100vh;
+	min-height: 90vh;
 }
 
 .main-screen__info {
@@ -73,6 +73,10 @@
 	margin-top: 109px;
 	padding: 80px 0;
 	gap: 32px;
+	@media screen and (max-height: 992px) {
+		margin-top: 50px;
+		padding: 40px 0 80px;
+	}
 	@include tablet {
 		flex-wrap: wrap;
 	}
@@ -86,7 +90,7 @@
 
 .main-screen__feature:hover .main-screen__feature-name,
 .main-screen__feature:hover .main-screen__feature-name.title span {
-	transform: scale(1.5);
+	transform: scale(1.1);
 	color: var(--primary);
 	@include mobile {
 		transform: scale(1.1);

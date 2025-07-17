@@ -145,11 +145,18 @@
 }
 
 .form__agreement {
+  display: flex;
   margin-top: 32px;
   text-align: right;
+  margin-left: auto;
+  width: fit-content;
   @include mobile {
     text-align: center;
   }
+}
+
+.form__agreement input {
+  margin-right: 6px;
 }
 
 .form__agreement a {
@@ -209,12 +216,26 @@
   }
 }
 
+.form__field.form__field--file {
+  display: flex;
+  align-items: center;
+}
+
 .form__file {
-  display: block;
-  padding: 21px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
   background-color: #D1D8DD;
   font-size: 14px;
   color: var(--primary-font-color);
+}
+
+.form__file-remove {
+  display: none;
+  cursor: pointer;
+  height: 20px;
+  margin-left: 10px;
 }
 
 .form__button {

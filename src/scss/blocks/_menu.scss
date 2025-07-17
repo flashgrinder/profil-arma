@@ -101,7 +101,7 @@
 }
 
 .menu__sub-menu > .menu__item {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: none;
   font-weight: normal;
   color: var(--primary-font-color);
@@ -219,6 +219,7 @@
 .menu__item.menu__item--catalog .menu__sub-menu > .menu__item .menu__sub-menu.menu__sub-menu--lvl-3 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-4 {
   left: 100%;
   top: 0;
+  height: 100%;
 }
 
 .menu__item.menu__item--catalog:hover .menu__sub-menu.menu__sub-menu--lvl-1,

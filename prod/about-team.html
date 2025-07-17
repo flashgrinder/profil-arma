@@ -846,9 +846,17 @@
                 <div class="modal__actions d-flex d-flex-column flex-justify-sb flex-align-center">
                     <div class="form__field form__field--file">
                         <label for="modal-file" class="form__file">
+                            <svg width="24" height="24">
+                                <use href="./img/svgsprite/sprite.symbol.svg#clip"></use>
+                            </svg>
                             <input class="visually-hidden js-file" type="file" name="file-tender" id="modal-file">
                             <span class="js-name-file">Прикрепить файл</span>
                         </label>
+                        <span class="form__file-remove js-remove-file" title="Удалить файл">
+                            <svg width="20" height="20">
+                                <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+                            </svg>
+                        </span>
                     </div>
                     <div class="form__captcha form__captcha">
                         <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>

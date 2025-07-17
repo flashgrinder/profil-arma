@@ -85,6 +85,7 @@
 	display: block;
 	margin-bottom: 22px;
 	white-space: nowrap;
+	color: #666666;
 	@include mobile {
 		margin-bottom: 6px;
 		text-align: left;
@@ -139,6 +140,7 @@
 .filters__th .filters__td:first-child,
 .filters__tr .filters__td:first-child {
 	width: 100%;
+	color: #666666;
 }
 
 .filters__th .filters__td:not(:first-child),
@@ -146,6 +148,7 @@
 	max-width: 150px;
 	width: 100%;
 	text-align: center;
+	color: #666666;
 	@include mobile {
 		max-width: 100%;
 	}

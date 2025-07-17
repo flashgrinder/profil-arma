@@ -1598,11 +1598,19 @@
                         </span>
                     </label>
                     <div class="form__actions d-flex flex-justify-sb flex-align-center">
-                        <div class="form__field">
+                        <div class="form__field form__field--file">
                             <label for="file-feedback" class="form__file">
+								<svg width="24" height="24">
+									<use href="./img/svgsprite/sprite.symbol.svg#clip"></use>
+								</svg>
                                 <input class="visually-hidden js-file" type="file" name="file-tender" id="file-feedback">
                                 <span class="js-name-file">Прикрепить файл</span>
                             </label>
+							<span class="form__file-remove js-remove-file" title="Удалить файл">
+								<svg width="20" height="20">
+									<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+								</svg>
+							</span>
                         </div>
                         <div class="form__captcha">
                             <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual smart-captcha" id="smart-captcha-2" data-testid="smartCaptcha-container"></div>
@@ -1616,9 +1624,9 @@
                             </button>
                         </div>
                     </div>
-                    <div class="form__agreement text text--small text--primary text--w-regular">
-                        Нажимая на кнопку, вы соглашаетесь на <a href="">обработку персональных данных</a>
-                    </div>
+                    <label for="agreement" class="form__agreement text text--small text--primary text--w-regular">
+						<input type="checkbox" name="" id="agreement"> Нажимая на кнопку, вы соглашаетесь на <a href="">обработку персональных данных</a>
+                    </label>
                 </form>
             </div>
             <div class="tender__col tender__col--right">
