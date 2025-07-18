@@ -70,6 +70,11 @@
 	margin-top: 40px;
 }
 
+.tender .form__field.form__field--textarea .form__input::placeholder {
+	font-size: 18px;
+	color: var(--primary-font-color);
+}
+
 .tender__features {
 	gap: 32px;
 	@include to(1500px){
@@ -197,6 +202,19 @@
 	margin-top: 32px;
 }
 
+.tender.tender--feedback .form__field.form__field--textarea .form__input::placeholder {
+	color: var(--primary-bg);
+	font-size: 18px;
+}
+
+.tender.tender--feedback .form__agreement {
+	display: flex;
+	width: fit-content;
+	@include mobile {
+		display: block;
+	}
+}
+
 /* Tender-gray */
 .tender.tender--gray {
 	@include mobile {
@@ -220,6 +238,11 @@
 }
 
 .tender.tender--gray .form__input {
+	color: var(--primary-font-color);
+}
+
+.tender.tender--gray .form__field.form__field--textarea .form__input::placeholder {
+	font-size: 18px;
 	color: var(--primary-font-color);
 }
 

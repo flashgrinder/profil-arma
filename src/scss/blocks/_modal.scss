@@ -66,6 +66,11 @@
   margin-top: 12px;
 }
 
+.modal.modal--feedback .form__field.form__field--textarea .form__input::placeholder  {
+  color: var(--blue-gray-font-color-09);
+  font-size: 18px;
+}
+
 .modal.modal--thanks .modal__body {
   padding: 48px;
   max-width: 500px;

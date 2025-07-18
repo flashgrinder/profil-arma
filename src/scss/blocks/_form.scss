@@ -94,6 +94,10 @@
   }
 }
 
+.form__field.form__field--textarea .form__input {
+  max-width: 1128px;
+}
+
 .form__input::placeholder,
 .form__input--textarea::placeholder {
   color: var(--secondary-font-color);
@@ -145,13 +149,17 @@
 }
 
 .form__agreement {
-  display: flex;
+  display: inline-block;
   margin-top: 32px;
   text-align: right;
   margin-left: auto;
   width: fit-content;
   @include mobile {
+    display: block;
     text-align: center;
+  }
+  @include mobileXS {
+    margin-right: auto;
   }
 }
 
@@ -210,6 +218,7 @@
 
 .form__actions {
   gap: 28px;
+  justify-content: space-between;
   @include tablet {
     flex-direction: column;
     gap: 32px;
