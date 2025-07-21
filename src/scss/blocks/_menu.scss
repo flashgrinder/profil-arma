@@ -232,12 +232,14 @@
 
 .menu__list > .menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 .menu__link,
 .menu__list > .menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-3 .menu__link,
+.menu__list > .menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-3.has-props > .menu__item .menu__link,
 .menu__list > .menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-3 .menu__item > .menu__sub-menu.menu__sub-menu--lvl-4 .menu__link {
   color: var(--primary-font-color);
 }
 
 .menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 .menu__item:hover .menu__link,
-.menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-3 .menu__item:hover .menu__link,
+.menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-3:not(.has-props) .menu__item:hover .menu__link,
+.menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-3.has-props > .menu__item .menu__link:hover,
 .menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-3 > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-4 .menu__item .menu__link:hover {
   color: var(--primary);
 }

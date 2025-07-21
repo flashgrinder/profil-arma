@@ -1,0 +1,15 @@
+.seo-block {
+	padding: 80px 0;
+	@include mobile {
+		padding: 48px 0;
+	}
+}
+
+.seo-block__outer {
+	display: grid;
+	grid-template-columns: minmax(300px, 396px) 1fr;
+	gap: 32px;
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+}
