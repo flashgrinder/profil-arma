@@ -23,6 +23,7 @@
 	color: #607D8B;
 	width: 100%;
 	margin-top: 24px;
+	z-index: 0;
 }
 
 .calculator__add-button:hover {
@@ -33,6 +34,7 @@
 	background-color: #30B800;
 	color: var(--primary-bg);
 	width: 100%;
+	z-index: 0;
 }
 
 .calculator__export-button:hover {
@@ -60,7 +62,7 @@
 	font-size: 13px;
 	user-select: none;
 	pointer-events: none;
-	z-index: 1;
+	z-index: 10;
 }
 
 .calculator__input {
@@ -112,4 +114,113 @@
 
 .ss-content.calculator__select .ss-list .ss-option:hover {
 	--ss-primary-color: #E3820D;
+}
+
+/* Custom-select */
+.custom-select-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.calculator__select {
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0; /* Уменьшаем z-index для <select> */
+	pointer-events: none; /* Полное отключение событий */
+	cursor: default;
+	visibility: hidden;
+}
+
+.custom-select {
+	position: relative;
+	width: 100%;
+	border: 1px solid var(--ss-border-color);
+	border-radius: 4px;
+	background-color: #ECEFF1;
+	z-index: 1;
+}
+
+.custom-select.disabled {
+	background-color: #dcdee2; /* Серый фон для отключенного состояния */
+	border-color: #ddd; /* Более светлая граница */
+	cursor: not-allowed; /* Курсор для неактивного элемента */
+}
+
+.custom-select.disabled .custom-select-selected {
+	color: #888; /* Более тусклый текст */
+	cursor: not-allowed;
+}
+
+.custom-select-selected {
+	padding: 33px 52px 10px 16px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f5f5f5;
+	color: #000;
+	user-select: none;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.custom-select-selected::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #000;
+}
+
+.custom-select.disabled .custom-select-selected::after {
+	border-top-color: #888; /* Тусклая стрелка */
+}
+
+.custom-select-options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.custom-select-options.active {
+	display: block;
+}
+
+.custom-select.disabled .custom-select-options.active {
+	display: none;
+	pointer-events: none;
+	user-select: none;
+}
+
+.custom-select-option {
+	font-weight: 600;
+	padding: 12px 16px;
+	cursor: pointer;
+	color: #000;
+}
+
+.custom-select-option:hover {
+	color: var(--ss-bg-color);
+	background-color: #e3820d;
+}
+
+.custom-select-option.selected {
+	color: var(--ss-bg-color);
+	background-color: var(--primary);
 }
