@@ -29,7 +29,7 @@ import toggleSearch from "./modules/search";
 import $ from "jquery";
 import mapDeliveryTooltip from "./modules/map-delivery-tooltip";
 import selectCalculator from "./modules/calculator-select";
-import cloneCalculatorItem from "./modules/calculator-add-item";
+// import cloneCalculatorItem from "./modules/calculator-add-item";
 import animationFlans from "./modules/animation-flans";
 import manufactureAccordion from "./modules/manufacture-accordion";
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     mapDeliveryTooltip();
     selectCalculator();
     window.selectCalculator = selectCalculator;
-    cloneCalculatorItem();
+    // cloneCalculatorItem();
     animationFlans();
     manufactureAccordion();
     Fancybox.bind('[data-fancybox]');
