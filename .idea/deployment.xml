@@ -44,6 +44,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="data-summit.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="fincom">
         <serverdata>
           <mappings>
@@ -87,6 +94,13 @@
         </serverdata>
       </paths>
       <paths name="polycoat">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="profil-arma">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
