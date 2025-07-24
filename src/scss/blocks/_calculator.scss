@@ -57,9 +57,11 @@
 
 .calculator__label > span {
 	position: absolute;
-	top: 14px;
+	top: 8px;
 	left: 16px;
-	font-size: 13px;
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--blue-gray-font-color);
 	user-select: none;
 	pointer-events: none;
 	z-index: 1;
@@ -140,7 +142,9 @@
 	border: 1px solid var(--ss-border-color);
 	border-radius: 4px;
 	background-color: #ECEFF1;
-	min-height: 66px;
+	min-height: 68px;
+	max-height: 68px;
+	max-width: 259px;
 	//z-index: 1;
 }
 
@@ -156,7 +160,7 @@
 }
 
 .custom-select-selected {
-	padding: 33px 52px 10px 16px;
+	padding: 36px 52px 10px 16px;
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
@@ -165,7 +169,10 @@
 	color: #000;
 	user-select: none;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .custom-select-selected::after {
