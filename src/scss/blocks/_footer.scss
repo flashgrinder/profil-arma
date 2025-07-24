@@ -150,6 +150,10 @@ a.footer__menu-link {
 	color: #455A64;
 }
 
+a.footer__link-policy + a.footer__link-policy {
+	margin-top: 12px;
+}
+
 a.footer__menu-link:hover {
 	color: var(--primary);
 }

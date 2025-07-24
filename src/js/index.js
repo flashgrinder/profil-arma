@@ -32,10 +32,13 @@ import selectCalculator from "./modules/calculator-select";
 // import cloneCalculatorItem from "./modules/calculator-add-item";
 import animationFlans from "./modules/animation-flans";
 import manufactureAccordion from "./modules/manufacture-accordion";
+import initCookie from "./modules/cookie";
+
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
     // animationPage();
+    initCookie();
     toggleSearch();
     mobileNav();
     mobileCatalog();
