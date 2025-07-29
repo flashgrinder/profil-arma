@@ -1,9 +1,11 @@
 .header {
 	position: absolute;
 	color: var(--primary-font-color);
-	background-color: var(--secondary-bg);
+	//background-color: var(--secondary-bg);
+	background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(236, 239, 241, 0.5), rgba(236, 239, 241, 0.5));
 	width: 100%;
 	border-bottom: 1px solid var(--secondary-bg-2);
+	z-index: 1;
 	@include tablet {
 		position: fixed;
 	}
@@ -169,6 +171,7 @@ body .page-head {
 		margin-left: auto;
 	}
 	@include mobile {
+		color: var(--primary-bg);
 		width: auto;
 	}
 	@include mobileXS {
@@ -179,6 +182,9 @@ body .page-head {
 .header__button .button__icon {
 	--file-header-color: #607D8B;
 	fill: var(--file-header-color);
+	@include mobile {
+		--file-header-color: var(--primary-bg);
+	}
 }
 
 .header--dark .header__button {

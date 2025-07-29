@@ -52,8 +52,8 @@
 }
 
 .button--primary:disabled {
-  color: var(--secondary-bg);
-  background-color: var(--disabled);
+  color: var(--primary-bg);
+  background-color: var(--blue-gray-bg);
 }
 
 .button--secondary {
@@ -106,8 +106,8 @@
 }
 
 .button--thirty:disabled {
-  background-color: var(--disabled);
-  color: var(--secondary-bg);
+  color: var(--primary-bg);
+  background-color: var(--blue-gray-bg);
 }
 
 .button--text {
