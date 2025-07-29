@@ -17,7 +17,7 @@
 	z-index: 10;
 	width: 100%;
 	color: var(--primary-bg);
-	background-color: transparent;
+	background: transparent;
 	border-bottom: 1px solid transparent;
 	@include tablet {
 		position: fixed;
