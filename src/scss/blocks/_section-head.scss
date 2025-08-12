@@ -68,8 +68,9 @@
 	gap: 20px;
 }
 
-.section-head__button {
+.section-head__button.button {
 	border: 1px solid var(--blue-gray-bg, #CFD8DC);
+	z-index: 0;
 	@include mobile {
 		font-size: 24px;
 	}

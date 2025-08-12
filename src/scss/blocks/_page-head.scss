@@ -365,8 +365,9 @@
 	height: 100%;
 	@include mobile {
 		top: auto;
-		height: auto;
+		//height: auto;
 		bottom: 0;
+		max-height: 330px;
 	}
 }
 
@@ -388,7 +389,7 @@
 	max-width: 900px;
 	@include mobile {
 		padding-left: 0;
-		margin-top: 80px;
+		margin-top: 32px;
 	}
 }
 
@@ -424,7 +425,8 @@
 
 .page-head.page-head--about .page-head__blockquote-text:last-child {
 	@include mobile {
-		max-width: 230px;
+		max-width: 250px;
+		font-size: 16px;
 	}
 }
 

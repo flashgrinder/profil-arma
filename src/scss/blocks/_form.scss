@@ -30,7 +30,7 @@
   color: var(--primary-font-color);
   outline: none;
   @include mobile {
-    padding: 25px 0 16px 0;
+    padding: 20px 0 16px 0;
     font-size: 14px;
   }
 }
@@ -54,6 +54,9 @@
               transform .1s linear,
               font-size .1s linear;
   font-size: 18px;
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .form__input.is-dirty + .form__placeholder {
@@ -98,9 +101,18 @@
   max-width: 1128px;
 }
 
+.form__field.form__field--textarea textarea::placeholder {
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
 .form__input::placeholder,
 .form__input--textarea::placeholder {
   color: var(--secondary-font-color);
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .form__files-wrapper {

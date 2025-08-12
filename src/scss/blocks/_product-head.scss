@@ -30,6 +30,7 @@
 	object-fit: cover;
 	@include mobile {
 		max-height: 245px;
+		object-fit: contain;
 	}
 }
 

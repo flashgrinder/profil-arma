@@ -10,6 +10,10 @@
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	align-items: center;
 	gap: 80px;
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
 }
 
 .about__item + .about__item {
@@ -26,6 +30,9 @@
 .about__item-title {
 	position: relative;
 	padding-left: 53px;
+	@include mobile {
+		padding-left: 38px;
+	}
 }
 
 .about__item-title::before {
@@ -38,6 +45,9 @@
 .about__item-description {
 	margin-top: 32px;
 	padding-left: 53px;
+	@include mobile {
+		padding-left: 38px;
+	}
 }
 
 .about__item-pic {

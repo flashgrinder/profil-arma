@@ -31,7 +31,7 @@ body.header--dark .main-screen {
 body .page-head {
 	padding-top: 264px;
 	@include mobile {
-		padding-top: 160px;
+		padding-top: 120px;
 	}
 }
 
@@ -206,6 +206,10 @@ a.header__contact[href^="mailto"] {
 	@include tablet {
 		font-size: 24px;
 	}
+	@include mobile {
+		font-size: 20px;
+		margin-top: 0;
+	}
 }
 
 a.header__contact[href^="tel"] {
@@ -217,6 +221,9 @@ a.header__contact[href^="tel"] {
 	}
 	@include tablet {
 		font-size: 32px;
+	}
+	@include mobile {
+		font-size: 26px;
 	}
 }
 
@@ -241,6 +248,7 @@ a.header__contact {
 		flex-direction: column;
 		align-items: stretch;
 		overflow: hidden;
+		overflow-y: auto;
 		transition: right var(--hover-time) linear, opacity .150s linear;
 	}
 }
@@ -285,6 +293,8 @@ a.header__contact {
 .header__info-mobile .header__button.header__button--mobile {
 	@include tablet {
 		background-color: var(--primary);
+		padding: 15px 20px;
+		font-size: 18px;
 	}
 }
 
@@ -295,11 +305,17 @@ a.header__contact {
 		height: auto;
 		padding-top: 80px;
 	}
+	@include mobile {
+		padding-top: 80px;
+	}
 }
 
 .header__menu.menu {
 	@include tablet {
 		font-size: 24px;
+	}
+	@include mobile {
+		font-size: 18px;
 	}
 }
 
@@ -307,6 +323,9 @@ a.header__contact {
 	@include tablet {
 		align-items: flex-start;
 		gap: 32px;
+	}
+	@include mobile {
+		gap: 24px;
 	}
 }
 
@@ -352,6 +371,9 @@ a.header__contact {
 		opacity: 1;
 		visibility: visible;
 	}
+	@include mobile {
+		margin-top: 32px;
+	}
 }
 
 .header__form-field {
@@ -384,6 +406,9 @@ a.header__contact {
 	@include tablet {
 		padding: 18px 15px 18px 58px;
 		border-width: 1px;
+	}
+	@include mobile {
+		padding: 12px 15px 12px 58px;
 	}
 }
 
