@@ -223,6 +223,10 @@
   overflow-y: visible;
 }
 
+.menu__item.menu__item--catalog .menu__sub-menu>.menu__item>.menu__sub-menu.menu__sub-menu--lvl-2>.menu__item>.menu__sub-menu.menu__sub-menu--lvl-3 {
+  overflow-y: auto;
+}
+
 .menu__item.menu__item--catalog:hover .menu__sub-menu.menu__sub-menu--lvl-1,
 .menu__item.menu__item--catalog .menu__sub-menu > .menu__item:hover > .menu__sub-menu.menu__sub-menu--lvl-2,
 .menu__item.menu__item--catalog .menu__sub-menu > .menu__item > .menu__sub-menu.menu__sub-menu--lvl-2 .menu__item:hover .menu__sub-menu.menu__sub-menu--lvl-3,
