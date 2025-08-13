@@ -198,7 +198,26 @@
 	color: var(--primary-bg);
 }
 
+
+.tender .form__wrap-fields,
+.tender.tender--feedback .form__wrap-fields {
+	margin-top: 32px;
+	gap: 24px;
+	@include mobile {
+		flex-direction: column;
+		gap: 32px;
+	}
+}
+
+.tender .form__agreement,
 .tender.tender--feedback .form__agreement {
+	margin-top: 0;
+	margin-left: 0;
+	text-align: left;
+}
+
+.tender .form__agreement + .form__agreement,
+.tender.tender--feedback .form__agreement + .form__agreement {
 	margin-top: 32px;
 }
 
@@ -207,8 +226,9 @@
 	font-size: 18px;
 }
 
+.tender .form__agreement,
 .tender.tender--feedback .form__agreement {
-	display: flex;
+	display: block;
 	width: fit-content;
 	@include mobile {
 		display: block;
