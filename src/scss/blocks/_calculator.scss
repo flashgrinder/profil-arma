@@ -93,6 +93,11 @@
 	-webkit-appearance: none;
 }
 
+.calculator__button.button {
+	font-size: 16px;
+	justify-content: center;
+}
+
 .calculator__select.ss-main:focus {
 	--ss-focus-color: #F48A0B;
 }
@@ -246,4 +251,19 @@
 .custom-select-option.selected {
 	color: var(--ss-bg-color);
 	background-color: var(--primary);
+}
+
+
+/* Calculator KOF */
+.calculator.calculator--kof .custom-select {
+	max-width: 100%;
+}
+
+.calculator.calculator--kof .calculator__bottom {
+	display: flex;
+	gap: 24px;
+}
+
+.calculator.calculator--kof .calculator__button {
+	width: 100%;
 }

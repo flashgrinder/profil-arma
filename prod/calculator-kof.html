@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Базовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png">
+</head>
+<body class="header--dark">
+
+<button class="button-feedback button" data-hystmodal="#feedback">
+    Написать нам
+</button>
+<!-- Убираешь класс header--dark и меняет цвета на белый -->
+<header class="header js-header-mobile header--dark">
+    <div class="header__top container">
+        <div class="header__top-wrap d-flex flex-justify-sb flex-align-center">
+            <div class="header__logo-wrap d-flex flex-justify-sb flex-align-center">
+                <a href="./" class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <div class="header__excerpt text text--normal text--w-regular">
+                    Производитель трубопроводной
+                    арматуры и&#160;деталей трубопровода
+                    любого диаметра и&#160;стандарта
+                </div>
+            </div>
+            <a href="javascript:;" class="header__button button button--secondary button--medium"
+               data-hystmodal="#feedback">
+                <svg width="24" height="24" class="button__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#pdf-file-header"></use>
+                </svg>
+                <span>Получить КП</span>
+            </a>
+            <a href="mailto:zakaz3@profil-arma.ru" class="header__contact contact d-flex flex-align-center">
+                <svg width="32" height="32" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                </svg>
+                zakaz3@profil-arma.ru
+            </a>
+            <a href="tel:+7 (3513) 62‒67‒74" class="header__contact contact d-flex flex-align-center">
+                +7 (3513) 62&#8211;67&#8211;74
+                <svg width="40" height="40" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                </svg>
+            </a>
+            <svg width="32" height="32"
+                 class="header__search-btn header__search-btn--top js-search-btn-header js-search-btn-header-mobile">
+                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+            </svg>
+            <button class="mobile-nav-btn burger js-mobile-nav-burger">
+                <span class="nav-icon burger__icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="header__outer container js-mobile-main-menu">
+        <div class="header__inner d-flex flex-justify-sb flex-align-center">
+            <a href="./" class="header__logo header__logo--fixed">
+                <img src="./img/logo-white.svg" alt="">
+            </a>
+            <nav class="header__menu menu">
+                <ul class="header__menu-list menu__list">
+                   <li class="header__menu-item menu__item menu__item--catalog">
+                       <a href="/katalog/" class="header__menu-link menu__link">
+                           Каталог
+                       </a>
+                       <!-- 1-й уровень -->
+                       <ul class="header__menu-sub-menu menu__sub-menu menu__sub-menu--lvl-1">
+                           <li class="menu__item">
+                               <div class="menu__item-inner">
+                                   <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                        alt="Фланцевая продукция">
+                                   <a href="" class="menu__link">Фланцевая продукция</a>
+                               </div>
+                               <!-- 2-й уровень -->
+                               <ul class="header__menu-sub-menu menu__sub-menu menu__sub-menu--lvl-2">
+                                   <li class="menu__item">
+                                       <div class="menu__item-inner">
+                                           <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                                alt="Фланцевая продукция">
+                                           <a href="" class="menu__link">Фланцы</a>
+                                       </div>
+                                       <!-- 3-й уровень -->
+                                       <ul class="header__menu-sub-menu menu__sub-menu menu__sub-menu--lvl-3">
+                                           <li class="menu__item">
+                                               <div class="menu__item-inner">
+                                                   <a href="" class="menu__link">По&#160;стандартам качества</a>
+                                               </div>
+                                               <!-- 4-й уровень -->
+                                               <ul class="header__menu-sub-menu menu__sub-menu menu__sub-menu--lvl-4">
+                                                   <li class="menu__item">
+                                                       <div class="menu__item-name">
+                                                           По&#160;максимальному давление РУ
+                                                       </div>
+                                                       <div class="menu__item-props">
+                                                           <a href="" class="menu__link">Ру&#160;6</a>
+                                                           <a href="" class="menu__link">Ру&#160;10</a>
+                                                           <a href="" class="menu__link">Ру&#160;12</a>
+                                                           <a href="" class="menu__link">Ру&#160;16</a>
+                                                           <a href="" class="menu__link">Ру&#160;25</a>
+                                                       </div>
+                                                   </li>
+                                                   <li class="menu__item">
+                                                       <div class="menu__item-name">
+                                                           По&#160;условному диаметру ДУ
+                                                       </div>
+                                                       <div class="menu__item-props">
+                                                           <a href="" class="menu__link">ДУ&#160;15</a>
+                                                           <a href="" class="menu__link">ДУ&#160;20</a>
+                                                           <a href="" class="menu__link">ДУ&#160;30</a>
+                                                           <a href="" class="menu__link">ДУ&#160;40</a>
+                                                           <a href="" class="menu__link">ДУ&#160;45</a>
+                                                           <a href="" class="menu__link">ДУ&#160;55</a>
+                                                           <a href="" class="menu__link">ДУ&#160;65</a>
+                                                           <a href="" class="menu__link">ДУ&#160;75</a>
+                                                           <a href="" class="menu__link">ДУ&#160;85</a>
+                                                           <a href="" class="menu__link">ДУ&#160;95</a>
+                                                       </div>
+                                                   </li>
+                                               </ul>
+                                               <!-- 4-й уровень конец -->
+                                           </li>
+                                           <li class="menu__item">
+                                               <div class="menu__item-inner">
+                                                   <a href="" class="menu__link">По&#160;маркам стали</a>
+                                               </div>
+                                           </li>
+                                           <li class="menu__item">
+                                               <div class="menu__item-inner">
+                                                   <a href="" class="menu__link">По&#160;типу фланца</a>
+                                               </div>
+                                           </li>
+                                           <li class="menu__item">
+                                               <div class="menu__item-inner">
+                                                   <a href="" class="menu__link">По&#160;параметрам РУ, ДУ</a>
+                                               </div>
+                                           </li>
+                                           <li class="menu__item">
+                                               <div class="menu__item-inner">
+                                                   <a href="" class="menu__link">По&#160;исполнениям</a>
+                                               </div>
+                                           </li>
+                                           <li class="menu__item">
+                                               <div class="menu__item-inner">
+                                                   <a href="" class="menu__link">По&#160;чертежам заказчика</a>
+                                               </div>
+                                           </li>
+                                       </ul>
+                                       <!-- 3-й уровень конец -->
+                                   </li>
+                                   <li class="menu__item">
+                                       <div class="menu__item-inner">
+                                           <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                                alt="Фланцевая продукция">
+                                           <a href="" class="menu__link">Заглушки</a>
+                                       </div>
+                                       <!-- 3-й уровень -->
+                                       <ul class="header__menu-sub-menu menu__sub-menu menu__sub-menu--lvl-3 has-props">
+                                           <li class="menu__item">
+                                               <div class="menu__item-name">
+                                                   По&#160;максимальному давление РУ
+                                               </div>
+                                               <div class="menu__item-props">
+                                                   <a href="" class="menu__link">Ру&#160;6</a>
+                                                   <a href="" class="menu__link">Ру&#160;10</a>
+                                                   <a href="" class="menu__link">Ру&#160;12</a>
+                                                   <a href="" class="menu__link">Ру&#160;16</a>
+                                                   <a href="" class="menu__link">Ру&#160;25</a>
+                                               </div>
+                                           </li>
+                                           <li class="menu__item">
+                                               <div class="menu__item-name">
+                                                   По&#160;условному диаметру ДУ
+                                               </div>
+                                               <div class="menu__item-props">
+                                                   <a href="" class="menu__link">ДУ&#160;15</a>
+                                                   <a href="" class="menu__link">ДУ&#160;20</a>
+                                                   <a href="" class="menu__link">ДУ&#160;30</a>
+                                                   <a href="" class="menu__link">ДУ&#160;40</a>
+                                                   <a href="" class="menu__link">ДУ&#160;45</a>
+                                                   <a href="" class="menu__link">ДУ&#160;55</a>
+                                                   <a href="" class="menu__link">ДУ&#160;65</a>
+                                                   <a href="" class="menu__link">ДУ&#160;75</a>
+                                                   <a href="" class="menu__link">ДУ&#160;85</a>
+                                                   <a href="" class="menu__link">ДУ&#160;95</a>
+                                               </div>
+                                           </li>
+                                       </ul>
+                                       <!-- 3-й уровень конец -->
+                                   </li>
+                                   <li class="menu__item">
+                                       <div class="menu__item-inner">
+                                           <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                                alt="Фланцевая продукция">
+                                           <a href="" class="menu__link">Линзы</a>
+                                       </div>
+                                   </li>
+                                   <li class="menu__item">
+                                       <div class="menu__item-inner">
+                                           <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                                alt="Фланцевая продукция">
+                                           <a href="" class="menu__link">Прокладки разного сечения</a>
+                                       </div>
+                                   </li>
+                                   <li class="menu__item">
+                                       <div class="menu__item-inner">
+                                           <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                                alt="Фланцевая продукция">
+                                           <a href="" class="menu__link">Изолирующие соединения</a>
+                                       </div>
+                                   </li>
+                                   <li class="menu__item">
+                                       <div class="menu__item-inner">
+                                           <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                                alt="Фланцевая продукция">
+                                           <a href="" class="menu__link">Фланцевый крепеж</a>
+                                       </div>
+                                   </li>
+                               </ul>
+                               <!-- 2-й уровень конец -->
+                           </li>
+                           <li class="menu__item is-no-section">
+                               <div class="menu__item-inner">
+                                   <img class="menu__img" width="44" height="44" src="./img/sections/flanec.png"
+                                        alt="Фланцевая продукция">
+                                   <a href="" class="menu__link">Детали трубопроводов</a>
+                               </div>
+                           </li>
+                           <li class="menu__item">
+                               <div class="menu__item-inner">
+                                   <img class="menu__img" width="44" height="44" src="./img/sections/tochechnaya_1.png"
+                                        alt="Фланцевая продукция">
+                                   <a href="" class="menu__link">Точеные детали трубопроводов</a>
+                               </div>
+                           </li>
+                           <li class="menu__item">
+                               <div class="menu__item-inner">
+                                   <img class="menu__img" width="44" height="44" src="./img/sections/trubnaya_reshetka.png"
+                                        alt="Фланцевая продукция">
+                                   <a href="" class="menu__link">Трубные решетки</a>
+                               </div>
+                           </li>
+                           <li class="menu__item">
+                               <div class="menu__item-inner">
+                                   <img class="menu__img" width="44" height="44" src="./img/sections/filtr_setchatiy.png"
+                                        alt="Фланцевая продукция">
+                                   <a href="" class="menu__link">Котельное оборудование</a>
+                               </div>
+                           </li>
+                           <li class="menu__item">
+                               <div class="menu__item-inner">
+                                   <img class="menu__img" width="44" height="44" src="./img/sections/pokovka.png"
+                                        alt="Фланцевая продукция">
+                                   <a href="" class="menu__link">Поковки</a>
+                               </div>
+                           </li>
+                           <li class="menu__item">
+                               <div class="menu__item-inner">
+                                   <img class="menu__img" width="44" height="44" src="./img/sections/avtoklav.png"
+                                        alt="Фланцевая продукция">
+                                   <a href="" class="menu__link">Устройства для контроля и&#160;измерений</a>
+                               </div>
+                           </li>
+                       </ul>
+                       <!-- 1-й уровень конец -->
+                   </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/otgruzki/" class="header__menu-link menu__link">
+                            Отгрузки
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/o-kompanii/" class="header__menu-link menu__link">
+                            О&#160;компании
+                        </a>
+                        <ul class="header__menu-sub-menu menu__sub-menu">
+                            <li class="menu__item"><a href="" class="menu__link">Фотогалерея</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/journal/" class="menu__link">Журнал</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/klienty-i-otzyvy/" class="menu__link">Клиенты и&#160;отзывы</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/nasha-komanda/" class="menu__link">Наша команда</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/partnery/" class="menu__link">Партнеры</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/proizvodstvo/" class="menu__link">Производство</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/rekvizity/" class="menu__link">Реквизиты</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/sfery-primeneniya/" class="menu__link">Сферы применения</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/standarty/" class="menu__link">Стандарты</a></li>
+                            <li class="menu__item"><a href="/o-kompanii/stati/" class="menu__link">Статьи</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/sertifikat/" class="header__menu-link menu__link">
+                            Сертификаты
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/dostavka-i-oplata/" class="header__menu-link menu__link">
+                            Доставка и&#160;оплата
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/kalkulyatory/" class="header__menu-link menu__link">
+                            Калькуляторы
+                        </a>
+                        <ul class="header__menu-sub-menu menu__sub-menu">
+                            <li class="menu__item"><a href="/kalkulyatory/kalkulyator-krep/" class="menu__link">Калькулятор крепежа</a></li>
+                            <li class="menu__item"><a href="/kalkulyatory/kalkulyator-kof/" class="menu__link">Калькулятор коф</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/vakansii/" class="header__menu-link menu__link">
+                            Вакансии
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="/contacts/" class="header__menu-link menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="mailto:zakaz3@profil-arma.ru" class="header__contact header__contact--fixed contact d-flex flex-align-center">
+                <svg width="32" height="32" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                </svg>
+            </a>
+            <a href="tel:+7 (3513) 62‒67‒74" class="header__contact header__contact--fixed contact d-flex flex-align-center">
+                <svg width="32" height="32" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                </svg>
+            </a>
+            <svg width="32" height="32" class="header__search-btn header__search-btn--bottom js-search-btn-header">
+                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+            </svg>
+        </div>
+        <form action="" class="header__form-search js-search-form">
+            <div class="header__form-field">
+                <input class="header__form-input" type="text" value="" name="q" placeholder="что вы ищете?" data-catalog-search-q="">
+                <button class="header__form-btn js-search-close" type="button">
+                    <svg class="header__form-svg-close" width="20px" height="20px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+        <div class="header__info-mobile">
+            <a href="mailto:zakaz3@profil-arma.ru" class="header__contact header__contact--mobile contact d-flex flex-align-center">
+                <svg width="32" height="32" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                </svg>
+                zakaz3@profil-arma.ru
+            </a>
+            <a href="tel:+7 (3513) 62‒67‒74" class="header__contact header__contact--mobile contact d-flex flex-align-center">
+                <svg width="40" height="40" class="contact__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                </svg>
+                +7 (3513) 62&#8211;67&#8211;74
+            </a>
+            <a href="javascript:;" class="header__button header__button--mobile button button--primary"
+			   data-hystmodal="#feedback">
+                <svg width="24" height="24" class="button__icon">
+                    <use href="./img/svgsprite/sprite.symbol.svg#pdf-file-header"></use>
+                </svg>
+                <span>Получить КП</span>
+            </a>
+        </div>
+    </div>
+</header>
+<div class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="docs.html">Документация</a></li>
+    </ul>
+</div>
+
+<main id="swup" class="transition-main">
+
+<section class="page-head">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs">
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs__nav d-flex flex-align-center">
+                    <a href="/">
+                        Главная
+                    </a>
+                    <a href="/">
+                        Калькуляторы деталей трубопроводов
+                    </a>
+                    <span>Калькулятор расчета комплекта ответных фланцев</span>
+                </nav>
+            </div>
+        </div>
+        <h1 class="page-head__heading title title--big title--primary title--w-semibold title--uppercase">
+            Калькулятор расчета комплекта ответных фланцев
+        </h1>
+    </div>
+</section>
+
+<div class="calculator calculator--kof">
+    <div class="calculator__body container">
+        <div class="calculator__form">
+            <div class="calculator__top js-container">
+                <div class="calculator__items js-target-container">
+                    <form action="" class="calculator__item js-calculator-item js-element-to-clone" data-calculator-form data-row-1>
+                        <label class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Вид метиза</span>
+                            <div class="custom-select-wrapper">
+                                <select class="calculator__select" name="metiz-type" data-select-id tabindex="-1">
+                                    <option>Выбрать</option>
+                                    <option value="Болт">Болт</option>
+                                    <option value="Гайка">Гайка</option>
+                                </select>
+                                <div class="custom-select">
+                                    <div class="custom-select-selected"></div>
+                                    <div class="custom-select-options"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Стандарт</span>
+                            <div class="custom-select-wrapper">
+                                <select class="calculator__select" name="gost" data-select-id tabindex="-1" disabled>
+                                    <option>Выбрать</option>
+                                    <option value="ГОСТ 15579-90">ГОСТ 15579-90</option>
+                                    <option value="ГОСТ 15579-70">ГОСТ 15579-70</option>
+                                    <option value="ГОСТ 14579-40">ГОСТ 14579-40</option>
+                                </select>
+                                <div class="custom-select">
+                                    <div class="custom-select-selected"></div>
+                                    <div class="custom-select-options"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Единица измерения</span>
+                            <div class="custom-select-wrapper">
+                                <select class="calculator__select" name="unit" data-select-id tabindex="-1" disabled>
+                                    <option>Выбрать</option>
+                                    <option value="шт">шт</option>
+                                    <option value="кг">кг</option>
+                                    <option value="фунт">фунт</option>
+                                </select>
+                                <div class="custom-select">
+                                    <div class="custom-select-selected"></div>
+                                    <div class="custom-select-options"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="" class="calculator__label">
+                            <span class="text text--subtext text--w-semibold">Количество, шт</span>
+                            <input class="calculator__input" type="number">
+                        </label>
+                        <div class="calculator__button button button--primary">
+                            <span>Подобрать</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="calculator__tabs">
+                Сюда пока тестово выводи данные
+            </div>
+            <div class="calculator__bottom">
+                <div class="calculator__export-button button">
+                    <svg width="24" height="24" class="button__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#file-download"></use>
+                    </svg>
+                    <span>Экспортировать данные (excel)</span>
+                </div>
+                <div class="calculator__button button button--primary">
+                    <span>Сделать заказ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="calculator js-container">-->
+<!--    <div class="calculator__body container">-->
+<!--		<template class="js-calculator-containersss" id="tmpl">-->
+<!--			<div class="calculator__item js-calculator-item">-->
+<!--				<label class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вид метиза</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select" data-name="Тип метизов">-->
+<!--						<option value="Болт">Болт</option>-->
+<!--						<option value="Гайка">Гайка</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Стандарт</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select">-->
+<!--						<option value="ГОСТ 7798-70">ГОСТ 7798-70</option>-->
+<!--						<option value="ГОСТ 7798-80">ГОСТ 7798-80</option>-->
+<!--						<option value="ГОСТ 7798-90">ГОСТ 7798-90</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Диаметр</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select">-->
+<!--						<option value="10мм">10мм</option>-->
+<!--						<option value="20мм">20мм</option>-->
+<!--						<option value="30мм">30мм</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label for="" class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Длина</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select">-->
+<!--						<option value="10мм">100мм</option>-->
+<!--						<option value="20мм">200мм</option>-->
+<!--						<option value="30мм">300мм</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label for="" class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Количество , шт</span>-->
+<!--					<input class="calculator__input" type="number">-->
+<!--				</label>-->
+<!--				<label for="" class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вес, кг</span>-->
+<!--					<input class="calculator__input" type="number">-->
+<!--				</label>-->
+<!--			</div>-->
+<!--		</template>-->
+<!--		<div class="js-container">-->
+<!--			<button class="js-copy-btn">Скопировать элемент</button>-->
+<!--			<div class="js-target-container">-->
+<!--				&lt;!&ndash; Сюда будут добавляться скопированные элементы &ndash;&gt;-->
+<!--			</div>-->
+<!--			<div class="js-element-to-clone">-->
+<!--				<p>Это элемент, который будет скопирован</p>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--        <div class="calculator__form">-->
+<!--            <div class="calculator__top">-->
+<!--                <div class="calculator__items js-target-container">-->
+<!--                    <form action="" class="calculator__item js-calculator-item js-element-to-clone" data-calculator-form data-row-1>-->
+<!--						<label class="calculator__label">-->
+<!--							<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вид метиза</span>-->
+<!--							<div class="custom-select-wrapper">-->
+<!--								<select class="calculator__select" name="metiz-type" data-select-id tabindex="-1">-->
+<!--									<option value="Болт">Болт</option>-->
+<!--									<option value="Гайка">Гайка</option>-->
+<!--								</select>-->
+<!--								<div class="custom-select">-->
+<!--									<div class="custom-select-selected"></div>-->
+<!--									<div class="custom-select-options"></div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</label>-->
+<!--                        <label class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вид метиза</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select" data-name="Тип метизов">-->
+<!--                                <option value="Болт">Болт</option>-->
+<!--                                <option value="Гайка">Гайка</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Стандарт</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select">-->
+<!--                                <option value="ГОСТ 7798-70">ГОСТ 7798-70</option>-->
+<!--                                <option value="ГОСТ 7798-80">ГОСТ 7798-80</option>-->
+<!--                                <option value="ГОСТ 7798-90">ГОСТ 7798-90</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Диаметр</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select">-->
+<!--                                <option value="10мм">10мм</option>-->
+<!--                                <option value="20мм">20мм</option>-->
+<!--                                <option value="30мм">30мм</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label for="" class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Длина</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select">-->
+<!--                                <option value="10мм">100мм</option>-->
+<!--                                <option value="20мм">200мм</option>-->
+<!--                                <option value="30мм">300мм</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label for="" class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Количество , шт</span>-->
+<!--                            <input class="calculator__input" type="number">-->
+<!--                        </label>-->
+<!--                        <label for="" class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вес, кг</span>-->
+<!--                            <input class="calculator__input" type="number">-->
+<!--                        </label>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div class="calculator__add-button button js-copy-btn js-calculator-add-item">-->
+<!--                    <span>+</span>-->
+<!--                    <span>Добавить еще позицию</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="calculator__bottom">-->
+<!--                <div class="calculator__export-button button">-->
+<!--                    <svg width="24" height="24" class="button__icon">-->
+<!--                        <use href="./img/svgsprite/sprite.symbol.svg#file-download"></use>-->
+<!--                    </svg>-->
+<!--                    <span>Экспортировать данные (excel)</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--	</div>-->
+<!--</div>-->
+
+<section class="answer">
+    <div class="answer__body container">
+        <div class="answer__columns">
+            <div class="answer__col">
+                <h3 class="answer__heading title title--big title--primary title--w-semibold title--uppercase">
+                    Расскажем про цены, <br>
+                    сроки и&#160;условия поставки
+                </h3>
+            </div>
+            <div class="answer__col">
+                <div class="answer__contacts d-flex d-flex-column">
+                    <a href="tel:+7(3513)62‒67‒74"
+					   class="answer__contact answer__contact--phone text text--primary text--w-bold link">
+                        +7 (3513) 62&#8211;67&#8211;74
+                    </a>
+                    <a href="mailto:zakaz3@profil-arma.ru"
+					   class="answer__contact text text--huge text--primary text--w-bold link">
+                        zakaz3@profil-arma.ru
+                    </a>
+                </div>
+                <div class="answer__contacts">
+                    <div class="answer__prop-name text text--huge text--primary text--w-bold">
+                        Время работы:
+                    </div>
+                    <div class="answer__prop-value text text--large text--primary text--w-regular">
+                        Пн-Пт: 9:00&#160;&#8212; 18:00 (Челябинск)
+                    </div>
+                    <div class="answer__prop-value text text--large text--primary text--w-regular">
+                        Пн-Пт: 7:00&#160;&#8212; 16:00 (Москва)
+                    </div>
+                </div>
+                <div class="answer__contacts">
+                    <div class="answer__prop-name text text--huge text--primary text--w-bold">
+                        Адрес офиса, склада и&#160;производства:
+                    </div>
+                    <div class="answer__prop-value text text--large text--primary text--w-regular">
+                        Челябинская область, г.&#160;Златоуст,
+                        ул.&#160;Спецдревесины, 26А, строение&#160;1
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="specialists">
+    <div class="specialists__body">
+        <div class="specialists__top container">
+            <h3 class="specialists__heading title title--big title--primary title--w-bold title--uppercase">
+                СПЕЦИАЛИСТЫ с&#160;5-летним отраслевым <br> опытом помогут оформить заказ
+            </h3>
+        </div>
+        <div class="specialists__slider-wrap container-right">
+            <div class="specialists__splide splide js-specialists-slider-init">
+                <div class="specialists__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
+                    <a href="" class="button button--text">
+                        <span>Все специалисты</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+                        </svg>
+                    </a>
+                    <div class="specialist__splide-arrows slider-nav splide__arrows">
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                            <svg class="slider-nav__arrow-icon" width="32px" height="16px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="specialists__splide-track splide__track">
+                    <div class="specialists__splide-list splide__list">
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialists__splide-slide splide__slide">
+                            <div class="specialists__item d-flex d-flex-column">
+                                <div class="specialists__item-photo">
+                                    <picture>
+                                        <img src="./img/other/specialist.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="specialists__item-info">
+                                    <div class="specialists__item-name text text--huge text--secondary text--w-medium">
+                                        Шарановская Вера Георгиевна&#160;2
+                                    </div>
+                                    <div class="specialists__item-position text text--small text--secondary text--w-medium">
+                                        Начальник тендерного отдела&#160;2
+                                    </div>
+                                    <a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                                        </svg>
+                                        8 (912) 898-51-62
+                                    </a>
+                                    <a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+                                        <svg width="24" height="24" class="contact__icon">
+                                            <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                                        </svg>
+                                        756102@profil-arma.ru
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<div class="overlay transition-overlay">
+    <div class="overlay__left"></div>
+    <svg width="182" height="176" class="overlay__logo">
+        <use href="./img/svgsprite/sprite.symbol.svg#logo-trs"></use>
+    </svg>
+    <div class="overlay__right"></div>
+</div>
+
+<div class="cookie-notifier" data-cookie-notifier="" id="js-cookie-note">
+    <div class="cookie-notifier__text">
+        Мы&#160;используем файлы cookie. Чтобы улучшить работу сайта и&#160;предоставить вам больше возможностей. Продолжая использовать сайт, вы&#160;<a class="cookie-notifier_policy" href="/user-docs/soglasie-na-obrabotku-personalnykh-dannykh/" data-modal--url="">соглашаетесь</a> с
+        <a class="cookie-notifier_policy" href="/user-docs/politika-ispolzovaniya-cookie-faylov/" data-modal--url="">условиями использования</a> cookie.
+    </div>
+    <div class="cookie-notifier__btn">
+        <button class="button button--primary button--small js-cookie-accept" data-cookie-notifier--read="">Согласен</button>
+    </div>
+</div>
+
+<!-- Модалка -->
+<div class="modal modal--feedback hystmodal" id="feedback" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__title title title--pre-big title--primary title--w-bold">
+                Форма обратной связи
+            </div>
+            <div class="modal__subtitle text text--medium text--primary text--w-regular">
+                Перезвоним в&#160;течение 20 минут
+            </div>
+            <form action="./upload/" class="modal-form__form form form--modal js-form-1"
+				  enctype="multipart/form-data"
+				  method="post">
+                <label for="modal-name" class="form__field is-error">
+                    <input type="text" class="form__input js-input" id="modal-name">
+                    <span class="form__placeholder is-required text text--large text--blue-gray-09 text--w-semibold">
+                        Имя или название организации
+                    </span>
+                </label>
+                <label for="modal-phone" class="form__field">
+                    <input type="tel" class="form__input js-input" id="modal-phone">
+                    <span class="form__placeholder is-required text text--large text--blue-gray-09 text--w-semibold">
+                        Номер телефона
+                    </span>
+                </label>
+                <label for="modal-email" class="form__field">
+                    <input type="email" class="form__input js-input" id="modal-email">
+                    <span class="form__placeholder is-required text text--large text--blue-gray-09 text--w-semibold">
+                        E-mail
+                    </span>
+                </label>
+                <label for="modal-message" class="form__field form__field--textarea">
+                    <textarea class="form__input js-input" name="message" id="modal-message"
+							  rows="1" placeholder="Ваше сообщение"></textarea>
+                </label>
+                <div class="modal__actions d-flex d-flex-column flex-justify-sb flex-align-center">
+                    <div class="form__field form__field--file">
+                        <label for="modal-file" class="form__file">
+                            <svg width="24" height="24">
+                                <use href="./img/svgsprite/sprite.symbol.svg#clip"></use>
+                            </svg>
+                            <input class="visually-hidden js-file" type="file" name="file-tender" id="modal-file">
+                            <span class="js-name-file">Прикрепить файл</span>
+                        </label>
+                        <span class="form__file-remove js-remove-file" title="Удалить файл">
+                            <svg width="20" height="20">
+                                <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="form__captcha form__captcha">
+                        <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
+                    </div>
+                    <div class="form__agreement text text--small text--primary text--w-regular">
+                        Нажимая на&#160;кнопку, вы&#160;соглашаетесь на&#160;<a href="">обработку персональных данных</a>
+                    </div>
+                    <button type="button" class="main-form__form-button form__button button button--primary">
+                        <svg width="24" height="24" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#check-white"></use>
+                        </svg>
+                        <span>Отправить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Модалка успешной отправки -->
+<div class="modal modal--thanks hystmodal js-modal-success" id="thanks" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
+            <div class="modal__inner">
+                <div class="modal__inner-text d-flex d-flex-column flex-align-center">
+                    <div class="modal__title title title--large title--primary title--w-bold text-center">
+                        Спасибо! <br> Ваша заявка принята.
+                    </div>
+                    <div class="modal__subtitle text text--large text--primary text--w-regular text-center">
+                        Наши менеджеры свяжутся с&#160;вами в&#160;ближайшее время для обсуждения деталей
+                    </div>
+                    <button class="modal__thanks-btn form__button button button--primary" data-hystclose>
+                        Вернуться назад
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="tender tender--decor">
+    <div class="tender__body container">
+        <div class="tender__columns">
+            <div class="tender__col tender__col--left">
+                <h3 class="tender__heading title title--big title--primary title--w-bold title--uppercase">
+                    Пригласить в&#160;тендер
+                </h3>
+                <div class="tender__subtitle text text--normal text--primary text--w-regular">
+                    Принимаем участие в&#160;тендерных закупках коммерческих организаций, а&#160;также в&#160;соответствии с&#160;44-ФЗ и&#160;223-ФЗ
+                </div>
+                <form action="" class="tender__form form js-form">
+                    <div class="tender__form-wrapper-fields form__wrapper-fields d-flex">
+                        <label for="name-tender" class="form__field is-error">
+                            <input type="text" class="form__input js-input" id="name-tender">
+                            <span class="form__placeholder is-required text text--large text--primary text--w-semibold">
+                                Имя или название организации
+                            </span>
+                        </label>
+                        <label for="phone-tender" class="form__field">
+                            <input type="tel" class="form__input js-input" id="phone-tender">
+                            <span class="form__placeholder is-required text text--large text--primary text--w-semibold">
+                                Номер телефона
+                            </span>
+                        </label>
+                        <label for="email-tender" class="form__field">
+                            <input type="email" class="form__input js-input" id="email-tender">
+                            <span class="form__placeholder is-required text text--large text--primary text--w-semibold">
+                                E-mail
+                            </span>
+                        </label>
+                    </div>
+                    <label for="message-tender" class="form__field form__field--textarea">
+                        <textarea class="form__input js-input" name="message" id="message-tender" rows="1" placeholder="Ваше сообщение"></textarea>
+                    </label>
+                    <div class="form__wrap-fields d-flex flex-justify-sb flex-align-center">
+                        <div class="form__wrap-agreement">
+                            <label for="agreement" class="form__agreement text text--small text--primary text--w-regular">
+                                <input type="checkbox" name="" id="agreement"> Нажимая на&#160;кнопку, вы&#160;соглашаетесь на&#160;<a href="">обработку персональных данных</a>
+                            </label>
+                            <label for="agreement_cost_orange_politika" class="form__agreement text text--small text--primary text--w-regular">
+                                <input type="checkbox" name="agreement_politika" id="agreement_cost_orange_politika">Ознакомлен c&#160;&#160;<a href="/user-docs/politika-obrabotki-i-konfidentsialnosti-personalnykh-dannykh/" target="_blank">Политикой конфиденциальности</a> <a href="/user-docs/polzovatelskoe-soglashenie/">Пользовательским соглашением</a> *
+                            </label>
+                        </div>
+                        <div class="form__captcha">
+                            <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual smart-captcha" id="smart-captcha-2" data-testid="smartCaptcha-container"></div>
+                        </div>
+                    </div>
+                    <div class="form__actions d-flex flex-align-center">
+                        <div class="form__field">
+                            <label for="file-tender" class="form__file">
+                                <input class="visually-hidden js-file" type="file" name="file-tender" id="file-tender">
+                                <span class="js-name-file">Прикрепить файл</span>
+                            </label>
+                        </div>
+                        <div class="form__wrap-buttons d-flex flex-align-center">
+                            <button class="form__button button button--thirty" type="submit">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#airbus"></use>
+                                </svg>
+                                <span>Отправить</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tender__col tender__col--right">
+                <div class="tender__features d-flex d-flex-column">
+                    <div class="tender__feature d-flex">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#verified"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__Feature-text text text--pre-medium text--primary text--w-regular">
+                            Поможем выбрать изделия по&#160;вашим требованиям: нормативы, размеры, марка стали. При необходимости подберем аналоги.
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#document-scanner"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__Feature-text text text--pre-medium text--primary text--w-regular">
+                            Можем изготовить изделия
+                            по&#160;вашим чертежам
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#pending-actions"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__Feature-text text text--pre-medium text--primary text--w-regular">
+                            Срок изготовления&#160;&#8212; 15-18 дней
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tender tender--feedback tender--gray tender--decor">
+    <div class="tender__body container-right">
+        <div class="tender__columns">
+            <div class="tender__col tender__col--left">
+                <h3 class="tender__heading title title--big title--primary title--w-bold title--uppercase">
+                    Получите расчет стоимости заказа
+                </h3>
+                <div class="tender__subtitle text text--medium text--primary text--w-regular">
+                    Перезвоним в&#160;течение 20 минут
+                </div>
+                <svg width="325" height="435" class="tender__decor-big">
+                    <use href="./img/svgsprite/sprite.symbol.svg#decor-tender-big-gray"></use>
+                </svg>
+                <form action="" class="tender__form form js-form">
+                    <div class="tender__form-wrapper-fields form__wrapper-fields d-flex">
+                        <label for="name-feedback" class="form__field is-error">
+                            <input type="text" class="form__input js-input" id="name-feedback">
+                            <span class="form__placeholder is-required text text--large text--secondary text--w-semibold">
+                                Имя или название организации
+                            </span>
+                        </label>
+                        <label for="phone-feedback" class="form__field form__field--phone">
+                            <input type="tel" class="form__input js-input" id="phone-feedback">
+                            <span class="form__placeholder is-required text text--large text--secondary text--w-semibold">
+                                Номер телефона
+                            </span>
+                        </label>
+                        <label for="email-feedback" class="form__field form__field--email">
+                            <input type="email" class="form__input js-input" id="email-feedback">
+                            <span class="form__placeholder is-required text text--large text--secondary text--w-semibold">
+                                E-mail
+                            </span>
+                        </label>
+                    </div>
+                    <label for="message-feedback" class="form__field form__field--textarea">
+                        <textarea class="form__input js-input" name="message" id="message-feedback" rows="1" placeholder="Ваше сообщение"></textarea>
+                    </label>
+                    <div class="form__wrap-fields d-flex flex-justify-sb flex-align-center">
+                        <div class="form__wrap-agreement">
+                            <label for="agreement" class="form__agreement text text--small text--primary text--w-regular">
+                                <input type="checkbox" name="" id="agreement"> Нажимая на&#160;кнопку, вы&#160;соглашаетесь на&#160;<a href="">обработку персональных данных</a>
+                            </label>
+                            <label for="agreement_cost_orange_politika" class="form__agreement text text--small text--primary text--w-regular">
+                                <input type="checkbox" name="agreement_politika" id="agreement_cost_orange_politika">Ознакомлен c&#160;&#160;<a href="/user-docs/politika-obrabotki-i-konfidentsialnosti-personalnykh-dannykh/" target="_blank">Политикой конфиденциальности</a> <a href="/user-docs/polzovatelskoe-soglashenie/">Пользовательским соглашением</a> *
+                            </label>
+                        </div>
+                        <div class="form__captcha">
+                            <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual smart-captcha" id="smart-captcha-2" data-testid="smartCaptcha-container"></div>
+                        </div>
+                    </div>
+                    <div class="form__actions d-flex flex-justify-sb flex-align-center">
+                        <div class="form__field">
+                            <label for="file-feedback-gray" class="form__file">
+                                <input class="visually-hidden js-file" type="file" name="file-tender"
+									   id="file-feedback-gray">
+                                <span class="js-name-file">Прикрепить файл</span>
+                            </label>
+                        </div>
+                        <div class="form__wrap-buttons d-flex flex-align-center">
+                            <button class="form__button button button--thirty" type="submit">
+                                <svg width="24" height="24" class="button__icon">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#airbus-white"></use>
+                                </svg>
+                                <span>Отправить</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tender__col tender__col--right">
+                <div class="tender__features d-flex flex-align-center flex-justify-sb">
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#verified"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--primary text--w-regular">
+                            Поможем выбрать изделия по&#160;вашим требованиям: нормативы, размеры, марка стали. При необходимости подберем аналоги.
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#document-scanner"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--primary text--w-regular">
+                            Можем изготовить изделия <br>
+                            по&#160;вашим чертежам
+                        </div>
+                    </div>
+                    <div class="tender__feature d-flex flex-align-center">
+                        <div class="tender__feature-icon">
+                            <svg width="40px" height="40px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#pending-actions"></use>
+                            </svg>
+                        </div>
+                        <div class="tender__feature-text text text--pre-medium text--primary text--w-regular">
+                            Срок изготовления&#160;&#8212; 15-18 дней
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer js-reveal gs-reveal">
+    <div class="footer__top">
+        <div class="footer__top-wrap container">
+            <div class="footer__top-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__logo-wrap d-flex flex-align-center">
+                    <div class="footer__logo logo">
+                        <svg width="265" height="87" class="footer__logo-svg logo__svg">
+                            <use href="./img/svgsprite/sprite.symbol.svg#logo"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__logo-description text text--large text--primary text--w-regular">
+                        Производитель трубопроводной
+                        арматуры и&#160;деталей трубопровода
+                        любого диаметра и&#160;стандарта
+                    </div>
+                </div>
+                <a href="mailto:zakaz3@profil-arma.ru" class="footer__contact contact d-flex flex-align-center">
+                    <svg width="40" height="40" class="contact__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+                    </svg>
+                    zakaz3@profil-arma.ru
+                </a>
+                <a href="tel:+7 (3513) 62‒67‒74" class="footer__contact contact d-flex flex-align-center">
+                    <svg width="40" height="40" class="contact__icon">
+                        <use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+                    </svg>
+                    +7 (3513) 62&#8211;67&#8211;74
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__center">
+        <div class="footer__center-wrap container">
+            <div class="footer__center-inner d-flex flex-justify-sb">
+                <div class="footer__menu footer__menu--catalog">
+                    <div class="footer__menu-name title title--pre-big title--primary title--w-semibold js-menu">
+                        Каталог
+                    </div>
+                    <ul class="footer__menu-list js-mobile-menu is-open can-animate">
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Фланцевая продукция
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Точеные детали трубопроводов
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Детали трубопровода
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Трубные решетки
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Устьевая арматура
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Фонтанная арматура
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Котельное оборудование
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Устройства для контроля и&#160;измерений
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Поковка
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Автоклав и&#160;парогенератор
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Дымовые трубы и&#160;воздуховоды
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__menu-name title title--pre-big title--primary title--w-semibold js-menu">
+                        Клиентам
+                    </div>
+                    <ul class="footer__menu-list js-mobile-menu">
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Отгрузки
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                О&#160;компании
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Сертификаты
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Доставка и&#160;оплата
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Калькуляторы
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="" class="footer__menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__tender">
+                    <div class="footer__tender-title title title--pre-big title--primary title--w-semibold">
+                        Участие в&#160;тендере
+                    </div>
+                    <div class="footer__tender-excerpt text text--normal text--primary text--w-medium">
+                        Принимаем участие в&#160;тендерных закупках коммерческих организаций,
+                        а&#160;также в&#160;соответствии с&#160;44-ФЗ и&#160;223-ФЗ
+                    </div>
+                    <a href="javascript:;" class="footer__tender-button button button--secondary"
+					   data-hystmodal="#feedback">
+                        <span>Пригласить в&#160;тендер</span>
+                        <svg width="45" height="23" class="button__icon">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-gray"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom-wrap container">
+            <div class="footer__bottom-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__copyright text text--small text--secondary text--w-regular">
+                    2002-2025 &#169; profil-arma.ru
+                </div>
+                <div class="footer__copy-page text text--small text--primary text--w-regular">
+                    Чтобы не&#160;потерять этот сайт,
+                    нажмите CTRL + D
+                </div>
+                <div class="footer__links d-flex d-flex-column text text--secondary text--small text--w-regular">
+                    <a href="" class="footer__link-policy">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="" class="footer__link-policy">
+                        Пользовательское соглашение
+                    </a>
+                </div>
+                <a href="https://saitcraft.ru"
+				   class="footer__develop d-flex flex-align-center text text--small text--primary text--w-regular">
+                    <svg width="23" height="23">
+                        <use href="./img/svgsprite/sprite.symbol.svg#saitcraft"></use>
+                    </svg>
+                    <span>Сайткрафт&#160;&#8212; маркетинг на&#160;промышленном рынке</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>

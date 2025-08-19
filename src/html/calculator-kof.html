@@ -1,0 +1,470 @@
+@@include('blocks/header.html')
+
+<section class="page-head">
+	<div class="page-head__body container">
+		<div class="page-head__breadcrumbs">
+			<div class="breadcrumbs">
+				<nav class="breadcrumbs__nav d-flex flex-align-center">
+					<a href="/">
+						Главная
+					</a>
+					<a href="/">
+						Калькуляторы деталей трубопроводов
+					</a>
+					<span>Калькулятор расчета комплекта ответных фланцев</span>
+				</nav>
+			</div>
+		</div>
+		<h1 class="page-head__heading title title--big title--primary title--w-semibold title--uppercase">
+			Калькулятор расчета комплекта ответных фланцев
+		</h1>
+	</div>
+</section>
+
+<div class="calculator calculator--kof">
+	<div class="calculator__body container">
+		<div class="calculator__form">
+			<div class="calculator__top js-container">
+				<div class="calculator__items js-target-container">
+					<form action="" class="calculator__item js-calculator-item js-element-to-clone" data-calculator-form data-row-1>
+						<label class="calculator__label">
+							<span class="text text--subtext text--w-semibold">Вид метиза</span>
+							<div class="custom-select-wrapper">
+								<select class="calculator__select" name="metiz-type" data-select-id tabindex="-1">
+									<option>Выбрать</option>
+									<option value="Болт">Болт</option>
+									<option value="Гайка">Гайка</option>
+								</select>
+								<div class="custom-select">
+									<div class="custom-select-selected"></div>
+									<div class="custom-select-options"></div>
+								</div>
+							</div>
+						</label>
+						<label class="calculator__label">
+							<span class="text text--subtext text--w-semibold">Стандарт</span>
+							<div class="custom-select-wrapper">
+								<select class="calculator__select" name="gost" data-select-id tabindex="-1" disabled>
+									<option>Выбрать</option>
+									<option value="ГОСТ 15579-90">ГОСТ 15579-90</option>
+									<option value="ГОСТ 15579-70">ГОСТ 15579-70</option>
+									<option value="ГОСТ 14579-40">ГОСТ 14579-40</option>
+								</select>
+								<div class="custom-select">
+									<div class="custom-select-selected"></div>
+									<div class="custom-select-options"></div>
+								</div>
+							</div>
+						</label>
+						<label class="calculator__label">
+							<span class="text text--subtext text--w-semibold">Единица измерения</span>
+							<div class="custom-select-wrapper">
+								<select class="calculator__select" name="unit" data-select-id tabindex="-1" disabled>
+									<option>Выбрать</option>
+									<option value="шт">шт</option>
+									<option value="кг">кг</option>
+									<option value="фунт">фунт</option>
+								</select>
+								<div class="custom-select">
+									<div class="custom-select-selected"></div>
+									<div class="custom-select-options"></div>
+								</div>
+							</div>
+						</label>
+						<label for="" class="calculator__label">
+							<span class="text text--subtext text--w-semibold">Количество , шт</span>
+							<input class="calculator__input" type="number">
+						</label>
+						<div class="calculator__button button button--primary">
+							<span>Подобрать</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="calculator__tabs">
+				Сюда пока тестово выводи данные
+			</div>
+			<div class="calculator__bottom">
+				<div class="calculator__export-button button">
+					<svg width="24" height="24" class="button__icon">
+						<use href="./img/svgsprite/sprite.symbol.svg#file-download"></use>
+					</svg>
+					<span>Экспортировать данные (excel)</span>
+				</div>
+				<div class="calculator__button button button--primary">
+					<span>Сделать заказ</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--<div class="calculator js-container">-->
+<!--    <div class="calculator__body container">-->
+<!--		<template class="js-calculator-containersss" id="tmpl">-->
+<!--			<div class="calculator__item js-calculator-item">-->
+<!--				<label class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вид метиза</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select" data-name="Тип метизов">-->
+<!--						<option value="Болт">Болт</option>-->
+<!--						<option value="Гайка">Гайка</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Стандарт</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select">-->
+<!--						<option value="ГОСТ 7798-70">ГОСТ 7798-70</option>-->
+<!--						<option value="ГОСТ 7798-80">ГОСТ 7798-80</option>-->
+<!--						<option value="ГОСТ 7798-90">ГОСТ 7798-90</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Диаметр</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select">-->
+<!--						<option value="10мм">10мм</option>-->
+<!--						<option value="20мм">20мм</option>-->
+<!--						<option value="30мм">30мм</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label for="" class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Длина</span>-->
+<!--					<select name="" id="" class="calculator__select js-calculator-select">-->
+<!--						<option value="10мм">100мм</option>-->
+<!--						<option value="20мм">200мм</option>-->
+<!--						<option value="30мм">300мм</option>-->
+<!--					</select>-->
+<!--				</label>-->
+<!--				<label for="" class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Количество , шт</span>-->
+<!--					<input class="calculator__input" type="number">-->
+<!--				</label>-->
+<!--				<label for="" class="calculator__label">-->
+<!--					<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вес, кг</span>-->
+<!--					<input class="calculator__input" type="number">-->
+<!--				</label>-->
+<!--			</div>-->
+<!--		</template>-->
+<!--		<div class="js-container">-->
+<!--			<button class="js-copy-btn">Скопировать элемент</button>-->
+<!--			<div class="js-target-container">-->
+<!--				&lt;!&ndash; Сюда будут добавляться скопированные элементы &ndash;&gt;-->
+<!--			</div>-->
+<!--			<div class="js-element-to-clone">-->
+<!--				<p>Это элемент, который будет скопирован</p>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--        <div class="calculator__form">-->
+<!--            <div class="calculator__top">-->
+<!--                <div class="calculator__items js-target-container">-->
+<!--                    <form action="" class="calculator__item js-calculator-item js-element-to-clone" data-calculator-form data-row-1>-->
+<!--						<label class="calculator__label">-->
+<!--							<span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вид метиза</span>-->
+<!--							<div class="custom-select-wrapper">-->
+<!--								<select class="calculator__select" name="metiz-type" data-select-id tabindex="-1">-->
+<!--									<option value="Болт">Болт</option>-->
+<!--									<option value="Гайка">Гайка</option>-->
+<!--								</select>-->
+<!--								<div class="custom-select">-->
+<!--									<div class="custom-select-selected"></div>-->
+<!--									<div class="custom-select-options"></div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</label>-->
+<!--                        <label class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вид метиза</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select" data-name="Тип метизов">-->
+<!--                                <option value="Болт">Болт</option>-->
+<!--                                <option value="Гайка">Гайка</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Стандарт</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select">-->
+<!--                                <option value="ГОСТ 7798-70">ГОСТ 7798-70</option>-->
+<!--                                <option value="ГОСТ 7798-80">ГОСТ 7798-80</option>-->
+<!--                                <option value="ГОСТ 7798-90">ГОСТ 7798-90</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Диаметр</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select">-->
+<!--                                <option value="10мм">10мм</option>-->
+<!--                                <option value="20мм">20мм</option>-->
+<!--                                <option value="30мм">30мм</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label for="" class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Длина</span>-->
+<!--                            <select name="" data-select-id class="calculator__select js-calculator-select">-->
+<!--                                <option value="10мм">100мм</option>-->
+<!--                                <option value="20мм">200мм</option>-->
+<!--                                <option value="30мм">300мм</option>-->
+<!--                            </select>-->
+<!--                        </label>-->
+<!--                        <label for="" class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Количество , шт</span>-->
+<!--                            <input class="calculator__input" type="number">-->
+<!--                        </label>-->
+<!--                        <label for="" class="calculator__label">-->
+<!--                            <span class="text text&#45;&#45;subtext text&#45;&#45;w-semibold">Вес, кг</span>-->
+<!--                            <input class="calculator__input" type="number">-->
+<!--                        </label>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div class="calculator__add-button button js-copy-btn js-calculator-add-item">-->
+<!--                    <span>+</span>-->
+<!--                    <span>Добавить еще позицию</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="calculator__bottom">-->
+<!--                <div class="calculator__export-button button">-->
+<!--                    <svg width="24" height="24" class="button__icon">-->
+<!--                        <use href="./img/svgsprite/sprite.symbol.svg#file-download"></use>-->
+<!--                    </svg>-->
+<!--                    <span>Экспортировать данные (excel)</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--	</div>-->
+<!--</div>-->
+
+<section class="answer">
+	<div class="answer__body container">
+		<div class="answer__columns">
+			<div class="answer__col">
+				<h3 class="answer__heading title title--big title--primary title--w-semibold title--uppercase">
+					Расскажем про цены, <br>
+					сроки и условия поставки
+				</h3>
+			</div>
+			<div class="answer__col">
+				<div class="answer__contacts d-flex d-flex-column">
+					<a href="tel:+7(3513)62‒67‒74"
+					   class="answer__contact answer__contact--phone text text--primary text--w-bold link">
+						+7 (3513) 62‒67‒74
+					</a>
+					<a href="mailto:zakaz3@profil-arma.ru"
+					   class="answer__contact text text--huge text--primary text--w-bold link">
+						zakaz3@profil-arma.ru
+					</a>
+				</div>
+				<div class="answer__contacts">
+					<div class="answer__prop-name text text--huge text--primary text--w-bold">
+						Время работы:
+					</div>
+					<div class="answer__prop-value text text--large text--primary text--w-regular">
+						Пн-Пт: 9:00 - 18:00 (Челябинск)
+					</div>
+					<div class="answer__prop-value text text--large text--primary text--w-regular">
+						Пн-Пт: 7:00 - 16:00 (Москва)
+					</div>
+				</div>
+				<div class="answer__contacts">
+					<div class="answer__prop-name text text--huge text--primary text--w-bold">
+						Адрес офиса, склада и производства:
+					</div>
+					<div class="answer__prop-value text text--large text--primary text--w-regular">
+						Челябинская область, г. Злaтoycт,
+						ул. Спецдревесины, 26А, строение 1
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="specialists">
+	<div class="specialists__body">
+		<div class="specialists__top container">
+			<h3 class="specialists__heading title title--big title--primary title--w-bold title--uppercase">
+				СПЕЦИАЛИСТЫ с 5-летним отраслевым <br> опытом помогут оформить заказ
+			</h3>
+		</div>
+		<div class="specialists__slider-wrap container-right">
+			<div class="specialists__splide splide js-specialists-slider-init">
+				<div class="specialists__slider-nav-wrap d-flex flex-justify-sb flex-align-center">
+					<a href="" class="button button--text">
+						<span>Все специалисты</span>
+						<svg width="45" height="23" class="button__icon">
+							<use href="./img/svgsprite/sprite.symbol.svg#arrow-btn-right-orange"></use>
+						</svg>
+					</a>
+					<div class="specialist__splide-arrows slider-nav splide__arrows">
+						<button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+							<svg class="slider-nav__arrow-icon" width="32px" height="16px">
+								<use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-left"></use>
+							</svg>
+						</button>
+						<button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+							<svg class="slider-nav__arrow-icon" width="32px" height="16px">
+								<use href="./img/svgsprite/sprite.symbol.svg#arrow-slider-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="specialists__splide-track splide__track">
+					<div class="specialists__splide-list splide__list">
+						<div class="specialists__splide-slide splide__slide">
+							<div class="specialists__item d-flex d-flex-column">
+								<div class="specialists__item-photo">
+									<picture>
+										<img src="./img/other/specialist.jpg" alt="">
+									</picture>
+								</div>
+								<div class="specialists__item-info">
+									<div class="specialists__item-name text text--huge text--secondary text--w-medium">
+										Шарановская Вера Георгиевна
+									</div>
+									<div class="specialists__item-position text text--small text--secondary text--w-medium">
+										Начальник тендерного отдела
+									</div>
+									<a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+										</svg>
+										8 (912) 898-51-62
+									</a>
+									<a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+										</svg>
+										756102@profil-arma.ru
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="specialists__splide-slide splide__slide">
+							<div class="specialists__item d-flex d-flex-column">
+								<div class="specialists__item-photo">
+									<picture>
+										<img src="./img/other/specialist.jpg" alt="">
+									</picture>
+								</div>
+								<div class="specialists__item-info">
+									<div class="specialists__item-name text text--huge text--secondary text--w-medium">
+										Шарановская Вера Георгиевна 2
+									</div>
+									<div class="specialists__item-position text text--small text--secondary text--w-medium">
+										Начальник тендерного отдела 2
+									</div>
+									<a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+										</svg>
+										8 (912) 898-51-62
+									</a>
+									<a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+										</svg>
+										756102@profil-arma.ru
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="specialists__splide-slide splide__slide">
+							<div class="specialists__item d-flex d-flex-column">
+								<div class="specialists__item-photo">
+									<picture>
+										<img src="./img/other/specialist.jpg" alt="">
+									</picture>
+								</div>
+								<div class="specialists__item-info">
+									<div class="specialists__item-name text text--huge text--secondary text--w-medium">
+										Шарановская Вера Георгиевна 2
+									</div>
+									<div class="specialists__item-position text text--small text--secondary text--w-medium">
+										Начальник тендерного отдела 2
+									</div>
+									<a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+										</svg>
+										8 (912) 898-51-62
+									</a>
+									<a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+										</svg>
+										756102@profil-arma.ru
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="specialists__splide-slide splide__slide">
+							<div class="specialists__item d-flex d-flex-column">
+								<div class="specialists__item-photo">
+									<picture>
+										<img src="./img/other/specialist.jpg" alt="">
+									</picture>
+								</div>
+								<div class="specialists__item-info">
+									<div class="specialists__item-name text text--huge text--secondary text--w-medium">
+										Шарановская Вера Георгиевна 2
+									</div>
+									<div class="specialists__item-position text text--small text--secondary text--w-medium">
+										Начальник тендерного отдела 2
+									</div>
+									<a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+										</svg>
+										8 (912) 898-51-62
+									</a>
+									<a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+										</svg>
+										756102@profil-arma.ru
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="specialists__splide-slide splide__slide">
+							<div class="specialists__item d-flex d-flex-column">
+								<div class="specialists__item-photo">
+									<picture>
+										<img src="./img/other/specialist.jpg" alt="">
+									</picture>
+								</div>
+								<div class="specialists__item-info">
+									<div class="specialists__item-name text text--huge text--secondary text--w-medium">
+										Шарановская Вера Георгиевна 2
+									</div>
+									<div class="specialists__item-position text text--small text--secondary text--w-medium">
+										Начальник тендерного отдела 2
+									</div>
+									<a href="tel: 8 (912) 898-51-62"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone-icon"></use>
+										</svg>
+										8 (912) 898-51-62
+									</a>
+									<a href="mailto:756102@profil-arma.ru"
+									   class="specialists__item-contact contact text text--pre-medium text--primary text--w-medium d-flex flex-align-center">
+										<svg width="24" height="24" class="contact__icon">
+											<use href="./img/svgsprite/sprite.symbol.svg#email-icon"></use>
+										</svg>
+										756102@profil-arma.ru
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/footer.html')
